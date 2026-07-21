@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#184978">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="TN RoadReady">
+  <title>TN RoadReady</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>TN RoadReady</h1>
+    <p>Tennessee Driver Education</p>
+  </div>
+  <button class="ghost" id="installBtn" hidden>Install App</button>
+</header>
+
+<main>
+  <section id="profileScreen" class="screen active">
+    <div class="hero card">
+      <h2>Choose a student</h2>
+      <p>Progress is stored only on this device.</p>
+      <div class="profile-grid" id="profileGrid"></div>
+      <button class="secondary" id="addProfileBtn">+ Add profile</button>
+    </div>
+  </section>
+
+  <section id="appScreen" class="screen">
+    <nav class="tabs">
+      <button data-tab="dashboard" class="active">Dashboard</button>
+      <button data-tab="study">Study</button>
+      <button data-tab="test">Practice Test</button>
+      <button data-tab="manual">Manual</button>
+    </nav>
+
+    <div id="dashboard" class="tab-panel active">
+      <div class="welcome">
+        <div><span class="eyebrow">CURRENT STUDENT</span><h2 id="studentName"></h2></div>
+        <button class="ghost" id="switchProfile">Switch</button>
+      </div>
+      <div class="metric-grid" id="metrics"></div>
+      <div class="card">
+        <div class="section-title"><h3>Section progress</h3><span id="passedCount"></span></div>
+        <div id="sectionProgress"></div>
+      </div>
+      <div class="card">
+        <div class="section-title"><h3>Recent test history</h3><button class="link" id="exportBtn">Export backup</button></div>
+        <div id="history"></div>
+        <label class="restore">Restore backup <input type="file" id="importFile" accept=".json"></label>
+      </div>
+    </div>
+
+    <div id="study" class="tab-panel">
+      <div class="card">
+        <h2>Study by section</h2>
+        <p>Each session uses applied questions and immediately teaches the correct answer after a mistake.</p>
+        <div id="sectionButtons" class="section-buttons"></div>
+      </div>
+    </div>
+
+    <div id="test" class="tab-panel">
+      <div class="card test-setup" id="testSetup">
+        <h2>Practice test</h2>
+        <p>Choose a test length. Questions are drawn across all sections.</p>
+        <div class="test-options">
+          <button data-count="10">Quick 10</button>
+          <button data-count="20">Standard 20</button>
+          <button data-count="30">Challenge 30</button>
+        </div>
+        <button class="secondary" id="missedBtn">Review missed questions</button>
+      </div>
+      <div id="quizArea" hidden></div>
+    </div>
+
+    <div id="manual" class="tab-panel">
+      <div class="card">
+        <div class="section-title"><div><h2>Driver License Manual</h2><p>Use the page field to jump to a referenced page.</p></div>
+          <a class="button-link" href="DL_Manual.pdf" target="_blank">Open full screen</a>
+        </div>
+        <div class="manual-tools">
+          <input id="manualPage" type="number" min="1" max="135" value="1" aria-label="Manual page">
+          <button id="goPage">Go to page</button>
+        </div>
+        <iframe id="manualFrame" title="Tennessee Driver License Manual" src="DL_Manual.pdf#page=1"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>Offline family study app • No accounts • No advertisements</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
