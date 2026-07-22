@@ -57,3 +57,25 @@ If the footer does not show v4.1, GitHub Pages has not deployed the new index.ht
 
 VERSION 4.2 BUNDLED REPAIR
 All course data and application logic are contained in app.bundle.js. Upload every file in this folder and remove old app.js and data.js from GitHub.
+
+
+VERSION 4.4 LESSON STATUS
+- Lesson cards now show Not Started, In Progress, or Completed.
+- Opening a lesson changes it to In Progress.
+- Selecting Mark lesson complete or starting its section quiz changes it to Completed.
+- Quiz mastery remains displayed separately from lesson completion.
+
+VERSION 4.5 — PERMIT READINESS FIX
+Permit readiness is now based equally on the 11 knowledge sections.
+- Each section contributes 1/11 of the total readiness score.
+- A section quiz score of 80% or higher earns full mastery for that section.
+- A score below 80% earns proportional partial credit.
+- One passed section is approximately 9% readiness.
+- All 11 sections passed equals 100% readiness.
+
+VERSION 4.6 — BALANCED ANSWER CHOICES
+- Revised all 158 questions to reduce answer-length clues.
+- Expanded short distractors into plausible alternatives.
+- Distributed correct answers evenly across A, B, C, and D.
+- Added randomized answer ordering for each quiz attempt when supported.
+- Preserved the correct rule explanations and manual references.
