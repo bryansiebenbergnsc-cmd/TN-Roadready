@@ -50,3 +50,7 @@ VERSION 3.1 FIX
 
 VERSION 4
 Expanded all 11 sections into full lessons with 44 teaching topics, examples, common mistakes, and embedded knowledge checks.
+
+VERSION 4.1 REPAIR
+This build uses cache-busted asset URLs. After uploading, the footer must display TN RoadReady v4.1.
+If the footer does not show v4.1, GitHub Pages has not deployed the new index.html.
