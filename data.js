@@ -2225,5 +2225,150 @@ window.APP_DATA = {
       "answer": 1,
       "explain": "Using a phone to record while driving is distracting and unlawful. Focus on the roadway."
     }
-  ]
+  ],
+  "lessons": {
+    "Licensing & Teen Rules": {
+      "title": "Licensing and Tennessee Teen Driver Rules",
+      "manualPages": "14\u201323",
+      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
+      "points": [
+        "Drivers under 18 move through graduated licensing stages.",
+        "A learner permit generally requires a licensed driver age 21 or older in the front seat.",
+        "Learner-permit holders may not drive between 10 p.m. and 6 a.m.",
+        "Advancing requires the minimum permit period, supervised practice, and required tests.",
+        "License restrictions still apply even when a parent gives permission."
+      ],
+      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+    },
+    "Vehicle & Occupant Safety": {
+      "title": "Preparing the Vehicle and Protecting Occupants",
+      "manualPages": "27\u201334",
+      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
+      "points": [
+        "Adjust the seat, mirrors, head restraint, and steering position before moving.",
+        "Use approximately the 9-and-3 hand position.",
+        "Every occupant should use the correct safety restraint.",
+        "Children are generally safest properly restrained in the rear seat.",
+        "Never run an engine in a closed garage or leave a child unattended."
+      ],
+      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+    },
+    "Signs, Signals & Markings": {
+      "title": "Traffic Signs, Signals, and Pavement Markings",
+      "manualPages": "35\u201344",
+      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
+      "points": [
+        "An octagon means stop; a triangle means yield; a round sign warns of railroad tracks.",
+        "Yellow diamond signs warn of hazards.",
+        "Orange signs identify temporary work zones.",
+        "Flashing red requires a stop; flashing yellow requires caution.",
+        "Lane markings control passing, stopping, and lane use."
+      ],
+      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+    },
+    "Speed, Space & Stopping": {
+      "title": "Speed, Following Distance, and Stopping",
+      "manualPages": "45\u201349",
+      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
+      "points": [
+        "The posted limit is a maximum under good conditions.",
+        "Use at least a two-second following interval in favorable conditions.",
+        "Poor weather and limited visibility require more distance and less speed.",
+        "Stopping distance increases rapidly as speed increases.",
+        "Drive so you can stop within the distance you can see."
+      ],
+      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+    },
+    "Intersections & Right-of-Way": {
+      "title": "Intersections, Turns, and Right-of-Way",
+      "manualPages": "52\u201358",
+      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
+      "points": [
+        "At the same arrival time, yield to the vehicle on your right.",
+        "A left-turning driver generally yields to oncoming traffic.",
+        "Drivers entering from driveways yield to roadway users.",
+        "Right turns on red require a full stop and yielding when permitted.",
+        "Right-of-way never gives permission to cause a collision."
+      ],
+      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+    },
+    "Required Stops & Emergencies": {
+      "title": "Required Stops and Roadway Emergencies",
+      "manualPages": "49\u201352, 72\u201373, 89\u201390",
+      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
+      "points": [
+        "Never enter railroad tracks unless you can clear them.",
+        "Stop for school buses as required by roadway configuration.",
+        "Clear intersections and move right for emergency vehicles.",
+        "Move over or slow down for stopped emergency vehicles.",
+        "After a crash, stop, protect the scene, and exchange information."
+      ],
+      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+    },
+    "Interstate Driving": {
+      "title": "Entering, Driving, and Exiting Interstates",
+      "manualPages": "68\u201373",
+      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
+      "points": [
+        "Use the acceleration lane to approach traffic speed.",
+        "Find a safe gap and merge without forcing other drivers to react.",
+        "Use the left lane mainly for passing.",
+        "Slow in the deceleration lane after entering the exit path.",
+        "If you miss an exit, continue to the next one."
+      ],
+      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+    },
+    "Night & Weather Driving": {
+      "title": "Night and Adverse-Weather Driving",
+      "manualPages": "74\u201378",
+      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
+      "points": [
+        "Do not overdrive your headlights.",
+        "Use low beams in fog and dim high beams around traffic.",
+        "Avoid cruise control on wet or icy roads.",
+        "Never drive into water of unknown depth.",
+        "Avoid abrupt braking or steering during a skid or hydroplane."
+      ],
+      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+    },
+    "Distraction & Impairment": {
+      "title": "Distracted and Impaired Driving",
+      "manualPages": "6, 79\u201384",
+      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
+      "points": [
+        "Visual, manual, and mental distractions all increase crash risk.",
+        "Set navigation and controls before moving.",
+        "Alcohol affects judgment early, and only time removes it.",
+        "Medicines can impair alertness and coordination.",
+        "Combining alcohol with sedating medicine increases danger."
+      ],
+      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+    },
+    "Defensive Driving & Sharing": {
+      "title": "Defensive Driving and Sharing the Road",
+      "manualPages": "93\u2013115",
+      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
+      "points": [
+        "Scan far ahead and maintain escape space.",
+        "Expect children and pedestrians to act unpredictably.",
+        "Give bicyclists room.",
+        "Motorcycles can be difficult to judge.",
+        "Large trucks have major blind spots and need extra turning room."
+      ],
+      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+    },
+    "Work Zones & Responsibility": {
+      "title": "Work Zones and Driver Responsibility",
+      "manualPages": "18\u201319, 47, 85\u201390",
+      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
+      "points": [
+        "Slow down and increase following distance in work zones.",
+        "Obey flaggers and temporary traffic controls.",
+        "Avoid unnecessary lane changes.",
+        "Repeated violations can affect driving privileges.",
+        "Drivers must stop after a crash and maintain financial responsibility."
+      ],
+      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+    }
+  }
 };

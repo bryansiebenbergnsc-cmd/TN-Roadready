@@ -5,9 +5,9 @@ let state=loadState(), currentProfile=null, quiz=null, deferredPrompt=null, sess
 
 function loadState(){try{return JSON.parse(localStorage.getItem(KEY))||{profiles:{}}}catch(e){return {profiles:{}}}}
 function save(){localStorage.setItem(KEY,JSON.stringify(state))}
-function blankProfile(name){return {name,seconds:0,answered:0,correct:0,sectionStats:{},tests:[],missed:[],lastSeen:Date.now()}}
+function blankProfile(name){return {name,seconds:0,answered:0,correct:0,sectionStats:{},tests:[],missed:[],lastSeen:Date.now(),dailyGoal:15,dailyLog:{},lessonsViewed:[]}}
 function ensureDefaults(){['Jace','Regan','Carly'].forEach(n=>{if(!state.profiles[n])state.profiles[n]=blankProfile(n)});save()}
-ensureDefaults();
+ensureDefaults();Object.values(state.profiles).forEach(p=>{if(!p.dailyGoal)p.dailyGoal=15;if(!p.dailyLog)p.dailyLog={};if(!p.lessonsViewed)p.lessonsViewed=[]});save();
 
 function showProfiles(){
  stopSession(); currentProfile=null;
@@ -26,7 +26,7 @@ function selectProfile(name){
  document.querySelector('#studentName').textContent=name;
  startSession(); renderAll(); switchTab('dashboard');
 }
-function startSession(){sessionStart=Date.now(); clearInterval(sessionTimer); sessionTimer=setInterval(()=>{if(currentProfile){currentProfile.seconds++; if(currentProfile.seconds%10===0)save(); if(document.querySelector('#dashboard').classList.contains('active'))renderMetrics()}},1000)}
+function startSession(){sessionStart=Date.now(); clearInterval(sessionTimer); sessionTimer=setInterval(()=>{if(currentProfile){currentProfile.seconds++;const day=new Date().toISOString().slice(0,10);currentProfile.dailyLog[day]=(currentProfile.dailyLog[day]||0)+1;if(currentProfile.seconds%10===0)save(); if(document.querySelector('#dashboard').classList.contains('active')){renderMetrics();renderGoalAndReadiness()}}},1000)}
 function stopSession(){clearInterval(sessionTimer);if(currentProfile)save()}
 window.addEventListener('beforeunload',stopSession);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stopSession();else if(currentProfile)startSession()});
@@ -65,14 +65,19 @@ function renderHistory(){
  if(!currentProfile.tests.length){h.innerHTML='<p class="empty">No completed tests yet.</p>';return}
  h.innerHTML=currentProfile.tests.slice(-8).reverse().map(t=>`<div class="history-item"><span>${new Date(t.date).toLocaleDateString()} • ${t.type}</span><b>${t.score}%</b></div>`).join('')
 }
-function renderAll(){renderMetrics();renderSections();renderHistory()}
+function readiness(){const acc=pct(currentProfile.correct,currentProfile.answered),passed=DATA.sections.filter(s=>sectionInfo(s).passed).length,best=currentProfile.tests.length?Math.max(...currentProfile.tests.map(t=>t.score)):0;return Math.min(100,Math.round(passed/DATA.sections.length*55)+Math.round(acc*.30)+Math.round(best*.15))}
+function renderGoalAndReadiness(){const day=new Date().toISOString().slice(0,10),studied=currentProfile.dailyLog[day]||0,goal=(currentProfile.dailyGoal||15)*60,gp=Math.min(100,Math.round(studied/goal*100));document.querySelector('#goalRing').style.background=`conic-gradient(var(--blue) ${gp}%,#dfe7ed ${gp}%)`;document.querySelector('#goalValue').textContent=gp+'%';document.querySelector('#goalText').textContent=`${formatTime(studied)} of ${currentProfile.dailyGoal} minutes today`;const r=readiness();document.querySelector('#readinessScore').textContent=r+'%';document.querySelector('#readinessMessage').textContent=r>=90?'Permit ready—maintain knowledge with mixed tests.':r>=75?'Almost ready—focus on weak sections.':r>=50?'Good progress—continue passing sections.':'Complete guided lessons and section quizzes.'}
+function renderBadges(){const passed=DATA.sections.filter(s=>sectionInfo(s).passed).length,best=currentProfile.tests.length?Math.max(...currentProfile.tests.map(t=>t.score)):0,b=[['🚦','First Steps','Answer 10 questions',currentProfile.answered>=10],['📘','Manual Explorer','Open 5 lessons',currentProfile.lessonsViewed.length>=5],['🎯','Accurate Driver','Reach 85% accuracy',currentProfile.answered>=20&&pct(currentProfile.correct,currentProfile.answered)>=85],['🏁','Section Champion','Pass 3 sections',passed>=3],['🏆','Course Master','Pass all sections',passed===DATA.sections.length],['🧠','Perfect Test','Score 100%',best===100],['🔁','Comeback Driver','Clear missed questions',currentProfile.correct>=25&&currentProfile.missed.length===0],['⏱️','Study Habit','Study 2 hours',currentProfile.seconds>=7200]];document.querySelector('#badgeCount').textContent=`${b.filter(x=>x[3]).length} of ${b.length} earned`;document.querySelector('#badges').innerHTML=b.map(x=>`<div class="badge ${x[3]?'':'locked'}"><span class="badge-icon">${x[0]}</span><b>${x[1]}</b><small>${x[2]}</small></div>`).join('')}
+function renderLessons(){const w=document.querySelector('#lessonCards');w.innerHTML='';DATA.sections.forEach(s=>{const l=DATA.lessons[s],x=sectionInfo(s),d=document.createElement('div');d.className='lesson-card';d.innerHTML=`<span class="eyebrow">PAGES ${l.manualPages}</span><h3>${l.title}</h3><p>${l.objective}</p><p><b>Status:</b> ${x.passed?'Passed':x.answered?x.score+'% practice accuracy':'Not started'}</p><button>Open lesson</button>`;d.querySelector('button').onclick=()=>openLesson(s);w.appendChild(d)})}
+function openLesson(s){const l=DATA.lessons[s],v=document.querySelector('#lessonViewer');if(!currentProfile.lessonsViewed.includes(s)){currentProfile.lessonsViewed.push(s);save()}document.querySelector('#lessonListCard').hidden=true;v.hidden=false;v.innerHTML=`<div class="card"><span class="eyebrow">${s} • PAGES ${l.manualPages}</span><h2>${l.title}</h2><div class="lesson-objective"><b>Objective:</b> ${l.objective}</div><h3>Key ideas</h3><ul class="lesson-points">${l.points.map(p=>`<li>${p}</li>`).join('')}</ul><div class="scenario-box"><b>Apply it:</b><p>${l.scenario}</p></div><div class="lesson-actions"><button id="lessonQuiz">Take section quiz</button><button class="secondary" id="lessonManual">Open manual</button><button class="secondary" id="lessonBack">Back</button></div></div>`;v.querySelector('#lessonQuiz').onclick=()=>{document.querySelector('#lessonListCard').hidden=false;v.hidden=true;startSection(s);switchTab('test')};v.querySelector('#lessonManual').onclick=()=>openManual(parseInt(l.manualPages)||1);v.querySelector('#lessonBack').onclick=()=>{v.hidden=true;document.querySelector('#lessonListCard').hidden=false;renderLessons()};renderBadges()}
+function renderAll(){renderMetrics();renderSections();renderHistory();renderGoalAndReadiness();renderBadges();renderLessons()}
 
 function switchTab(id){
  document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('active',b.dataset.tab===id));
  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.toggle('active',p.id===id))
 }
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>switchTab(b.dataset.tab));
-document.querySelector('#switchProfile').onclick=showProfiles;
+document.querySelector('#switchProfile').onclick=showProfiles;document.querySelector('#goalSettings').onclick=()=>{const n=Number(prompt('Daily study goal in minutes:',currentProfile.dailyGoal||15));if(Number.isFinite(n)&&n>=5&&n<=120){currentProfile.dailyGoal=Math.round(n);save();renderGoalAndReadiness()}};
 document.querySelector('#addProfileBtn').onclick=()=>{
  const name=prompt('Student name:')?.trim();if(!name)return;
  if(state.profiles[name])return alert('That profile already exists.');

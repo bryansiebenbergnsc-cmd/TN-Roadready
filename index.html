@@ -34,8 +34,8 @@
   <section id="appScreen" class="screen">
     <nav class="tabs">
       <button data-tab="dashboard" class="active">Dashboard</button>
-      <button data-tab="study">Study</button>
-      <button data-tab="test">Practice Test</button>
+      <button data-tab="study">Lessons</button>
+      <button data-tab="test">Practice</button>
       <button data-tab="manual">Manual</button>
     </nav>
 
@@ -44,7 +44,7 @@
         <div><span class="eyebrow">CURRENT STUDENT</span><h2 id="studentName"></h2></div>
         <button class="ghost" id="switchProfile">Switch</button>
       </div>
-      <div class="metric-grid" id="metrics"></div>
+      <div class="goal-readiness-grid"><div class="card goal-card"><div class="section-title"><h3>Daily study goal</h3><button class="link" id="goalSettings">Change</button></div><div class="goal-ring" id="goalRing"><span id="goalValue">0%</span></div><p id="goalText"></p></div><div class="card readiness-card"><span class="eyebrow">PERMIT READINESS</span><div class="readiness-score" id="readinessScore">0%</div><p id="readinessMessage"></p></div></div><div class="metric-grid" id="metrics"></div><div class="card"><div class="section-title"><h3>Achievements</h3><span id="badgeCount"></span></div><div id="badges" class="badge-grid"></div></div>
       <div class="card">
         <div class="section-title"><h3>Section progress</h3><span id="passedCount"></span></div>
         <div id="sectionProgress"></div>
@@ -56,15 +56,7 @@
       </div>
     </div>
 
-    <div id="study" class="tab-panel">
-      <div class="card">
-        <h2>Study by section</h2>
-        <p>Each session uses applied questions and immediately teaches the correct answer after a mistake.</p>
-        <div id="sectionButtons" class="section-buttons"></div>
-      </div>
-    </div>
-
-    <div id="test" class="tab-panel">
+    <div id="study" class="tab-panel"><div class="card" id="lessonListCard"><h2>Guided lessons</h2><p>Read the lesson summary, review the manual pages, then complete the section quiz.</p><div id="lessonCards" class="lesson-grid"></div></div><div id="lessonViewer" hidden></div></div><div id="test" class="tab-panel">
       <div class="card test-setup" id="testSetup">
         <h2>Practice test</h2>
         <p>Choose a test length. Questions are drawn across all sections.</p>

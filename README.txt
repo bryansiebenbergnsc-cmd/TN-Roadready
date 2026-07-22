@@ -34,3 +34,11 @@ the next time the device connects. If an update seems stuck, close and reopen th
 
 VERSION 2 CONTENT
 This release contains 158 applied-knowledge questions across 11 sections.
+
+VERSION 3 FEATURES
+- Guided lessons for all sections
+- Daily study goals
+- Permit-readiness score
+- Achievement badges
+- Improved dashboard
+- Existing progress remains compatible
