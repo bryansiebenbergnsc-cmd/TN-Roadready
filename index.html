@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="TN RoadReady">
-  <title>TN RoadReady v4.6</title>
+  <title>TN RoadReady v5.1 Learning Coach</title>
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icon-192.png">
   <link rel="stylesheet" href="styles.css?v=4.1">
@@ -44,7 +44,38 @@
         <div><span class="eyebrow">CURRENT STUDENT</span><h2 id="studentName"></h2></div>
         <button class="ghost" id="switchProfile">Switch</button>
       </div>
+      <div class="card coach-card">
+        <div class="section-title">
+          <div>
+            <span class="eyebrow">LEARNING COACH</span>
+            <h2 id="coachGreeting">Your study plan</h2>
+          </div>
+          <span id="studyStreak" class="streak-pill"></span>
+        </div>
+        <div id="coachPlan" class="coach-plan"></div>
+        <div class="coach-actions">
+          <button id="startCoachPlan">Start Next Activity</button>
+          <button class="secondary" id="refreshCoachPlan">Refresh Plan</button>
+        </div>
+      </div>
+
+      <div class="coach-summary-grid">
+        <div class="card compact-card">
+          <span class="eyebrow">THIS WEEK</span>
+          <div id="weeklySummary" class="weekly-summary"></div>
+        </div>
+        <div class="card compact-card">
+          <span class="eyebrow">COURSE MILESTONES</span>
+          <div id="milestoneProgress" class="milestone-list"></div>
+        </div>
+      </div>
+
       <div class="goal-readiness-grid"><div class="card goal-card"><div class="section-title"><h3>Daily study goal</h3><button class="link" id="goalSettings">Change</button></div><div class="goal-ring" id="goalRing"><span id="goalValue">0%</span></div><p id="goalText"></p></div><div class="card readiness-card"><span class="eyebrow">PERMIT READINESS</span><div class="readiness-score" id="readinessScore">0%</div><p id="readinessMessage"></p></div></div><div class="metric-grid" id="metrics"></div><div class="card"><div class="section-title"><h3>Achievements</h3><span id="badgeCount"></span></div><div id="badges" class="badge-grid"></div></div>
+      <div class="card">
+        <div class="section-title"><h3>Adaptive learning insights</h3><span id="learningConfidence"></span></div>
+        <div id="learningInsights" class="insight-grid"></div>
+        <button class="secondary" id="smartReviewBtn">Start Smart Review</button>
+      </div>
       <div class="card">
         <div class="section-title"><h3>Section progress</h3><span id="passedCount"></span></div>
         <div id="sectionProgress"></div>
@@ -57,15 +88,48 @@
     </div>
 
     <div id="study" class="tab-panel"><div class="card" id="lessonListCard"><h2>Guided lessons</h2><p>Read the lesson summary, review the manual pages, then complete the section quiz.</p><div id="lessonCards" class="lesson-grid"></div></div><div id="lessonViewer" hidden></div></div><div id="test" class="tab-panel">
-      <div class="card test-setup" id="testSetup">
-        <h2>Practice test</h2>
-        <p>Choose a test length. Questions are drawn across all sections.</p>
-        <div class="test-options">
-          <button data-count="10">Quick 10</button>
-          <button data-count="20">Standard 20</button>
-          <button data-count="30">Challenge 30</button>
+      <div class="test-setup" id="testSetup">
+        <div class="card">
+          <span class="eyebrow">LEARNING MODE</span>
+          <h2>Practice questions</h2>
+          <p>Receive immediate feedback, explanations, and manual references after every answer.</p>
+          <div class="test-options">
+            <button data-count="10">Quick 10</button>
+            <button data-count="20">Standard 20</button>
+            <button data-count="30">Challenge 30</button>
+          </div>
+          <div class="practice-actions">
+            <button class="secondary" id="missedBtn">Review missed questions</button>
+            <button class="secondary" id="adaptiveReviewBtn">Smart Review 15</button>
+          </div>
         </div>
-        <button class="secondary" id="missedBtn">Review missed questions</button>
+
+        <div class="exam-mode-grid">
+          <div class="card exam-card">
+            <span class="eyebrow">EXAM SIMULATOR</span>
+            <h2>Permit Practice Exam</h2>
+            <p>30 mixed questions, 30-minute timer, no feedback until the exam is submitted.</p>
+            <ul class="exam-features">
+              <li>Balanced coverage across all 11 sections</li>
+              <li>Randomized questions and answer order</li>
+              <li>Detailed section report at the end</li>
+            </ul>
+            <button id="permitExamBtn">Start Permit Practice Exam</button>
+          </div>
+
+          <div class="card exam-card adaptive-card">
+            <span class="eyebrow">ADAPTIVE FINAL</span>
+            <h2>Adaptive Final Exam</h2>
+            <p>The exam emphasizes weaker knowledge sections while still testing the full course.</p>
+            <div id="adaptiveStatus" class="adaptive-status"></div>
+            <ul class="exam-features">
+              <li>30 questions selected from performance history</li>
+              <li>More questions from weak or untested sections</li>
+              <li>Final recommendations based on missed topics</li>
+            </ul>
+            <button id="adaptiveExamBtn">Start Adaptive Final Exam</button>
+          </div>
+        </div>
       </div>
       <div id="quizArea" hidden></div>
     </div>
@@ -85,7 +149,7 @@
   </section>
 </main>
 
-<footer>TN RoadReady v4.6 • Offline family study app • No accounts • No advertisements</footer>
-<script src="app.bundle.js?v=4.3"></script>
+<footer>TN RoadReady v5.1 Learning Coach • Offline family study app • No accounts • No advertisements</footer>
+<script src="app.bundle.js?v=5.3"></script>
 </body>
 </html>

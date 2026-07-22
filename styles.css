@@ -26,3 +26,80 @@ footer{text-align:center;color:var(--muted);font-size:.8rem;padding:25px}
 .lesson-card-status.not-started{background:#edf1f4;color:#586574}
 .lesson-card-status.in-progress{background:#fff3cc;color:#7a5900}
 .lesson-card-status.completed{background:#dff3e7;color:#17623b}
+
+.exam-mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.exam-card{display:flex;flex-direction:column}
+.exam-card h2{margin-bottom:5px}.exam-card>button{margin-top:auto}
+.adaptive-card{border-top:5px solid var(--gold)}
+.exam-features{padding-left:20px;color:var(--muted);line-height:1.55}
+.adaptive-status{background:#eef4f8;border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0}
+.exam-shell{max-width:780px;margin:auto}
+.exam-topbar{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:12px;margin-bottom:14px}
+.exam-timer{font-weight:900;color:var(--blue);font-variant-numeric:tabular-nums;background:#edf3f7;padding:8px 12px;border-radius:9px}
+.exam-timer.warning{color:#9a2b2b;background:#fde7e7}
+.exam-progress{height:9px;background:#e0e8ee;border-radius:10px;overflow:hidden;margin:10px 0 20px}
+.exam-progress i{height:100%;display:block;background:var(--blue)}
+.exam-notice{background:#fff7dc;border:1px solid #ead087;border-radius:10px;padding:11px;margin-bottom:15px;font-size:.9rem}
+.exam-result-hero{text-align:center;padding:15px}.exam-result-hero .score{font-size:4rem;line-height:1;font-weight:900;color:var(--blue)}
+.result-pass{color:var(--good);font-weight:900}.result-fail{color:var(--bad);font-weight:900}
+.section-report{display:grid;gap:11px;margin-top:16px}
+.section-report-row{border:1px solid var(--line);padding:12px;border-radius:11px}
+.section-report-head{display:flex;justify-content:space-between;gap:12px;margin-bottom:7px}
+.recommendations{background:#fff8df;border-left:5px solid var(--gold);padding:15px;border-radius:10px}
+.exam-history-tag{font-size:.72rem;padding:3px 7px;border-radius:10px;background:#e7eef4;color:var(--blue);font-weight:800}
+@media(max-width:720px){.exam-mode-grid{grid-template-columns:1fr}.exam-topbar{grid-template-columns:1fr auto}.exam-topbar .exam-label{grid-column:1/-1}.exam-result-hero .score{font-size:3.2rem}}
+
+.insight-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:12px;margin:12px 0 16px}
+.insight-card{border:1px solid var(--line);border-radius:13px;padding:13px;background:#f8fbfd}
+.insight-card b{display:block;color:var(--blue);font-size:1.15rem;margin-bottom:4px}
+.insight-card span{color:var(--muted);font-size:.83rem}
+.insight-card.weak{border-left:5px solid var(--gold)}
+.insight-card.strong{border-left:5px solid var(--good)}
+.practice-actions{display:flex;gap:10px;flex-wrap:wrap}
+.confidence-high{color:var(--good);font-weight:800}.confidence-medium{color:#9a6b00;font-weight:800}.confidence-low{color:var(--bad);font-weight:800}
+.smart-review-note{background:#eaf2f8;border:1px solid #bfd2e0;border-radius:10px;padding:11px;margin-bottom:14px}
+
+body.exam-active header,body.exam-active footer,body.exam-active .tabs{display:none!important}
+body.exam-active main{max-width:none;padding:0;min-height:100vh;background:#f4f7f9}
+body.exam-active #appScreen{display:block}
+body.exam-active #test{display:block;padding:18px}
+body.exam-active #testSetup{display:none!important}
+body.exam-active #quizArea{display:block!important}
+.exam-shell.fullscreen{max-width:900px;margin:0 auto;padding-top:10px}
+.exam-header-card{position:sticky;top:0;z-index:10;background:white;border:1px solid var(--line);border-radius:15px;padding:12px 16px;margin-bottom:14px;box-shadow:0 5px 20px #20304018}
+.exam-nav-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(42px,1fr));gap:7px;margin:14px 0}
+.exam-nav-btn{padding:9px 4px;border-radius:8px;background:#e7edf2;color:var(--blue);font-size:.82rem}
+.exam-nav-btn.answered{background:#dcefe5;color:var(--good)}
+.exam-nav-btn.current{outline:3px solid var(--gold)}
+.exam-nav-btn.locked{opacity:.55}
+.exam-controls{display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap}
+.exam-controls .right{display:flex;gap:10px;flex-wrap:wrap}
+.unanswered-warning{background:#fdeaea;border:1px solid #e1a2a2;color:#7d2222;padding:12px;border-radius:10px;margin:12px 0}
+.exam-rule-list{background:#eef4f8;border:1px solid #c7d7e2;border-radius:12px;padding:15px 18px;margin:15px 0}
+.exam-rule-list li{margin:7px 0}
+.confirm-box{background:#fff8df;border:1px solid #e3c96f;border-radius:12px;padding:15px;margin:15px 0}
+.final-lock-note{font-size:.85rem;color:var(--muted);margin-top:8px}
+
+.coach-card{border-top:6px solid var(--gold);background:linear-gradient(135deg,#fff,#f7fbfe)}
+.coach-card h2{margin:3px 0 0;color:var(--blue)}
+.streak-pill{background:#fff0cc;color:#8a5a00;border:1px solid #ebcf82;border-radius:999px;padding:8px 12px;font-weight:900;white-space:nowrap}
+.coach-plan{display:grid;gap:10px;margin:16px 0}
+.coach-item{display:grid;grid-template-columns:38px 1fr auto;gap:12px;align-items:center;border:1px solid var(--line);border-radius:13px;padding:12px;background:white}
+.coach-item.done{opacity:.65;background:#edf7f1}
+.coach-step{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:white;font-weight:900}
+.coach-item.done .coach-step{background:var(--good)}
+.coach-item b{display:block}.coach-item small{color:var(--muted)}
+.coach-duration{font-weight:800;color:var(--blue);font-size:.85rem}
+.coach-actions{display:flex;gap:10px;flex-wrap:wrap}
+.coach-summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.compact-card{min-height:180px}
+.weekly-summary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
+.weekly-stat{background:#f3f7fa;border-radius:11px;padding:12px}
+.weekly-stat b{display:block;font-size:1.3rem;color:var(--blue)}
+.weekly-stat span{font-size:.8rem;color:var(--muted)}
+.milestone-list{display:grid;gap:10px;margin-top:12px}
+.milestone-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.milestone-row .status{font-weight:900}
+.milestone-row .complete{color:var(--good)}.milestone-row .pending{color:#9a6b00}
+.next-recommendation{background:#edf4f9;border-left:5px solid var(--blue);padding:12px;border-radius:10px}
+@media(max-width:720px){.coach-summary-grid{grid-template-columns:1fr}.coach-item{grid-template-columns:34px 1fr}.coach-duration{grid-column:2}.weekly-summary{grid-template-columns:repeat(2,1fr)}}

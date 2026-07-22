@@ -79,3 +79,52 @@ VERSION 4.6 — BALANCED ANSWER CHOICES
 - Distributed correct answers evenly across A, B, C, and D.
 - Added randomized answer ordering for each quiz attempt when supported.
 - Preserved the correct rule explanations and manual references.
+
+VERSION 5.0 — PHASE A TESTING ENGINE
+- Permit Practice Exam: 30 questions, 30-minute timer, no feedback until submission.
+- Balanced exam coverage across all 11 knowledge sections.
+- Adaptive Final Exam weighted toward weak, missed, or untested sections.
+- Randomized answer order for every exam.
+- Detailed section-by-section score report.
+- Review of every incorrect answer with explanations and manual links.
+- Exam history stored locally with each student profile.
+- Exam results contribute to general accuracy but do not replace section-quiz mastery.
+- Simulator passing score is set to 80% and is not represented as the official state examination.
+
+VERSION 5.0 — PHASE B LOCAL ADAPTIVE LEARNING
+- Tracks performance for each individual question.
+- Tracks concept mastery across signs, right-of-way, school buses, railroads, weather, distraction, and other topics.
+- Measures average response time without sending any information off the device.
+- Identifies repeated trouble questions and weak concepts.
+- Adds a 15-question Smart Review weighted toward slow, missed, weak, and untested material.
+- Improves Adaptive Final Exam weighting using question-level and concept-level performance.
+- Adds a Learning Confidence score based on accuracy, coverage, practice volume, and exam consistency.
+- All adaptive data remains stored locally on the student's device.
+
+VERSION 5.0 — PHASE C EXAM SIMULATOR EXPERIENCE
+- Full-screen exam mode removes normal app navigation during testing.
+- Practice Permit Exam allows backward navigation and answer changes.
+- Adaptive Final Exam locks an answer after the student advances.
+- Numbered exam navigator shows current and answered questions.
+- Unanswered-question warning before advancing or submitting.
+- Dedicated final review screen with answer count and time remaining.
+- Final submission confirmation.
+- Automatic submission when the 30-minute timer expires.
+- No manual links, explanations, or correctness feedback during testing.
+- Normal navigation returns after exam submission or exit.
+
+VERSION 5.1 — LEARNING COACH
+- Personalized daily three-step study plan.
+- Recommends lessons, unfinished section quizzes, Smart Review, and practice exams.
+- One-tap Start Next Activity button.
+- Daily study streak tracking.
+- Seven-day study summary with time, active days, test count, and average score.
+- Course milestone tracker for lessons, section quizzes, practice exams, questions answered, and readiness.
+- Adaptive Final Exam unlock requirements:
+  * 11 lessons completed
+  * 11 section quizzes passed
+  * 3 Permit Practice Exams completed
+  * 200 questions answered
+  * 85% permit readiness
+- Local milestone celebrations.
+- No Parent Mode, no cloud account, and no outside data storage.

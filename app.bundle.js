@@ -3182,9 +3182,9 @@ let state=loadState(), currentProfile=null, quiz=null, deferredPrompt=null, sess
 
 function loadState(){try{return JSON.parse(localStorage.getItem(KEY))||{profiles:{}}}catch(e){return {profiles:{}}}}
 function save(){localStorage.setItem(KEY,JSON.stringify(state))}
-function blankProfile(name){return {name,seconds:0,answered:0,correct:0,sectionStats:{},tests:[],missed:[],lastSeen:Date.now(),dailyGoal:15,dailyLog:{},lessonsViewed:[],lessonsCompleted:[]}}
+function blankProfile(name){return {name,seconds:0,answered:0,correct:0,sectionStats:{},tests:[],missed:[],lastSeen:Date.now(),dailyGoal:15,dailyLog:{},lessonsViewed:[],lessonsCompleted:[],examHistory:[],questionStats:{},conceptStats:{},coachPlan:null,coachPlanDate:null}}
 function ensureDefaults(){['Jace','Regan','Carly'].forEach(n=>{if(!state.profiles[n])state.profiles[n]=blankProfile(n)});save()}
-ensureDefaults();Object.values(state.profiles).forEach(p=>{if(!p.dailyGoal)p.dailyGoal=15;if(!p.dailyLog)p.dailyLog={};if(!p.lessonsViewed)p.lessonsViewed=[];if(!p.lessonsCompleted)p.lessonsCompleted=[]});save();
+ensureDefaults();Object.values(state.profiles).forEach(p=>{if(!p.dailyGoal)p.dailyGoal=15;if(!p.dailyLog)p.dailyLog={};if(!p.lessonsViewed)p.lessonsViewed=[];if(!p.lessonsCompleted)p.lessonsCompleted=[];if(!p.examHistory)p.examHistory=[];if(!p.questionStats)p.questionStats={};if(!p.conceptStats)p.conceptStats={}});save();
 
 function showProfiles(){
  stopSession(); currentProfile=null;
@@ -3211,6 +3211,250 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden)stopSession
 function pct(a,b){return b?Math.round(a/b*100):0}
 function formatTime(sec){const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60);return h?`${h}h ${m}m`:`${m} min`}
 function sectionInfo(s){const x=currentProfile.sectionStats[s]||{answered:0,correct:0,attempts:0,best:0};return {...x,score:pct(x.correct,x.answered),passed:(x.best||0)>=80}}
+
+// ===== VERSION 5 PHASE B: LOCAL ADAPTIVE LEARNING =====
+function conceptFor(q){
+ const t=(q.q+' '+q.explain).toLowerCase();
+ const rules=[
+  ['School Buses',/school bus|stop arm/],['Railroad Crossings',/railroad|tracks|train/],
+  ['Right-of-Way',/right.of.way|four-way|4-way|yield to the vehicle|turning left/],
+  ['Traffic Signals',/traffic signal|flashing red|flashing yellow|green arrow|red light|yellow light/],
+  ['Road Signs',/sign|octagon|triangle|diamond-shaped|round yellow/],
+  ['Following Distance',/following distance|two-second|space cushion|tailgat/],
+  ['Speed Selection',/speed|posted limit|basic speed|stopping distance/],
+  ['Interstate Merging',/interstate|merge|acceleration lane|exit|deceleration lane/],
+  ['Night Visibility',/night|headlight|high beam|glare|fog/],
+  ['Weather and Traction',/rain|snow|ice|hydroplan|flood|wet road|skid/],
+  ['Distracted Driving',/phone|text|navigation|distract|video/],
+  ['Alcohol and Drugs',/alcohol|drink|bac|medicine|drug|implied consent/],
+  ['Pedestrians and Bicycles',/pedestrian|crosswalk|bicycl/],
+  ['Large Vehicles',/truck|bus|no-zone|blind spot|trailer/],
+  ['Emergency Response',/emergency vehicle|crash|accident|tire blows|brakes fail|stalls/],
+  ['Teen Licensing',/learner|permit|intermediate|teen|under 18|practice hours/],
+  ['Occupant Safety',/seat belt|safety belt|child restraint|air bag|head restraint/],
+  ['Work Zones',/work zone|construction|flagger|channelizing/]
+ ];
+ const hit=rules.find(x=>x[1].test(t));
+ return hit?hit[0]:q.section;
+}
+function recordQuestionPerformance(q,correct,responseSeconds,source='practice'){
+ const id=String(q.id),concept=conceptFor(q);
+ const qs=currentProfile.questionStats[id]||{attempts:0,correct:0,totalSeconds:0,lastSeen:0,sources:{}};
+ qs.attempts++;if(correct)qs.correct++;qs.totalSeconds+=Math.max(1,Math.min(300,responseSeconds||1));qs.lastSeen=Date.now();qs.sources[source]=(qs.sources[source]||0)+1;currentProfile.questionStats[id]=qs;
+ const cs=currentProfile.conceptStats[concept]||{attempts:0,correct:0,totalSeconds:0,lastSeen:0};
+ cs.attempts++;if(correct)cs.correct++;cs.totalSeconds+=Math.max(1,Math.min(300,responseSeconds||1));cs.lastSeen=Date.now();currentProfile.conceptStats[concept]=cs;
+}
+function conceptRows(){
+ return Object.entries(currentProfile.conceptStats||{}).map(([concept,s])=>({
+  concept,attempts:s.attempts||0,accuracy:pct(s.correct||0,s.attempts||0),
+  avgSeconds:(s.attempts?Math.round((s.totalSeconds||0)/s.attempts):0)
+ }));
+}
+function learningConfidenceScore(){
+ const rows=conceptRows(),coverage=Math.min(1,rows.filter(x=>x.attempts>=2).length/12);
+ const accuracy=currentProfile.answered?currentProfile.correct/currentProfile.answered:0;
+ const repeat=Math.min(1,(currentProfile.answered||0)/100);
+ const examConsistency=(()=>{
+  const scores=(currentProfile.examHistory||[]).slice(-3).map(x=>x.score);
+  if(scores.length<2)return .35;
+  const range=Math.max(...scores)-Math.min(...scores);
+  return Math.max(0,1-range/30);
+ })();
+ return Math.round((coverage*.30+accuracy*.35+repeat*.20+examConsistency*.15)*100);
+}
+function weaknessScore(q){
+ const qs=currentProfile.questionStats[String(q.id)]||{attempts:0,correct:0,totalSeconds:0};
+ const concept=currentProfile.conceptStats[conceptFor(q)]||{attempts:0,correct:0,totalSeconds:0};
+ const qAcc=qs.attempts?qs.correct/qs.attempts:.45;
+ const cAcc=concept.attempts?concept.correct/concept.attempts:.5;
+ const avgTime=qs.attempts?qs.totalSeconds/qs.attempts:25;
+ const missed=currentProfile.missed.includes(q.id)?1:0;
+ const unseen=qs.attempts===0?1:0;
+ return (1-qAcc)*5+(1-cAcc)*3+Math.min(2,avgTime/30)+missed*3+unseen*1.5;
+}
+function smartReviewQuestions(total=15){
+ const pool=DATA.questions.map(q=>({q,weight:weaknessScore(q)}));
+ const selected=[],used=new Set();
+ while(selected.length<Math.min(total,pool.length)){
+  const candidates=pool.filter(x=>!used.has(x.q.id));
+  const weightSum=candidates.reduce((a,x)=>a+Math.max(.1,x.weight),0);
+  let roll=Math.random()*weightSum,pick=candidates[0];
+  for(const item of candidates){roll-=Math.max(.1,item.weight);if(roll<=0){pick=item;break}}
+  selected.push(pick.q);used.add(pick.q.id);
+ }
+ return selected;
+}
+function renderLearningInsights(){
+ const el=document.querySelector('#learningInsights'),label=document.querySelector('#learningConfidence');if(!el||!currentProfile)return;
+ const rows=conceptRows().sort((a,b)=>a.accuracy-b.accuracy||b.avgSeconds-a.avgSeconds);
+ const weak=rows.filter(x=>x.attempts>=2).slice(0,3);
+ const strong=[...rows].filter(x=>x.attempts>=3).sort((a,b)=>b.accuracy-a.accuracy||a.avgSeconds-b.avgSeconds).slice(0,2);
+ const allStats=Object.values(currentProfile.questionStats||{});
+ const avgTime=allStats.length?Math.round(allStats.reduce((a,x)=>a+(x.totalSeconds||0),0)/Math.max(1,allStats.reduce((a,x)=>a+(x.attempts||0),0))):0;
+ const repeated=allStats.filter(x=>(x.attempts||0)>=2&&(x.correct||0)/(x.attempts||1)<.6).length;
+ const confidence=learningConfidenceScore(),cls=confidence>=80?'confidence-high':confidence>=55?'confidence-medium':'confidence-low';
+ label.innerHTML=`<span class="${cls}">${confidence}% learning confidence</span>`;
+ const cards=[
+  [`${avgTime||'—'} sec`,'Average answer time',''],
+  [repeated,'Repeated trouble questions','weak'],
+  [weak[0]?.concept||'More data needed',weak[0]?`${weak[0].accuracy}% weakest concept`:'Complete more questions','weak'],
+  [strong[0]?.concept||'More data needed',strong[0]?`${strong[0].accuracy}% strongest concept`:'Complete more questions','strong']
+ ];
+ el.innerHTML=cards.map(x=>`<div class="insight-card ${x[2]}"><b>${x[0]}</b><span>${x[1]}</span></div>`).join('');
+}
+function startSmartReview(){
+ const qs=smartReviewQuestions(15);
+ if(!qs.length)return alert('Complete a few questions first so Smart Review can identify useful material.');
+ beginQuiz(qs,'Smart Adaptive Review',null,true);
+ switchTab('test');
+ const area=document.querySelector('#quizArea');
+ if(area&&!area.hidden)area.insertAdjacentHTML('afterbegin','<div class="smart-review-note"><b>Smart Review:</b> This session emphasizes slow, missed, weak, and untested concepts.</div>');
+}
+// ===== END VERSION 5 PHASE B =====
+
+
+// ===== VERSION 5.1 LEARNING COACH =====
+function localDateKey(date=new Date()){
+ const y=date.getFullYear(),m=String(date.getMonth()+1).padStart(2,'0'),d=String(date.getDate()).padStart(2,'0');
+ return `${y}-${m}-${d}`;
+}
+function recentDayKeys(days=7){
+ const out=[];for(let i=0;i<days;i++){const d=new Date();d.setDate(d.getDate()-i);out.push(localDateKey(d))}return out;
+}
+function studyStreak(){
+ let streak=0;
+ for(let i=0;i<365;i++){
+  const d=new Date();d.setDate(d.getDate()-i);
+  const sec=currentProfile.dailyLog?.[localDateKey(d)]||0;
+  if(sec>=60)streak++;
+  else if(i===0&&sec===0)continue;
+  else break;
+ }
+ return streak;
+}
+function weeklyStats(){
+ const keys=recentDayKeys(7),seconds=keys.reduce((a,k)=>a+(currentProfile.dailyLog?.[k]||0),0);
+ const recentTests=[...(currentProfile.tests||[]),...(currentProfile.examHistory||[])].filter(t=>Date.now()-t.date<=7*86400000);
+ const recentQuestionAttempts=Object.values(currentProfile.questionStats||{}).reduce((sum,s)=>{
+   return sum+(s.lastSeen&&Date.now()-s.lastSeen<=7*86400000?(s.attempts||0):0)
+ },0);
+ const activeDays=keys.filter(k=>(currentProfile.dailyLog?.[k]||0)>=60).length;
+ const avgScore=recentTests.length?Math.round(recentTests.reduce((a,t)=>a+(t.score||0),0)/recentTests.length):0;
+ return {seconds,activeDays,tests:recentTests.length,avgScore,recentQuestionAttempts};
+}
+function weakestSection(){
+ return DATA.sections.map(section=>{
+  const info=sectionInfo(section);
+  const accuracy=info.answered?pct(info.correct,info.answered):0;
+  return {section,best:info.best||0,accuracy,attempts:info.attempts||0,passed:info.passed}
+ }).sort((a,b)=>Number(a.passed)-Number(b.passed)||a.best-b.best||a.accuracy-b.accuracy)[0];
+}
+function nextUnfinishedLesson(){
+ return DATA.sections.find(s=>!currentProfile.lessonsCompleted.includes(s))
+   || DATA.sections.find(s=>!sectionInfo(s).passed)
+   || DATA.sections[0];
+}
+function coachRequirements(){
+ const lessons=currentProfile.lessonsCompleted.length;
+ const passed=DATA.sections.filter(s=>sectionInfo(s).passed).length;
+ const practiceExams=(currentProfile.examHistory||[]).filter(x=>x.mode==='permit').length;
+ const answered=currentProfile.answered||0;
+ const ready=readiness();
+ return {
+  lessons:{value:lessons,target:DATA.sections.length,complete:lessons>=DATA.sections.length},
+  sections:{value:passed,target:DATA.sections.length,complete:passed>=DATA.sections.length},
+  exams:{value:practiceExams,target:3,complete:practiceExams>=3},
+  answered:{value:answered,target:200,complete:answered>=200},
+  readiness:{value:ready,target:85,complete:ready>=85}
+ };
+}
+function finalExamUnlocked(){
+ const r=coachRequirements();
+ return r.lessons.complete&&r.sections.complete&&r.exams.complete&&r.answered.complete&&r.readiness.complete;
+}
+function buildCoachPlan(force=false){
+ const today=localDateKey();
+ if(!force&&currentProfile.coachPlanDate===today&&currentProfile.coachPlan?.length)return currentProfile.coachPlan;
+ const plan=[],weak=weakestSection(),unfinished=nextUnfinishedLesson(),req=coachRequirements();
+ if(!currentProfile.lessonsCompleted.includes(unfinished)){
+  plan.push({type:'lesson',section:unfinished,title:`Continue: ${DATA.lessons[unfinished].title}`,detail:'Complete the guided lesson and embedded checks.',minutes:8,done:false});
+ }else if(weak&&!weak.passed){
+  plan.push({type:'sectionQuiz',section:weak.section,title:`Pass: ${weak.section}`,detail:`Best quiz ${weak.best}% — reach 80% to master this section.`,minutes:10,done:false});
+ }
+ plan.push({type:'smartReview',title:'Smart Review — 15 Questions',detail:'Targets slow, missed, weak, and untested concepts.',minutes:12,done:false});
+ if(req.sections.value>=5){
+  plan.push({type:'permitExam',title:'Permit Practice Exam',detail:'Build consistency across all 11 knowledge sections.',minutes:30,done:false});
+ }else{
+  const second=DATA.sections.find(s=>s!==unfinished&&!sectionInfo(s).passed);
+  if(second)plan.push({type:'sectionQuiz',section:second,title:`Practice: ${second}`,detail:'Strengthen another unfinished knowledge section.',minutes:10,done:false});
+ }
+ currentProfile.coachPlan=plan.slice(0,3);currentProfile.coachPlanDate=today;save();
+ return currentProfile.coachPlan;
+}
+function coachActivityComplete(item){
+ if(item.type==='lesson')return currentProfile.lessonsCompleted.includes(item.section);
+ if(item.type==='sectionQuiz')return sectionInfo(item.section).passed;
+ if(item.type==='permitExam'){
+  const startOfDay=new Date();startOfDay.setHours(0,0,0,0);
+  return (currentProfile.examHistory||[]).some(x=>x.mode==='permit'&&x.date>=startOfDay.getTime());
+ }
+ if(item.type==='smartReview'){
+  const startOfDay=new Date();startOfDay.setHours(0,0,0,0);
+  return Object.values(currentProfile.questionStats||{}).some(s=>s.lastSeen>=startOfDay.getTime()&&(s.sources?.review||0)>0);
+ }
+ return false;
+}
+function startCoachActivity(item){
+ if(!item)return;
+ if(item.type==='lesson'){switchTab('study');openLesson(item.section);return}
+ if(item.type==='sectionQuiz'){startSection(item.section);switchTab('test');return}
+ if(item.type==='smartReview'){startSmartReview();return}
+ if(item.type==='permitExam'){switchTab('test');startExam('permit');return}
+}
+function renderLearningCoach(){
+ if(!currentProfile)return;
+ const plan=buildCoachPlan(),streak=studyStreak(),weekly=weeklyStats(),req=coachRequirements();
+ const greeting=document.querySelector('#coachGreeting'),streakEl=document.querySelector('#studyStreak'),planEl=document.querySelector('#coachPlan');
+ if(!greeting||!streakEl||!planEl)return;
+ greeting.textContent=`${currentProfile.name}'s study plan`;
+ streakEl.textContent=streak?`🔥 ${streak} day streak`:'Start your streak today';
+ planEl.innerHTML=plan.map((item,i)=>{
+  const done=coachActivityComplete(item);
+  return `<div class="coach-item ${done?'done':''}" data-plan-index="${i}">
+    <div class="coach-step">${done?'✓':i+1}</div>
+    <div><b>${item.title}</b><small>${item.detail}</small></div>
+    <div class="coach-duration">${done?'Complete':item.minutes+' min'}</div>
+  </div>`;
+ }).join('');
+ const weeklyEl=document.querySelector('#weeklySummary');
+ weeklyEl.innerHTML=[
+  [formatTime(weekly.seconds),'Study time'],
+  [weekly.activeDays,'Active days'],
+  [weekly.tests,'Tests completed'],
+  [weekly.tests?weekly.avgScore+'%':'—','Average test score']
+ ].map(x=>`<div class="weekly-stat"><b>${x[0]}</b><span>${x[1]}</span></div>`).join('');
+ const milestone=document.querySelector('#milestoneProgress');
+ const rows=[
+  ['Lessons completed',req.lessons],
+  ['Section quizzes passed',req.sections],
+  ['Practice exams',req.exams],
+  ['Questions answered',req.answered],
+  ['Permit readiness',req.readiness]
+ ];
+ milestone.innerHTML=rows.map(([label,r])=>`<div class="milestone-row"><span>${label}</span><span class="status ${r.complete?'complete':'pending'}">${r.value}/${r.target}${r.complete?' ✓':''}</span></div>`).join('')
+   +`<div class="next-recommendation"><b>Adaptive Final:</b> ${finalExamUnlocked()?'Unlocked and ready to take.':'Complete the milestones above to unlock.'}</div>`;
+ const next=plan.find(x=>!coachActivityComplete(x))||plan[0];
+ document.querySelector('#startCoachPlan').onclick=()=>startCoachActivity(next);
+ document.querySelector('#refreshCoachPlan').onclick=()=>{buildCoachPlan(true);renderLearningCoach()};
+}
+function maybeCelebrateMilestone(label){
+ const key='celebrated-'+label;
+ if(currentProfile[key])return;
+ currentProfile[key]=true;save();
+ setTimeout(()=>alert(`🎉 Milestone reached: ${label}`),100);
+}
+// ===== END VERSION 5.1 LEARNING COACH =====
+
 function renderMetrics(){
  if(!currentProfile)return;
  const avg=currentProfile.tests.length?Math.round(currentProfile.tests.reduce((a,t)=>a+t.score,0)/currentProfile.tests.length):0;
@@ -3240,7 +3484,8 @@ function renderSections(){
 function renderHistory(){
  const h=document.querySelector('#history');
  if(!currentProfile.tests.length){h.innerHTML='<p class="empty">No completed tests yet.</p>';return}
- h.innerHTML=currentProfile.tests.slice(-8).reverse().map(t=>`<div class="history-item"><span>${new Date(t.date).toLocaleDateString()} • ${t.type}</span><b>${t.score}%</b></div>`).join('')
+ const combined=[...(currentProfile.tests||[]).map(t=>({...t,kind:'Practice'})),...(currentProfile.examHistory||[]).map(t=>({...t,kind:t.mode==='adaptive'?'Adaptive Final':'Exam'}))].sort((a,b)=>b.date-a.date).slice(0,10);
+ h.innerHTML=combined.map(t=>`<div class="history-item"><span>${new Date(t.date).toLocaleDateString()} • ${t.type||'Permit Exam'} <span class="exam-history-tag">${t.kind}</span></span><b>${t.score}%</b></div>`).join('')
 }
 function readiness(){
  const total=DATA.sections.length||11;
@@ -3262,7 +3507,7 @@ function lessonStatus(section){
 function renderLessons(){const w=document.querySelector('#lessonCards');if(!w){console.error('lessonCards container missing');return;}w.innerHTML='<p class="lesson-status">Loading '+(DATA?.sections?.length||0)+' course sections…</p>';if(!DATA||!DATA.lessons){w.innerHTML='<div class="feedback"><h3>Lesson files did not update together</h3><p>This page is not running the current course data. Re-upload every file, then refresh.</p></div>';return;}w.innerHTML='';DATA.sections.forEach(s=>{const l=DATA.lessons[s];if(!l)return;const x=sectionInfo(s),status=lessonStatus(s),d=document.createElement('div');d.className='lesson-card';const quizNote=x.passed?'<span>Section quiz passed</span>':(x.attempts?'<span>Best quiz: '+x.best+'%</span>':'');d.innerHTML=`<span class="eyebrow">${l.topics.length} TOPICS • PAGES ${l.manualPages}</span><h3>${l.title}</h3><p>${l.objective}</p><div class="lesson-card-status ${status.className}"><b>${status.label}</b>${quizNote}</div><button>${status.button}</button>`;d.querySelector('button').onclick=()=>openLesson(s);w.appendChild(d)});if(!w.children.length)w.innerHTML='<div class="feedback"><h3>No lessons rendered</h3><p>No matching lesson records were found.</p></div>'}
 function openLesson(s){const l=DATA.lessons[s],v=document.querySelector('#lessonViewer');if(!currentProfile.lessonsViewed.includes(s)){currentProfile.lessonsViewed.push(s);save()}document.querySelector('#lessonListCard').hidden=true;v.hidden=false;let checks=l.topics.map((t,i)=>`<article class="topic-block"><div class="topic-number">${i+1}</div><div class="topic-content"><span class="eyebrow">TOPIC ${i+1} • MANUAL PAGE ${t.page}</span><h3>${t.title}</h3><p>${t.body}</p><div class="example-box"><b>Real-world example</b><p>${t.example}</p></div><div class="mistake-box"><b>Common mistake</b><p>${t.mistake}</p></div><div class="mini-check" data-topic="${i}"><b>Quick check</b><p>${t.check.q}</p><div class="mini-choices">${t.check.choices.map((c,j)=>`<button data-answer="${j}">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="mini-feedback"></div></div></div></article>`).join('');v.innerHTML=`<div class="card lesson-view"><span class="eyebrow">${s} • MANUAL PAGES ${l.manualPages}</span><h2>${l.title}</h2><div class="lesson-objective"><b>Learning objective:</b> ${l.objective}</div><p class="lesson-intro">${l.intro}</p><div class="lesson-toc"><b>In this lesson</b>${l.topics.map((t,i)=>`<a href="#topic-${i}">${i+1}. ${t.title}</a>`).join('')}</div>${checks}<div class="lesson-summary"><h3>Lesson summary</h3><ul class="lesson-points">${l.summary.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="lesson-actions"><button id="lessonComplete">Mark lesson complete</button><button class="secondary" id="lessonQuiz">Take section quiz</button><button class="secondary" id="lessonManual">Open manual</button><button class="secondary" id="lessonBack">Back to lessons</button></div></div>`;v.querySelectorAll('.topic-block').forEach((el,i)=>el.id='topic-'+i);v.querySelectorAll('.mini-check').forEach((box,i)=>{box.querySelectorAll('button').forEach(btn=>btn.onclick=()=>{if(box.dataset.done)return;box.dataset.done='1';const chosen=Number(btn.dataset.answer),correct=l.topics[i].check.answer;box.querySelectorAll('button').forEach(b=>{b.disabled=true;if(Number(b.dataset.answer)===correct)b.classList.add('correct');if(b===btn&&chosen!==correct)b.classList.add('wrong')});box.querySelector('.mini-feedback').innerHTML=`<div class="feedback ${chosen===correct?'good':''}"><b>${chosen===correct?'Correct':'Correct answer: '+l.topics[i].check.choices[correct]}</b><p>${l.topics[i].check.feedback}</p></div>`})});v.querySelector('#lessonComplete').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();renderLessons();v.querySelector('#lessonComplete').textContent='Lesson completed ✓';v.querySelector('#lessonComplete').disabled=true};v.querySelector('#lessonQuiz').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();document.querySelector('#lessonListCard').hidden=false;v.hidden=true;startSection(s);switchTab('test')};v.querySelector('#lessonManual').onclick=()=>openManual(parseInt(l.manualPages)||1);v.querySelector('#lessonBack').onclick=()=>{v.hidden=true;document.querySelector('#lessonListCard').hidden=false;renderLessons()};renderBadges();window.scrollTo({top:0,behavior:'smooth'})}
 function renderAll(){
- const jobs=[['lessons',renderLessons],['metrics',renderMetrics],['sections',renderSections],['history',renderHistory],['goal',renderGoalAndReadiness],['badges',renderBadges]];
+ const jobs=[['lessons',renderLessons],['metrics',renderMetrics],['sections',renderSections],['history',renderHistory],['goal',renderGoalAndReadiness],['badges',renderBadges],['examStatus',renderExamStatus],['learningInsights',renderLearningInsights],['learningCoach',renderLearningCoach]];
  jobs.forEach(([name,fn])=>{try{fn()}catch(err){console.error('Render failure:',name,err);if(name==='lessons'){const w=document.querySelector('#lessonCards');if(w)w.innerHTML='<div class="feedback"><h3>Lesson rendering error</h3><p>'+String(err.message||err)+'</p></div>';}}});
 }
 
@@ -3298,6 +3543,7 @@ function beginQuiz(questions,type,section=null,review=false){
 }
 function renderQuestion(){
  const area=document.querySelector('#quizArea'),baseQ=quiz.questions[quiz.index];
+ quiz.questionStarted=Date.now();
  const q={...baseQ};
  if(!quiz.answers[quiz.index]){
    const mapped=baseQ.choices.map((text,i)=>({text,isCorrect:i===baseQ.answer}));
@@ -3322,7 +3568,9 @@ function renderQuestion(){
   area.querySelectorAll('.choice').forEach(b=>{const i=Number(b.dataset.i);if(i===q.answer)b.classList.add('correct');if(i===selected&&!correct)b.classList.add('wrong');b.disabled=true});
   area.querySelector('#feedback').innerHTML=`<div class="feedback ${correct?'good':''}"><h3>${correct?'Correct':'Not quite'}</h3>${!correct?`<p><b>Correct answer:</b> ${q.choices[q.answer]}</p>`:''}<p>${q.explain}</p><p><a href="#" id="manualRef">View manual page ${q.page}</a></p></div>`;
   area.querySelector('#manualRef').onclick=e=>{e.preventDefault();openManual(q.page)};
-  quiz.answers.push({id:q.id,selected,correct});save();
+  const responseSeconds=Math.max(1,Math.round((Date.now()-(quiz.questionStarted||Date.now()))/1000));
+  recordQuestionPerformance(q,correct,responseSeconds,quiz.review?'review':'practice');
+  quiz.answers.push({id:q.id,selected,correct,responseSeconds});save();
   const submit=area.querySelector('#submitAnswer');submit.disabled=false;submit.textContent=quiz.index===quiz.questions.length-1?'See results':'Next question';submit.onclick=()=>{delete area.dataset.locked;if(++quiz.index>=quiz.questions.length)finishQuiz(false);else renderQuestion()}
  }
 }
@@ -3333,9 +3581,289 @@ function finishQuiz(abandoned){
  currentProfile.tests.push({date:Date.now(),type:quiz.type,score,total:quiz.questions.length});
  if(quiz.section){const s=currentProfile.sectionStats[quiz.section]||{answered:0,correct:0,attempts:0,best:0};s.attempts++;s.best=Math.max(s.best||0,score);currentProfile.sectionStats[quiz.section]=s}
  save();renderAll();
+ if(DATA.sections.filter(s=>sectionInfo(s).passed).length===DATA.sections.length)maybeCelebrateMilestone('All 11 section quizzes passed');
  area.innerHTML=`<div class="card"><h2>${passed?'Great work!':'Keep practicing'}</h2><div class="metric"><b>${score}%</b><span>${quiz.correct} of ${quiz.questions.length} correct</span></div><p>${passed?'You passed this test.':'A passing score is 80%. Review missed questions and try again.'}</p><button id="doneQuiz">Return to dashboard</button></div>`;
  document.querySelector('#doneQuiz').onclick=()=>{area.hidden=true;document.querySelector('#testSetup').hidden=false;quiz=null;switchTab('dashboard')}
 }
+
+// ===== VERSION 5 PHASE A: EXAM ENGINE =====
+let examSession=null,examTimerHandle=null;
+
+function renderExamStatus(){
+ const el=document.querySelector('#adaptiveStatus');if(!el||!currentProfile)return;
+ const passed=DATA.sections.filter(s=>sectionInfo(s).passed).length;
+ const untested=DATA.sections.filter(s=>(sectionInfo(s).attempts||0)===0).length;
+ const r=readiness();
+ const unlocked=typeof finalExamUnlocked==='function'&&finalExamUnlocked();
+ el.innerHTML=`<b>${passed} of ${DATA.sections.length} sections mastered</b><br><span>${r}% readiness • ${untested} untested sections • ${unlocked?'Unlocked':'Locked'}</span>`;
+}
+
+function sampleWithoutReplacement(items,count){
+ const pool=[...items],out=[];
+ while(pool.length&&out.length<count){out.push(pool.splice(Math.floor(Math.random()*pool.length),1)[0])}
+ return out;
+}
+
+function balancedExamQuestions(total=30){
+ const selected=[],used=new Set();
+ // Guarantee representation from all 11 knowledge sections.
+ DATA.sections.forEach(section=>{
+   sampleWithoutReplacement(DATA.questions.filter(q=>q.section===section),2).forEach(q=>{selected.push(q);used.add(q.id)})
+ });
+ const remaining=DATA.questions.filter(q=>!used.has(q.id));
+ selected.push(...sampleWithoutReplacement(remaining,total-selected.length));
+ return shuffled(selected).slice(0,total);
+}
+
+function adaptiveExamQuestions(total=30){
+ const selected=[],used=new Set();
+ // Every section is represented at least once.
+ DATA.sections.forEach(section=>{
+   const pool=DATA.questions.filter(q=>q.section===section);
+   const q=sampleWithoutReplacement(pool,1)[0];
+   if(q){selected.push(q);used.add(q.id)}
+ });
+ // Build weights from quiz mastery, historical accuracy, and missed-question history.
+ const weightedSections=[];
+ DATA.sections.forEach(section=>{
+   const info=sectionInfo(section);
+   const attempts=Math.max(1,info.answered||0);
+   const accuracy=(info.correct||0)/attempts;
+   const quizMastery=Math.min(1,(info.best||0)/80);
+   const missedCount=DATA.questions.filter(q=>q.section===section&&currentProfile.missed.includes(q.id)).length;
+   const sectionQuestions=DATA.questions.filter(q=>q.section===section);
+   const questionWeakness=sectionQuestions.length?sectionQuestions.reduce((a,q)=>a+weaknessScore(q),0)/sectionQuestions.length:0;
+   const deficiency=(1-quizMastery)*5+(1-accuracy)*3+Math.min(3,missedCount*.6)+(info.attempts?0:4)+Math.min(5,questionWeakness*.45);
+   const tickets=Math.max(1,Math.round(deficiency*4));
+   for(let i=0;i<tickets;i++)weightedSections.push(section);
+ });
+ while(selected.length<total){
+   const section=weightedSections[Math.floor(Math.random()*weightedSections.length)];
+   const pool=DATA.questions.filter(q=>q.section===section&&!used.has(q.id));
+   let q=pool[Math.floor(Math.random()*pool.length)];
+   if(!q){
+     const fallback=DATA.questions.filter(q=>!used.has(q.id));
+     q=fallback[Math.floor(Math.random()*fallback.length)];
+   }
+   if(!q)break;
+   selected.push(q);used.add(q.id);
+ }
+ return shuffled(selected).slice(0,total);
+}
+
+function startExam(mode){
+ const isFinal=mode==='adaptive';
+ const title=isFinal?'Adaptive Final Exam':'Permit Practice Exam';
+ const rules=isFinal
+  ? '30 questions • 30 minutes • answers lock when you move forward • no explanations until submission'
+  : '30 questions • 30 minutes • you may review and change answers before submission • no explanations until submission';
+ if(!confirm(`${title}\n\n${rules}\n\nBegin now?`))return;
+ const questions=mode==='adaptive'?adaptiveExamQuestions(30):balancedExamQuestions(30);
+ examSession={
+   mode,isFinal,questions,index:0,answers:[],started:Date.now(),secondsRemaining:30*60,
+   displayQuestions:questions.map(baseQ=>{
+     const mapped=baseQ.choices.map((text,i)=>({text,isCorrect:i===baseQ.answer}));
+     for(let i=mapped.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[mapped[i],mapped[j]]=[mapped[j],mapped[i]]}
+     return {...baseQ,choices:mapped.map(x=>x.text),answer:mapped.findIndex(x=>x.isCorrect)}
+   })
+ };
+ document.querySelector('#testSetup').hidden=true;
+ document.querySelector('#quizArea').hidden=false;
+ document.body.classList.add('exam-active');
+ clearInterval(examTimerHandle);
+ examTimerHandle=setInterval(()=>{
+   if(!examSession)return;
+   examSession.secondsRemaining--;
+   updateExamTimer();
+   if(examSession.secondsRemaining<=0)submitExam(true);
+ },1000);
+ renderExamQuestion();
+}
+
+function updateExamTimer(){
+ const el=document.querySelector('#examTimer');if(!el||!examSession)return;
+ const m=Math.floor(examSession.secondsRemaining/60),s=examSession.secondsRemaining%60;
+ el.textContent=`${m}:${String(s).padStart(2,'0')}`;
+ el.classList.toggle('warning',examSession.secondsRemaining<=300);
+}
+
+function renderExamQuestion(){
+ const area=document.querySelector('#quizArea');
+ const q=examSession.displayQuestions[examSession.index];
+ if(!examSession.answers[examSession.index])examSession.questionStarted=Date.now();
+ const saved=examSession.answers[examSession.index];
+ const answeredCount=examSession.answers.filter(Boolean).length;
+ const locked=examSession.isFinal&&saved?.locked;
+ const canGoBack=!examSession.isFinal&&examSession.index>0;
+ const nav=examSession.displayQuestions.map((_,i)=>{
+   const a=examSession.answers[i],cls=[i===examSession.index?'current':'',a?'answered':'',examSession.isFinal&&a?.locked?'locked':''].filter(Boolean).join(' ');
+   const disabled=examSession.isFinal&&i<examSession.index?'disabled':'';
+   return `<button class="exam-nav-btn ${cls}" data-jump="${i}" ${disabled}>${i+1}</button>`;
+ }).join('');
+ area.innerHTML=`<div class="exam-shell fullscreen">
+ <div class="exam-header-card">
+   <div class="exam-topbar"><span class="exam-label"><b>${examSession.isFinal?'Adaptive Final Exam':'Permit Practice Exam'}</b></span><span>${answeredCount}/${examSession.questions.length} answered</span><span class="exam-timer" id="examTimer"></span></div>
+   <div class="exam-progress"><i style="width:${((examSession.index+1)/examSession.questions.length)*100}%"></i></div>
+   <div class="exam-nav-grid">${nav}</div>
+ </div>
+ <div class="card question-card">
+   <span class="eyebrow">${q.section}</span>
+   <h2>Question ${examSession.index+1}: ${q.q}</h2>
+   <div class="choice-list">${q.choices.map((c,i)=>`<button class="choice ${saved?.selected===i?'selected':''}" data-i="${i}" ${locked?'disabled':''}>${String.fromCharCode(65+i)}. ${c}</button>`).join('')}</div>
+   ${examSession.isFinal?'<div class="final-lock-note">Final Exam rule: once you move forward, this answer is locked.</div>':''}
+   <div class="exam-controls">
+     <button class="secondary" id="exitExam">Exit exam</button>
+     <div class="right">
+       ${canGoBack?'<button class="secondary" id="prevExam">Previous</button>':''}
+       <button class="secondary" id="reviewExam">Review & Submit</button>
+       <button id="nextExam">${examSession.index===examSession.questions.length-1?'Review & Submit':'Next Question'}</button>
+     </div>
+   </div>
+ </div></div>`;
+ updateExamTimer();
+
+ area.querySelectorAll('.choice').forEach(btn=>btn.onclick=()=>{
+   if(locked)return;
+   const selected=Number(btn.dataset.i);
+   examSession.answers[examSession.index]={selected,responseSeconds:Math.max(1,Math.round((Date.now()-(examSession.questionStarted||Date.now()))/1000)),locked:false};
+   area.querySelectorAll('.choice').forEach(x=>x.classList.toggle('selected',x===btn));
+ });
+
+ area.querySelectorAll('[data-jump]').forEach(btn=>btn.onclick=()=>{
+   const target=Number(btn.dataset.jump);
+   if(examSession.isFinal&&target<examSession.index)return;
+   examSession.index=target;renderExamQuestion();
+ });
+
+ area.querySelector('#exitExam').onclick=()=>{
+   if(confirm('Exit this exam? Current answers will not be saved.')){
+     clearInterval(examTimerHandle);examTimerHandle=null;examSession=null;
+     document.body.classList.remove('exam-active');
+     area.hidden=true;document.querySelector('#testSetup').hidden=false;
+   }
+ };
+ const prev=area.querySelector('#prevExam');
+ if(prev)prev.onclick=()=>{examSession.index--;renderExamQuestion()};
+ area.querySelector('#reviewExam').onclick=renderExamReview;
+ area.querySelector('#nextExam').onclick=()=>{
+   if(!examSession.answers[examSession.index]){
+     if(!confirm('This question is unanswered. Continue anyway?'))return;
+   }
+   if(examSession.isFinal&&examSession.answers[examSession.index])examSession.answers[examSession.index].locked=true;
+   if(examSession.index===examSession.questions.length-1)renderExamReview();
+   else{examSession.index++;renderExamQuestion()}
+ };
+}
+
+function renderExamReview(){
+ const area=document.querySelector('#quizArea');
+ const unanswered=examSession.answers.reduce((n,a)=>n+(a?0:1),0);
+ const nav=examSession.displayQuestions.map((_,i)=>{
+   const a=examSession.answers[i];
+   return `<button class="exam-nav-btn ${a?'answered':''}" data-review-jump="${i}">${i+1}</button>`;
+ }).join('');
+ area.innerHTML=`<div class="exam-shell fullscreen">
+ <div class="card">
+   <span class="eyebrow">FINAL REVIEW</span>
+   <h2>Review before submitting</h2>
+   <div class="exam-rule-list">
+     <ul>
+       <li>${examSession.answers.filter(Boolean).length} of ${examSession.questions.length} questions answered</li>
+       <li>${unanswered} unanswered question${unanswered===1?'':'s'}</li>
+       <li>${Math.floor(examSession.secondsRemaining/60)} minutes ${examSession.secondsRemaining%60} seconds remaining</li>
+     </ul>
+   </div>
+   ${unanswered?`<div class="unanswered-warning"><b>${unanswered} unanswered.</b> Unanswered questions count as incorrect.</div>`:''}
+   <div class="exam-nav-grid">${nav}</div>
+   <div class="confirm-box">Once submitted, the exam cannot be changed. Explanations and section results will appear after submission.</div>
+   <div class="quiz-actions">
+     <button class="secondary" id="returnExam">Return to Exam</button>
+     <button id="submitExamNow">Submit Exam</button>
+   </div>
+ </div></div>`;
+ area.querySelectorAll('[data-review-jump]').forEach(btn=>btn.onclick=()=>{
+   const target=Number(btn.dataset.reviewJump);
+   if(examSession.isFinal&&target<examSession.index&&examSession.answers[target]?.locked){
+     alert('That answer is locked in Final Exam mode.');
+     return;
+   }
+   examSession.index=target;renderExamQuestion();
+ });
+ area.querySelector('#returnExam').onclick=()=>renderExamQuestion();
+ area.querySelector('#submitExamNow').onclick=()=>{
+   const msg=unanswered?`Submit with ${unanswered} unanswered question${unanswered===1?'':'s'}?`:'Submit this exam now?';
+   if(confirm(msg))submitExam(false);
+ };
+}
+
+function submitExam(timedOut=false){
+ if(!examSession)return;
+ document.body.classList.remove('exam-active');
+ clearInterval(examTimerHandle);examTimerHandle=null;
+ const details=examSession.displayQuestions.map((q,i)=>{
+   const selected=examSession.answers[i]?.selected;
+   return {id:q.id,section:q.section,page:q.page,q:q.q,choices:q.choices,selected,responseSeconds:examSession.answers[i]?.responseSeconds||0,correctAnswer:q.answer,correct:selected===q.answer,explain:q.explain};
+ });
+ const correct=details.filter(x=>x.correct).length;
+ const score=Math.round(correct/details.length*100);
+ const sectionResults={};
+ DATA.sections.forEach(s=>sectionResults[s]={correct:0,total:0});
+ details.forEach(x=>{sectionResults[x.section].total++;if(x.correct)sectionResults[x.section].correct++});
+ const result={
+   date:Date.now(),mode:examSession.mode,type:examSession.mode==='adaptive'?'Adaptive Final Exam':'Permit Practice Exam',
+   score,correct,total:details.length,secondsUsed:30*60-examSession.secondsRemaining,timedOut,sectionResults
+ };
+ currentProfile.examHistory.push(result);
+ // Exam answers count toward general question analytics, but do not replace section-quiz mastery.
+ details.forEach(x=>{
+   const source=examSession.mode==='adaptive'?'adaptive-exam':'permit-exam';
+   const originalQ=DATA.questions.find(q=>q.id===x.id)||x;
+   recordQuestionPerformance(originalQ,x.correct,x.responseSeconds||1,source);
+   currentProfile.answered++;if(x.correct)currentProfile.correct++;
+   else if(!currentProfile.missed.includes(x.id))currentProfile.missed.push(x.id);
+   const st=currentProfile.sectionStats[x.section]||{answered:0,correct:0,attempts:0,best:0};
+   st.answered++;if(x.correct)st.correct++;currentProfile.sectionStats[x.section]=st;
+ });
+ save();renderAll();
+ renderExamResults(result,details);
+ examSession=null;
+}
+
+function renderExamResults(result,details){
+ const area=document.querySelector('#quizArea'),passed=result.score>=80;
+ const rows=DATA.sections.map(section=>{
+   const r=result.sectionResults[section],score=r.total?Math.round(r.correct/r.total*100):0;
+   return `<div class="section-report-row"><div class="section-report-head"><b>${section}</b><span>${r.correct}/${r.total} • ${score}%</span></div><div class="bar"><i style="width:${score}%"></i></div></div>`;
+ }).join('');
+ const weak=DATA.sections.map(section=>{
+   const r=result.sectionResults[section];return {section,score:r.total?Math.round(r.correct/r.total*100):0}
+ }).sort((a,b)=>a.score-b.score).slice(0,3);
+ const missed=details.filter(x=>!x.correct);
+ area.innerHTML=`<div class="exam-shell">
+ <div class="card exam-result-hero"><span class="eyebrow">${result.mode==='adaptive'?'ADAPTIVE FINAL EXAM':'PERMIT PRACTICE EXAM'}</span><h2>${result.timedOut?'Time Expired':'Exam Complete'}</h2><div class="score">${result.score}%</div><div class="${passed?'result-pass':'result-fail'}">${passed?'PASS':'NEEDS MORE REVIEW'}</div><p>${result.correct} of ${result.total} correct • ${Math.floor(result.secondsUsed/60)} min ${result.secondsUsed%60} sec</p></div>
+ <div class="card"><h3>Knowledge-section report</h3><div class="section-report">${rows}</div></div>
+ <div class="card recommendations"><h3>Recommended review</h3><p>Focus next on:</p><ol>${weak.map(x=>`<li><b>${x.section}</b> — ${x.score}% on this exam</li>`).join('')}</ol></div>
+ <div class="card"><h3>Review incorrect answers</h3>${missed.length?missed.map((x,i)=>`<details class="review-item"><summary>${i+1}. ${x.section}: ${x.q}</summary><p><b>Your answer:</b> ${x.selected===undefined?'No answer':x.choices[x.selected]}</p><p><b>Correct answer:</b> ${x.choices[x.correctAnswer]}</p><p>${x.explain}</p><p><a href="#" data-page="${x.page}">Manual page ${x.page}</a></p></details>`).join(''):'<p class="passed">No incorrect answers.</p>'}</div>
+ <div class="card"><div class="quiz-actions"><button class="secondary" id="examAgain">Take another exam</button><button id="examDone">Return to dashboard</button></div></div>
+ </div>`;
+ area.querySelectorAll('[data-page]').forEach(a=>a.onclick=e=>{e.preventDefault();openManual(Number(a.dataset.page))});
+ area.querySelector('#examAgain').onclick=()=>{document.body.classList.remove('exam-active');area.hidden=true;document.querySelector('#testSetup').hidden=false;switchTab('test')};
+ area.querySelector('#examDone').onclick=()=>{document.body.classList.remove('exam-active');area.hidden=true;document.querySelector('#testSetup').hidden=false;switchTab('dashboard')};
+}
+
+document.querySelector('#smartReviewBtn').onclick=startSmartReview;
+document.querySelector('#adaptiveReviewBtn').onclick=startSmartReview;
+document.querySelector('#permitExamBtn').onclick=()=>startExam('permit');
+document.querySelector('#adaptiveExamBtn').onclick=()=>{
+ if(!finalExamUnlocked()){
+  const r=coachRequirements();
+  alert(`Adaptive Final is locked.\n\nLessons: ${r.lessons.value}/${r.lessons.target}\nSections passed: ${r.sections.value}/${r.sections.target}\nPractice exams: ${r.exams.value}/${r.exams.target}\nQuestions answered: ${r.answered.value}/${r.answered.target}\nReadiness: ${r.readiness.value}/${r.readiness.target}%`);
+  return;
+ }
+ startExam('adaptive');
+};
+// ===== END VERSION 5 PHASE A =====
+
 function openManual(page){document.querySelector('#manualPage').value=page;document.querySelector('#manualFrame').src=`DL_Manual.pdf#page=${page}`;switchTab('manual')}
 document.querySelector('#goPage').onclick=()=>openManual(Math.max(1,Math.min(135,Number(document.querySelector('#manualPage').value)||1)));
 
