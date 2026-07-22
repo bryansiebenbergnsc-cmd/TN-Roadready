@@ -1,4 +1,4 @@
-const CACHE='tn-roadready-v4-1';
+const CACHE='tn-roadready-v4-2';
 const ASSETS=['./','./index.html','./styles.css?v=4.1','./app.js?v=4.1','./data.js?v=4.1','./manifest.json','./icon-192.png','./icon-512.png','./DL_Manual.pdf'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));
