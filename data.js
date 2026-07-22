@@ -2229,146 +2229,949 @@ window.APP_DATA = {
   "lessons": {
     "Licensing & Teen Rules": {
       "title": "Licensing and Tennessee Teen Driver Rules",
+      "objective": "Understand how Tennessee gradually grants driving privileges and why every restriction must be followed.",
       "manualPages": "14\u201323",
-      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
-      "points": [
-        "Drivers under 18 move through graduated licensing stages.",
-        "A learner permit generally requires a licensed driver age 21 or older in the front seat.",
-        "Learner-permit holders may not drive between 10 p.m. and 6 a.m.",
-        "Advancing requires the minimum permit period, supervised practice, and required tests.",
-        "License restrictions still apply even when a parent gives permission."
+      "intro": "Driving privileges expand in stages. Each stage adds freedom only after the young driver demonstrates experience, maturity, and a safe record. Parent permission never cancels a state restriction.",
+      "topics": [
+        {
+          "title": "The graduated licensing path",
+          "body": "Tennessee uses four stages for drivers under 18: Learner Permit, Intermediate Restricted License, Intermediate Unrestricted License, and Regular Driver License. The purpose is to give a new driver supervised experience before allowing unrestricted driving. A learner permit may generally be obtained at age 15 after the knowledge and vision requirements are met.",
+          "example": "A 15-year-old passes the knowledge and vision tests. The permit allows supervised practice; it does not allow the teen to drive alone.",
+          "mistake": "Thinking that passing the written test means the teen may immediately drive without supervision.",
+          "check": {
+            "q": "Which privilege comes with a learner permit?",
+            "choices": [
+              "Driving alone during daylight",
+              "Supervised practice with the required licensed adult",
+              "Driving friends after school",
+              "Driving after midnight"
+            ],
+            "answer": 1,
+            "feedback": "A learner permit authorizes supervised practice, not independent driving."
+          },
+          "page": 14
+        },
+        {
+          "title": "Learner-permit restrictions",
+          "body": "A permit holder must be accompanied by a licensed driver age 21 or older seated in the front seat. The permit holder may not drive from 10 p.m. to 6 a.m. Everyone in the vehicle must wear a safety belt, and the driver may not use a handheld device.",
+          "example": "A practice trip begins at 9:40 p.m. but would end after 10 p.m. The adult should drive the return portion so the teen does not operate during restricted hours.",
+          "mistake": "Assuming a short distance, empty road, or parental permission creates an exception.",
+          "check": {
+            "q": "A permit holder is two blocks from home at 10:05 p.m. May the teen continue driving?",
+            "choices": [
+              "Yes, because the trip is short",
+              "Yes, if a parent is present",
+              "No, the restricted hours still apply",
+              "Only below 25 mph"
+            ],
+            "answer": 2,
+            "feedback": "The time restriction applies regardless of distance."
+          },
+          "page": 14
+        },
+        {
+          "title": "Advancing to Intermediate Restricted",
+          "body": "Before advancing, a driver under 18 must generally be at least 16, hold the permit for 180 days, complete 50 hours of supervised driving including 10 at night, satisfy safe-record requirements, and pass the road test. These requirements work together; completing one early does not waive another.",
+          "example": "A teen has 50 logged hours but has held the permit only five months. The teen must wait until the 180-day requirement is met.",
+          "mistake": "Counting passenger time or observation time as actual supervised driving experience.",
+          "check": {
+            "q": "A teen has 44 daytime hours and 8 nighttime hours. What is still needed?",
+            "choices": [
+              "Nothing",
+              "Six daytime hours only",
+              "At least two nighttime hours and enough total hours to reach 50",
+              "A second learner permit"
+            ],
+            "answer": 2,
+            "feedback": "The log must reach 50 total hours and include at least 10 at night."
+          },
+          "page": 17
+        },
+        {
+          "title": "Intermediate restrictions and safe records",
+          "body": "The Intermediate Restricted License permits independent driving but still limits late-night driving and passengers, subject to specific exceptions. Written documentation may be required for certain school, work, or designated-driver exceptions. Violations, crashes, points, or fraudulent permission letters can delay advancement or cause a downgrade.",
+          "example": "A teen working past 11 p.m. should carry the written parental authorization described by the restriction rules.",
+          "mistake": "Believing that an Intermediate license is the same as a regular unrestricted adult license.",
+          "check": {
+            "q": "Why should an Intermediate driver carry the restriction card?",
+            "choices": [
+              "It replaces insurance",
+              "It identifies the rules and exceptions that apply to that license",
+              "It permits speeding to work",
+              "It serves as vehicle registration"
+            ],
+            "answer": 1,
+            "feedback": "The restriction card helps the driver understand and document the privileges and limits of the license."
+          },
+          "page": 19
+        }
       ],
-      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+      "summary": [
+        "Privileges increase in stages.",
+        "Permit driving requires the correct adult supervisor.",
+        "Restricted hours and passenger rules must be followed exactly.",
+        "Practice-hour, time-held, age, testing, and driving-record requirements are separate requirements."
+      ]
     },
     "Vehicle & Occupant Safety": {
       "title": "Preparing the Vehicle and Protecting Occupants",
+      "objective": "Build a repeatable pre-drive routine that protects the driver, passengers, and people around the vehicle.",
       "manualPages": "27\u201334",
-      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
-      "points": [
-        "Adjust the seat, mirrors, head restraint, and steering position before moving.",
-        "Use approximately the 9-and-3 hand position.",
-        "Every occupant should use the correct safety restraint.",
-        "Children are generally safest properly restrained in the rear seat.",
-        "Never run an engine in a closed garage or leave a child unattended."
+      "intro": "Safe driving begins before the vehicle moves. A properly adjusted driver, clear windows, functioning equipment, correct restraints, and a complete check around the vehicle prevent many avoidable crashes.",
+      "topics": [
+        {
+          "title": "Driver position and controls",
+          "body": "Sit upright with enough distance from the steering wheel to control the vehicle while reducing air-bag injury risk. Adjust the head restraint near the back of the head, position hands around 9 and 3, and know the location of lights, wipers, signals, hazard flashers, and defroster before moving.",
+          "example": "A new driver adjusts the seat so the pedals can be fully operated without stretching and the chest remains roughly 10\u201312 inches from the steering wheel.",
+          "mistake": "Sitting extremely close to the wheel or driving one-handed because the trip is short.",
+          "check": {
+            "q": "Which hand position is generally recommended?",
+            "choices": [
+              "12 and 6",
+              "9 and 3",
+              "One hand at 6",
+              "11 and 1"
+            ],
+            "answer": 1,
+            "feedback": "The 9-and-3 position provides control and helps reduce injury from an air bag."
+          },
+          "page": 27
+        },
+        {
+          "title": "Mirrors, windows, and blind areas",
+          "body": "Adjust mirrors before driving and clear frost, fog, cargo, or dirt that blocks vision. Mirrors do not show every area, so turn your head to check blind spots before changing lanes or backing. Cameras and sensors are aids, not substitutes for looking.",
+          "example": "Before backing, the driver walks around the vehicle, clears the rear window, checks mirrors, and looks over the shoulder.",
+          "mistake": "Backing based only on a camera image or assuming a warning sensor will detect every child, bicycle, or low object.",
+          "check": {
+            "q": "A backup camera shows a clear path. What else should the driver do?",
+            "choices": [
+              "Nothing",
+              "Look around the vehicle and directly behind",
+              "Back faster",
+              "Turn off the mirrors"
+            ],
+            "answer": 1,
+            "feedback": "Direct observation remains necessary because cameras have limited fields of view."
+          },
+          "page": 27
+        },
+        {
+          "title": "Safety belts and child restraints",
+          "body": "Every occupant should be correctly restrained on every trip. The lap belt should lie low across the hips, and the shoulder belt should cross the chest and shoulder. Children need a restraint appropriate for age and size and are generally safest in the rear seat.",
+          "example": "A passenger places the shoulder belt under an arm. The driver asks the passenger to reposition it correctly before moving.",
+          "mistake": "Treating a short neighborhood trip as an exception to belt use.",
+          "check": {
+            "q": "Where should the lap portion of a safety belt rest?",
+            "choices": [
+              "Across the stomach",
+              "Low across the hips",
+              "Under one arm",
+              "Behind the back"
+            ],
+            "answer": 1,
+            "feedback": "The lap belt should contact the stronger hip and pelvic area."
+          },
+          "page": 31
+        },
+        {
+          "title": "Vehicle condition and carbon monoxide",
+          "body": "Check tires, lights, brakes, fluid warnings, and obvious defects before a trip. Never run an engine in a closed garage because carbon monoxide is colorless, odorless, and potentially fatal. Do not leave children unattended in a vehicle.",
+          "example": "A low-tire-pressure warning appears before an interstate trip. The driver checks and corrects the pressure rather than ignoring it.",
+          "mistake": "Assuming a vehicle is safe merely because it starts and moves.",
+          "check": {
+            "q": "The engine is running in a closed garage. What should happen?",
+            "choices": [
+              "Open one car window",
+              "Shut it off or move immediately into open air",
+              "Turn on the heater",
+              "Wait five minutes"
+            ],
+            "answer": 1,
+            "feedback": "A closed garage can rapidly accumulate deadly carbon monoxide."
+          },
+          "page": 29
+        }
       ],
-      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+      "summary": [
+        "Adjust the driver and mirrors before moving.",
+        "Look directly into blind areas.",
+        "Require proper restraints for every occupant.",
+        "Correct vehicle defects before they become emergencies."
+      ]
     },
     "Signs, Signals & Markings": {
       "title": "Traffic Signs, Signals, and Pavement Markings",
+      "objective": "Recognize traffic controls quickly and translate each one into the correct driving action.",
       "manualPages": "35\u201344",
-      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
-      "points": [
-        "An octagon means stop; a triangle means yield; a round sign warns of railroad tracks.",
-        "Yellow diamond signs warn of hazards.",
-        "Orange signs identify temporary work zones.",
-        "Flashing red requires a stop; flashing yellow requires caution.",
-        "Lane markings control passing, stopping, and lane use."
+      "intro": "Traffic controls communicate through shape, color, symbols, lights, and pavement lines. Good drivers identify the message early enough to slow, stop, yield, merge, or position the vehicle smoothly.",
+      "topics": [
+        {
+          "title": "Shapes communicate meaning",
+          "body": "Certain shapes have unique meanings: octagon for STOP, downward triangle for YIELD, round for railroad warning, crossbuck at the tracks, diamond for warnings, and rectangles for regulations or information. Shape recognition is especially helpful at night or when a sign is partly obscured.",
+          "example": "At night, a driver sees an eight-sided silhouette before reading the word and begins a controlled stop.",
+          "mistake": "Waiting until the words are readable before reacting to a familiar shape.",
+          "check": {
+            "q": "What does a round traffic sign normally warn about?",
+            "choices": [
+              "A railroad crossing ahead",
+              "A hospital",
+              "A stop sign",
+              "A speed limit"
+            ],
+            "answer": 0,
+            "feedback": "The round sign is reserved for advance railroad warnings."
+          },
+          "page": 36
+        },
+        {
+          "title": "Colors communicate purpose",
+          "body": "Red usually means stop, prohibition, or a critical regulation. Yellow warns of hazards; orange marks temporary work zones; white commonly carries regulations; green guides directions; blue identifies services; brown identifies recreation or cultural sites.",
+          "example": "An orange diamond sign alerts a driver to expect workers, lane changes, equipment, or a flagger.",
+          "mistake": "Treating orange signs as optional because the road arrangement is temporary.",
+          "check": {
+            "q": "A yellow diamond sign means the driver should:",
+            "choices": [
+              "Expect a warning or hazard ahead",
+              "Stop in all cases",
+              "Find a hospital",
+              "Enter an interstate"
+            ],
+            "answer": 0,
+            "feedback": "Yellow diamond signs warn of changing or hazardous conditions."
+          },
+          "page": 35
+        },
+        {
+          "title": "Traffic signals and arrows",
+          "body": "A steady red requires a stop. Green permits movement only when the path is clear. Yellow warns that the signal is changing. Flashing red is treated like a stop sign; flashing yellow means slow and proceed cautiously. A green arrow protects movement in the arrow direction, but pedestrians and hazards must still be considered.",
+          "example": "The light is green, but traffic blocks the far side. The driver waits behind the line rather than blocking the intersection.",
+          "mistake": "Believing green means \u201cgo no matter what.\u201d",
+          "check": {
+            "q": "A flashing red signal requires:",
+            "choices": [
+              "A complete stop and safe yield procedure",
+              "Only slowing",
+              "Immediate acceleration",
+              "A lane change"
+            ],
+            "answer": 0,
+            "feedback": "Flashing red is handled like a stop sign."
+          },
+          "page": 41
+        },
+        {
+          "title": "Pavement markings and lane controls",
+          "body": "Yellow lines separate opposing traffic; white lines separate traffic moving in the same direction. Broken lines generally permit crossing when safe; solid lines restrict crossing. Stop lines show where to stop, crosswalks protect pedestrian paths, arrows assign lane movements, and a red X closes a lane.",
+          "example": "A solid yellow line is on the driver\u2019s side. The driver stays in the lane and waits for a lawful passing area.",
+          "mistake": "Crossing a solid line merely because no opposing vehicle is visible.",
+          "check": {
+            "q": "A red X above a lane means:",
+            "choices": [
+              "The lane is open",
+              "The lane is closed",
+              "The lane is for carpools",
+              "Passing is required"
+            ],
+            "answer": 1,
+            "feedback": "A red X prohibits travel in that lane."
+          },
+          "page": 42
+        }
       ],
-      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+      "summary": [
+        "Use shape and color together.",
+        "Respond early and smoothly.",
+        "A permissive signal never removes the duty to avoid a collision.",
+        "Read pavement markings before choosing a lane or passing."
+      ]
     },
     "Speed, Space & Stopping": {
       "title": "Speed, Following Distance, and Stopping",
+      "objective": "Select a speed and safety cushion that allow enough time to see, decide, and stop.",
       "manualPages": "45\u201349",
-      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
-      "points": [
-        "The posted limit is a maximum under good conditions.",
-        "Use at least a two-second following interval in favorable conditions.",
-        "Poor weather and limited visibility require more distance and less speed.",
-        "Stopping distance increases rapidly as speed increases.",
-        "Drive so you can stop within the distance you can see."
+      "intro": "The safest speed is not always the number on the sign. Weather, darkness, curves, hills, traffic, vehicle weight, tire condition, and visibility determine how much time and distance a driver needs.",
+      "topics": [
+        {
+          "title": "The basic speed rule",
+          "body": "A posted speed is the maximum under favorable conditions. Drivers must reduce speed whenever conditions make the posted maximum unsafe. The vehicle should always be controllable within the visible roadway.",
+          "example": "Fog limits visibility to a short distance, so a driver travels well below the posted limit.",
+          "mistake": "Thinking that driving at the posted number is automatically legal and safe in rain, fog, ice, or congestion.",
+          "check": {
+            "q": "The limit is 55 mph during heavy rain. Which speed is correct?",
+            "choices": [
+              "Exactly 55",
+              "A lower speed reasonable for conditions",
+              "At least 50",
+              "The speed of the fastest car"
+            ],
+            "answer": 1,
+            "feedback": "The basic speed rule requires adapting to actual conditions."
+          },
+          "page": 46
+        },
+        {
+          "title": "Following interval and space cushion",
+          "body": "Use a fixed roadside object to measure at least a two-second interval in good conditions. Increase the interval for rain, darkness, towing, large vehicles, motorcycles, poor visibility, or slippery roads. Space ahead allows gradual braking and an escape route.",
+          "example": "After another car merges closely, the driver eases off the accelerator to rebuild space rather than retaliating.",
+          "mistake": "Counting too quickly or treating two seconds as enough in every condition.",
+          "check": {
+            "q": "On a wet road behind a truck, the driver should:",
+            "choices": [
+              "Follow more closely to see lights",
+              "Increase the following interval",
+              "Use high beams",
+              "Drive on the shoulder"
+            ],
+            "answer": 1,
+            "feedback": "Wet traction and blocked visibility both require more space."
+          },
+          "page": 48
+        },
+        {
+          "title": "Reaction and braking distance",
+          "body": "Total stopping distance includes perception, reaction, and braking. Speed greatly increases braking distance and crash energy. Fatigue, distraction, alcohol, poor tires, heavy loads, and slippery pavement add distance.",
+          "example": "A driver doubles speed and realizes the stopping distance increases far more than a simple extra car length.",
+          "mistake": "Focusing only on brake condition while ignoring reaction time.",
+          "check": {
+            "q": "Which factor affects total stopping distance?",
+            "choices": [
+              "Reaction time",
+              "Road traction",
+              "Vehicle speed",
+              "All of these"
+            ],
+            "answer": 3,
+            "feedback": "Stopping distance is the combined result of driver, vehicle, speed, and roadway factors."
+          },
+          "page": 47
+        },
+        {
+          "title": "Managing tailgaters and changing traffic",
+          "body": "If followed too closely, do not brake-check. Increase space ahead so you can slow gradually, maintain a steady speed, and let the other driver pass when safe. Scan several vehicles ahead for brake lights and congestion.",
+          "example": "Several vehicles ahead show brake lights. The driver eases off early rather than waiting for the nearest car to brake hard.",
+          "mistake": "Using abrupt braking to \u201cteach\u201d a following driver a lesson.",
+          "check": {
+            "q": "What is the safest response to a tailgater?",
+            "choices": [
+              "Brake suddenly",
+              "Create more space ahead and allow passing when safe",
+              "Speed excessively",
+              "Block the passing lane"
+            ],
+            "answer": 1,
+            "feedback": "Avoid conflict and preserve room for gradual speed changes."
+          },
+          "page": 48
+        }
       ],
-      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+      "summary": [
+        "Conditions determine safe speed.",
+        "More risk requires more following time.",
+        "Stopping starts with seeing and deciding, not just braking.",
+        "Never use the vehicle to punish another driver."
+      ]
     },
     "Intersections & Right-of-Way": {
       "title": "Intersections, Turns, and Right-of-Way",
+      "objective": "Make predictable, lawful decisions while protecting pedestrians and avoiding conflicts.",
       "manualPages": "52\u201358",
-      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
-      "points": [
-        "At the same arrival time, yield to the vehicle on your right.",
-        "A left-turning driver generally yields to oncoming traffic.",
-        "Drivers entering from driveways yield to roadway users.",
-        "Right turns on red require a full stop and yielding when permitted.",
-        "Right-of-way never gives permission to cause a collision."
+      "intro": "Intersections combine crossing paths, limited sight lines, signals, pedestrians, and turning vehicles. Right-of-way rules organize movement, but every driver remains responsible for preventing a collision.",
+      "topics": [
+        {
+          "title": "Approaching and scanning",
+          "body": "Slow enough to search left, right, and ahead. Look for signs, signals, pedestrians, bicycles, motorcycles, and vehicles hidden by buildings or parked cars. Do not enter unless there is room to clear the intersection.",
+          "example": "A green light appears, but traffic is stopped beyond the crosswalk. The driver waits behind the line.",
+          "mistake": "Looking only in the direction of the intended turn.",
+          "check": {
+            "q": "When should a driver enter a green-light intersection?",
+            "choices": [
+              "Immediately",
+              "Only when the path is clear enough to complete the movement",
+              "After sounding the horn",
+              "Whenever cross traffic is stopped"
+            ],
+            "answer": 1,
+            "feedback": "A green light does not authorize blocking the intersection."
+          },
+          "page": 52
+        },
+        {
+          "title": "Four-way stops and uncontrolled intersections",
+          "body": "At a stop, the first vehicle to arrive generally moves first. If vehicles arrive at about the same time, yield to the vehicle on the right. Opposing left-turn traffic yields to traffic traveling straight. Communicate with signals and avoid competing for the same space.",
+          "example": "Two cars arrive together; the other car is to the right. The driver yields and proceeds after that vehicle clears.",
+          "mistake": "Insisting on technical right-of-way after another driver begins moving.",
+          "check": {
+            "q": "Two vehicles arrive simultaneously. The other is on your right. Who normally proceeds first?",
+            "choices": [
+              "You",
+              "The vehicle on the right",
+              "The larger vehicle",
+              "Both together"
+            ],
+            "answer": 1,
+            "feedback": "At approximately the same arrival time, yield to the right."
+          },
+          "page": 53
+        },
+        {
+          "title": "Left turns, right turns, and signals",
+          "body": "Signal early, move into the correct lane, reduce speed, and check mirrors and blind spots. A left turn yields to oncoming traffic. A right turn must protect pedestrians and bicyclists on the right. A permitted right on red requires a full stop and yielding.",
+          "example": "Before turning right, the driver sees a bicyclist beside the vehicle and waits until the cyclist clears.",
+          "mistake": "Turning the steering wheels left while waiting in the intersection, which can send the car into oncoming traffic if struck from behind.",
+          "check": {
+            "q": "Before a permitted right turn on red, the driver must:",
+            "choices": [
+              "Roll through slowly",
+              "Stop completely and yield",
+              "Honk and turn",
+              "Wait for green in every state"
+            ],
+            "answer": 1,
+            "feedback": "A complete stop and safe yield are required before a permitted turn."
+          },
+          "page": 55
+        },
+        {
+          "title": "Roundabouts, driveways, and special situations",
+          "body": "Entering roundabout traffic yields to vehicles already circulating and travels counterclockwise. Drivers leaving driveways or alleys yield to traffic and pedestrians. Directions from police officers and authorized flaggers override normal signals.",
+          "example": "A police officer waves traffic through a red light. The driver follows the officer\u2019s direction after confirming the path.",
+          "mistake": "Entering a roundabout and stopping inside it when no hazard requires stopping.",
+          "check": {
+            "q": "Who has priority at a roundabout entrance?",
+            "choices": [
+              "Entering traffic",
+              "Traffic already circulating",
+              "The largest vehicle",
+              "Traffic to the right outside the roundabout"
+            ],
+            "answer": 1,
+            "feedback": "Entering drivers yield to circulating vehicles."
+          },
+          "page": 58
+        }
       ],
-      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+      "summary": [
+        "Search every conflict path.",
+        "Use arrival order and right-side rules at stops.",
+        "Turning vehicles protect oncoming traffic, pedestrians, and bicyclists.",
+        "Preventing a crash is more important than claiming right-of-way."
+      ]
     },
     "Required Stops & Emergencies": {
-      "title": "Required Stops and Roadway Emergencies",
+      "title": "Required Stops and Emergency Response",
+      "objective": "React correctly to school buses, railroads, emergency vehicles, breakdowns, and crashes.",
       "manualPages": "49\u201352, 72\u201373, 89\u201390",
-      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
-      "points": [
-        "Never enter railroad tracks unless you can clear them.",
-        "Stop for school buses as required by roadway configuration.",
-        "Clear intersections and move right for emergency vehicles.",
-        "Move over or slow down for stopped emergency vehicles.",
-        "After a crash, stop, protect the scene, and exchange information."
+      "intro": "Some situations require an absolute stop; others require controlled movement to protect responders and road users. The safest response is early, visible, and predictable.",
+      "topics": [
+        {
+          "title": "Stop signs and sight obstructions",
+          "body": "Stop before the stop line, crosswalk, or intersection. If visibility is blocked, make the required full stop first, then creep forward carefully to see while continuing to yield.",
+          "example": "Parked vehicles block cross traffic. The driver stops at the line, then inches forward to a second viewing position.",
+          "mistake": "Rolling beyond the crosswalk before making the first stop.",
+          "check": {
+            "q": "Where is the first stop made when a stop line is present?",
+            "choices": [
+              "After the crosswalk",
+              "Before the stop line",
+              "In the intersection",
+              "Beside the sign"
+            ],
+            "answer": 1,
+            "feedback": "The stop line identifies the required stopping position."
+          },
+          "page": 49
+        },
+        {
+          "title": "Railroad crossings",
+          "body": "Obey lights, bells, gates, and flaggers. Never drive around a gate, race a train, or enter without enough room to clear every track. If stalled on tracks, exit immediately, move away, and call the posted emergency number or 911.",
+          "example": "Traffic is backed up beyond the crossing, so the driver waits before the tracks despite a green traffic light.",
+          "mistake": "Following another vehicle onto the tracks without confirming space beyond.",
+          "check": {
+            "q": "The crossing gate is raised but red lights flash. What should you do?",
+            "choices": [
+              "Cross quickly",
+              "Stop and wait",
+              "Drive around stopped traffic",
+              "Park on the tracks"
+            ],
+            "answer": 1,
+            "feedback": "Flashing railroad signals require stopping."
+          },
+          "page": 50
+        },
+        {
+          "title": "School buses and emergency vehicles",
+          "body": "Yellow school-bus lights warn that the bus is preparing to stop. Red lights and the stop arm require stops according to roadway configuration. For an approaching emergency vehicle, clear an intersection if necessary, then pull right and stop.",
+          "example": "An ambulance approaches while the driver is inside an intersection. The driver clears the intersection, then pulls right and stops.",
+          "mistake": "Stopping in the middle of an intersection and blocking the emergency vehicle.",
+          "check": {
+            "q": "What do yellow school-bus lights tell you?",
+            "choices": [
+              "Pass immediately",
+              "Slow and prepare to stop",
+              "The bus is out of service",
+              "Only pedestrians must stop"
+            ],
+            "answer": 1,
+            "feedback": "Yellow lights warn that a stop is about to occur."
+          },
+          "page": 51
+        },
+        {
+          "title": "Breakdowns, move-over situations, and crashes",
+          "body": "Move a disabled vehicle as far from traffic as possible, activate hazards, and remain in a safe location. Move over or slow for stopped emergency or service vehicles. After a crash, stop, call for help, protect the scene, exchange information, and avoid moving injured people unless immediate danger requires it.",
+          "example": "A drivable vehicle after a minor interstate crash is moved out of the travel lane, and the driver remains at the scene.",
+          "mistake": "Standing between damaged vehicles or in a traffic lane while exchanging information.",
+          "check": {
+            "q": "An injured person is not in immediate danger. What should an untrained driver do?",
+            "choices": [
+              "Move the person immediately",
+              "Call emergency services and avoid moving the person",
+              "Give food",
+              "Leave"
+            ],
+            "answer": 1,
+            "feedback": "Movement can worsen injuries; wait for trained responders unless immediate danger exists."
+          },
+          "page": 72
+        }
       ],
-      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+      "summary": [
+        "Stop at the correct location.",
+        "Never become trapped on railroad tracks.",
+        "Clear intersections for emergency vehicles.",
+        "Protect yourself from secondary crashes after a breakdown or collision."
+      ]
     },
     "Interstate Driving": {
-      "title": "Entering, Driving, and Exiting Interstates",
+      "title": "Interstate Driving",
+      "objective": "Enter, travel, pass, exit, and respond to problems safely at higher speeds.",
       "manualPages": "68\u201373",
-      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
-      "points": [
-        "Use the acceleration lane to approach traffic speed.",
-        "Find a safe gap and merge without forcing other drivers to react.",
-        "Use the left lane mainly for passing.",
-        "Slow in the deceleration lane after entering the exit path.",
-        "If you miss an exit, continue to the next one."
+      "intro": "Interstates reduce crossing conflicts but increase speed, stopping distance, wind effects, and consequences of sudden decisions. Planning and lane discipline are essential.",
+      "topics": [
+        {
+          "title": "Entering and merging",
+          "body": "Use the acceleration lane to build speed close to traffic flow. Check mirrors, look over the shoulder, select a gap, signal, and merge smoothly. Entering traffic yields; it should not force through traffic to brake sharply.",
+          "example": "A car occupies the planned gap, so the entering driver adjusts speed and merges behind it.",
+          "mistake": "Stopping at the end of the ramp when a safe speed adjustment would create a gap.",
+          "check": {
+            "q": "What is the purpose of an acceleration lane?",
+            "choices": [
+              "Parking",
+              "Matching traffic speed and finding a safe gap",
+              "Making U-turns",
+              "Passing on the right"
+            ],
+            "answer": 1,
+            "feedback": "The lane allows a driver to prepare for a smooth merge."
+          },
+          "page": 68
+        },
+        {
+          "title": "Lane use and passing",
+          "body": "Keep right except when passing or when another lane is appropriate. Check mirrors and blind spots before changing lanes, signal, pass without lingering, and return only after adequate clearance. Avoid staying beside trucks.",
+          "example": "A driver completes a pass and can see the passed vehicle in the rearview mirror before returning right.",
+          "mistake": "Remaining in a truck\u2019s blind spot or using the left lane as a permanent travel lane.",
+          "check": {
+            "q": "Where should a driver avoid lingering?",
+            "choices": [
+              "Behind a distant car",
+              "Beside a large truck",
+              "In the right lane",
+              "Near an exit sign"
+            ],
+            "answer": 1,
+            "feedback": "Large vehicles have extensive side blind spots."
+          },
+          "page": 68
+        },
+        {
+          "title": "Exiting and interchanges",
+          "body": "Read signs early, signal, move into the correct exit lane, and slow in the deceleration lane. If an exit is missed, continue to the next one. Never back up, stop in a travel lane, cross the gore, or use an emergency crossover.",
+          "example": "A driver misses the exit and calmly follows signs at the next interchange to reverse direction.",
+          "mistake": "Cutting across several lanes at the last second.",
+          "check": {
+            "q": "What should you do after missing an exit?",
+            "choices": [
+              "Back up",
+              "Use the median crossover",
+              "Continue to the next exit",
+              "Stop on the shoulder"
+            ],
+            "answer": 2,
+            "feedback": "Continuing to the next exit avoids a dangerous sudden maneuver."
+          },
+          "page": 69
+        },
+        {
+          "title": "Congestion, fatigue, and emergencies",
+          "body": "Increase following distance in stop-and-go traffic, scan far ahead, and avoid repeated abrupt lane changes. If sleepy, stop safely and rest or change drivers. For a breakdown, move off the roadway when possible, activate hazards, and seek help from a protected location.",
+          "example": "The driver notices repeated yawning and exits to a safe rest location instead of opening a window and continuing.",
+          "mistake": "Believing loud music or cold air cures dangerous fatigue.",
+          "check": {
+            "q": "What is the reliable response to drowsiness?",
+            "choices": [
+              "Drive faster",
+              "Stop safely and rest or change drivers",
+              "Open a window only",
+              "Use high beams"
+            ],
+            "answer": 1,
+            "feedback": "Rest or an alert replacement driver is required."
+          },
+          "page": 70
+        }
       ],
-      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+      "summary": [
+        "Match traffic speed before merging.",
+        "Avoid blind spots and unnecessary left-lane travel.",
+        "Plan exits early.",
+        "Fatigue is an emergency, not an inconvenience."
+      ]
     },
     "Night & Weather Driving": {
       "title": "Night and Adverse-Weather Driving",
+      "objective": "Maintain visibility and traction when darkness, rain, fog, flooding, snow, or ice reduce safety margins.",
       "manualPages": "74\u201378",
-      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
-      "points": [
-        "Do not overdrive your headlights.",
-        "Use low beams in fog and dim high beams around traffic.",
-        "Avoid cruise control on wet or icy roads.",
-        "Never drive into water of unknown depth.",
-        "Avoid abrupt braking or steering during a skid or hydroplane."
+      "intro": "Poor conditions reduce what the driver can see and how strongly the tires grip. The correct response is usually less speed, more space, smoother control, and a willingness to stop.",
+      "topics": [
+        {
+          "title": "Night visibility and headlights",
+          "body": "Drive slowly enough to stop within the area illuminated by the headlights. Dim high beams for approaching and followed vehicles. Keep the windshield and lights clean and watch for pedestrians and animals beyond the strongest light.",
+          "example": "A deer stands near the shoulder, so the driver slows and looks for additional animals instead of swerving.",
+          "mistake": "Overdriving the headlights\u2014traveling too fast to stop within the visible area.",
+          "check": {
+            "q": "Why must speed often be lower at night?",
+            "choices": [
+              "Fuel is different",
+              "The visible stopping area is shorter",
+              "Road signs do not apply",
+              "Brakes stop working"
+            ],
+            "answer": 1,
+            "feedback": "Headlights limit how far hazards can be detected."
+          },
+          "page": 74
+        },
+        {
+          "title": "Rain, hydroplaning, and visibility",
+          "body": "Use headlights, reduce speed, increase following distance, and avoid cruise control. If hydroplaning begins, ease off the accelerator and steer smoothly without sudden braking. If rain prevents seeing lane lines, leave the roadway at a safe location.",
+          "example": "Steering feels light in standing water, so the driver eases off and holds a steady direction.",
+          "mistake": "Braking hard immediately when traction disappears.",
+          "check": {
+            "q": "What is the first response to hydroplaning?",
+            "choices": [
+              "Accelerate",
+              "Ease off the accelerator and steer smoothly",
+              "Turn sharply",
+              "Use the parking brake"
+            ],
+            "answer": 1,
+            "feedback": "Smoothly reducing speed helps the tires regain contact."
+          },
+          "page": 75
+        },
+        {
+          "title": "Fog and limited visibility",
+          "body": "Use low beams because high beams reflect back from fog. Slow down, increase space, use roadway edge markings as a guide, and stop somewhere safely off the road if visibility becomes inadequate.",
+          "example": "Dense fog reduces visibility to a few car lengths, so the driver exits and waits at a safe location.",
+          "mistake": "Following another vehicle closely to use its taillights as a guide.",
+          "check": {
+            "q": "Which beams are generally best in fog?",
+            "choices": [
+              "High beams",
+              "Low beams",
+              "Parking lights only",
+              "No lights"
+            ],
+            "answer": 1,
+            "feedback": "Low beams reduce reflected glare."
+          },
+          "page": 75
+        },
+        {
+          "title": "Flooding, snow, ice, and skids",
+          "body": "Never enter water of unknown depth. Bridges can freeze before normal pavement. Use slow, smooth steering, braking, and acceleration. If a skid begins, look and steer toward the intended path while easing off power.",
+          "example": "A bridge appears wet near freezing temperatures, so the driver assumes possible ice and slows before reaching it.",
+          "mistake": "Using cruise control or abrupt inputs on slippery surfaces.",
+          "check": {
+            "q": "Water covers the road and depth is unknown. What should you do?",
+            "choices": [
+              "Drive through slowly",
+              "Follow a truck",
+              "Turn around",
+              "Accelerate"
+            ],
+            "answer": 2,
+            "feedback": "Unknown water may be deep, moving, or hiding road damage."
+          },
+          "page": 76
+        }
       ],
-      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+      "summary": [
+        "Never outrun your headlights.",
+        "Low traction demands smooth inputs.",
+        "Poor visibility may require stopping the trip.",
+        "Turn around rather than entering unknown floodwater."
+      ]
     },
     "Distraction & Impairment": {
       "title": "Distracted and Impaired Driving",
+      "objective": "Protect attention, judgment, coordination, and reaction time from phones, emotions, alcohol, drugs, and fatigue.",
       "manualPages": "6, 79\u201384",
-      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
-      "points": [
-        "Visual, manual, and mental distractions all increase crash risk.",
-        "Set navigation and controls before moving.",
-        "Alcohol affects judgment early, and only time removes it.",
-        "Medicines can impair alertness and coordination.",
-        "Combining alcohol with sedating medicine increases danger."
+      "intro": "Driving is a continuous decision task. A distraction or substance can reduce ability before the driver recognizes the loss. The safest plan removes the risk before the vehicle moves.",
+      "topics": [
+        {
+          "title": "Three forms of distraction",
+          "body": "Visual distraction takes eyes off the road, manual distraction takes hands from control, and cognitive distraction takes the mind away. Texting combines all three. Eating, passengers, controls, grooming, and emotional conversations can also distract.",
+          "example": "A conversation becomes heated, so the driver asks to pause it until parked.",
+          "mistake": "Treating hands-free activity as automatically risk-free; the mind can still be distracted.",
+          "check": {
+            "q": "Which distraction involves thinking about something other than driving?",
+            "choices": [
+              "Visual",
+              "Manual",
+              "Cognitive",
+              "Mechanical"
+            ],
+            "answer": 2,
+            "feedback": "Cognitive distraction removes mental focus from the driving task."
+          },
+          "page": 6
+        },
+        {
+          "title": "Phones, navigation, and planning",
+          "body": "Set navigation, music, and climate controls before moving. Keep the phone stored and use a safe parking location before reading, typing, recording, or changing a route. Never stop in a travel or merge lane to use a device.",
+          "example": "The route changes, and the driver pulls into a parking lot before touching the phone.",
+          "mistake": "Holding the phone low and assuming that makes use safe or legal.",
+          "check": {
+            "q": "When should a driver change a phone navigation route?",
+            "choices": [
+              "While moving slowly",
+              "After safely parking",
+              "At a red light only",
+              "During a merge"
+            ],
+            "answer": 1,
+            "feedback": "A safely parked vehicle prevents the device from competing with driving."
+          },
+          "page": 6
+        },
+        {
+          "title": "Alcohol and judgment",
+          "body": "Alcohol affects judgment early, then vision, coordination, reaction time, concentration, and alertness. A person may feel confident while becoming less capable of evaluating risk. Coffee, food, showers, and exercise do not quickly remove alcohol; only time does.",
+          "example": "A friend says a cold shower made them sober. The family arranges a sober ride instead.",
+          "mistake": "Using feelings or behavior as proof that BAC is safe.",
+          "check": {
+            "q": "What ability is often affected early by alcohol?",
+            "choices": [
+              "Judgment",
+              "Hearing only",
+              "Fuel economy",
+              "Tire traction"
+            ],
+            "answer": 0,
+            "feedback": "Impaired judgment can hide the driver\u2019s own impairment."
+          },
+          "page": 79
+        },
+        {
+          "title": "Drugs, medications, and combinations",
+          "body": "Illegal drugs, prescriptions, and over-the-counter medicines may cause drowsiness, slowed reaction, blurred vision, or poor coordination. Read labels, follow medical advice, and do not drive until effects are known. Alcohol can intensify sedating medicines.",
+          "example": "A cold medicine warns of drowsiness, so the driver arranges another ride.",
+          "mistake": "Assuming a legal medicine cannot impair driving.",
+          "check": {
+            "q": "A label says \u201cDo not operate machinery.\u201d Does that include driving?",
+            "choices": [
+              "No",
+              "Yes",
+              "Only commercial trucks",
+              "Only at night"
+            ],
+            "answer": 1,
+            "feedback": "A motor vehicle is machinery, and the warning applies."
+          },
+          "page": 81
+        }
       ],
-      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+      "summary": [
+        "Protect eyes, hands, and mental focus.",
+        "Set up the trip before moving.",
+        "Only time removes alcohol.",
+        "Legal medicines can still make driving unsafe."
+      ]
     },
     "Defensive Driving & Sharing": {
       "title": "Defensive Driving and Sharing the Road",
+      "objective": "Anticipate hazards and cooperate safely with pedestrians, bicycles, motorcycles, trucks, and slow vehicles.",
       "manualPages": "93\u2013115",
-      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
-      "points": [
-        "Scan far ahead and maintain escape space.",
-        "Expect children and pedestrians to act unpredictably.",
-        "Give bicyclists room.",
-        "Motorcycles can be difficult to judge.",
-        "Large trucks have major blind spots and need extra turning room."
+      "intro": "A defensive driver manages what can be controlled: speed, space, attention, communication, and escape routes. The driver also assumes that others may fail to see, understand, or obey.",
+      "topics": [
+        {
+          "title": "Scanning and escape space",
+          "body": "Look far ahead, check mirrors regularly, and avoid being boxed in. Watch wheels, brake lights, body language, and gaps that suggest another road user may move. Keep enough space to brake or steer away.",
+          "example": "Several vehicles ahead illuminate brake lights, so the driver eases off before the nearest car reacts.",
+          "mistake": "Staring only at the rear bumper directly ahead.",
+          "check": {
+            "q": "What does scanning far ahead provide?",
+            "choices": [
+              "More time to recognize and respond to hazards",
+              "Permission to speed",
+              "A shorter stopping distance",
+              "A right to pass"
+            ],
+            "answer": 0,
+            "feedback": "Early information creates decision and reaction time."
+          },
+          "page": 93
+        },
+        {
+          "title": "Pedestrians and children",
+          "body": "Yield at crosswalks, never pass a vehicle stopped for a pedestrian, and be especially cautious near schools, neighborhoods, parked cars, and people with disabilities. Children may enter the road without checking.",
+          "example": "A child near the curb holds a ball. The driver slows and prepares for the ball or child to enter the street.",
+          "mistake": "Assuming eye contact guarantees that a pedestrian will wait.",
+          "check": {
+            "q": "A child stands near the road with a ball. What should you do?",
+            "choices": [
+              "Accelerate",
+              "Slow and prepare to stop",
+              "Honk and maintain speed",
+              "Move into the opposite lane"
+            ],
+            "answer": 1,
+            "feedback": "Children and balls can move into the road unexpectedly."
+          },
+          "page": 103
+        },
+        {
+          "title": "Bicycles and motorcycles",
+          "body": "Bicycles and motorcycles are legitimate roadway users. Give bicycles clearance and wait when opposing traffic prevents a safe pass. Look twice for motorcycles because smaller size makes speed and distance harder to judge, and motorcycle signals may remain on.",
+          "example": "A motorcycle\u2019s signal flashes, but the driver waits for actual movement before entering its path.",
+          "mistake": "Turning across a bicycle lane without a mirror and blind-spot check.",
+          "check": {
+            "q": "Why is motorcycle distance sometimes misjudged?",
+            "choices": [
+              "Motorcycles have no lights",
+              "Their smaller size changes visual perception",
+              "They always speed",
+              "They cannot stop"
+            ],
+            "answer": 1,
+            "feedback": "A smaller profile can appear farther away or slower."
+          },
+          "page": 105
+        },
+        {
+          "title": "Large trucks, buses, and slow vehicles",
+          "body": "Large vehicles have blind spots in front, behind, and along both sides. Do not linger beside them, cut closely in front, or pass on the right during a wide turn. Slow farm equipment may be passed only where legal and visible.",
+          "example": "A truck moves left before a right turn, and the driver stays back rather than entering the space on the right.",
+          "mistake": "Assuming a truck driver can see a car because the car can see the truck.",
+          "check": {
+            "q": "What should you do when a truck begins a wide right turn?",
+            "choices": [
+              "Pass on the right",
+              "Stay back and give it room",
+              "Drive beside the trailer",
+              "Use the shoulder"
+            ],
+            "answer": 1,
+            "feedback": "The right side can become a dangerous squeeze area."
+          },
+          "page": 108
+        }
       ],
-      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+      "summary": [
+        "Scan far ahead and preserve an escape route.",
+        "Expect vulnerable users to make unexpected moves.",
+        "Look twice for motorcycles.",
+        "Stay out of large-vehicle blind spots and turning space."
+      ]
     },
     "Work Zones & Responsibility": {
       "title": "Work Zones and Driver Responsibility",
+      "objective": "Navigate temporary traffic controls safely and understand the continuing responsibilities of a licensed driver.",
       "manualPages": "18\u201319, 47, 85\u201390",
-      "objective": "Learn the core rules, apply them to realistic situations, and demonstrate mastery on the section quiz.",
-      "points": [
-        "Slow down and increase following distance in work zones.",
-        "Obey flaggers and temporary traffic controls.",
-        "Avoid unnecessary lane changes.",
-        "Repeated violations can affect driving privileges.",
-        "Drivers must stop after a crash and maintain financial responsibility."
+      "intro": "Work zones change normal traffic patterns and combine workers, equipment, narrow lanes, queues, and distracted drivers. Responsibility also continues after a violation or crash.",
+      "topics": [
+        {
+          "title": "Recognizing and entering work zones",
+          "body": "Orange signs, cones, barrels, arrow boards, workers, and equipment indicate temporary control. Reduce speed early, turn on headlights when appropriate, increase following distance, and expect lane shifts or sudden queues.",
+          "example": "Brake lights appear several vehicles ahead before the first cone, so the driver slows early.",
+          "mistake": "Watching construction activity instead of traffic movement.",
+          "check": {
+            "q": "What is the most important adjustment in a work zone?",
+            "choices": [
+              "More speed",
+              "More attention, lower speed, and more space",
+              "Frequent lane changes",
+              "Phone recording"
+            ],
+            "answer": 1,
+            "feedback": "Work zones require extra time and attention."
+          },
+          "page": 18
+        },
+        {
+          "title": "Flaggers and channelizing devices",
+          "body": "Flaggers have authority to stop or release traffic. Follow STOP/SLOW paddles, hand signals, signs, cones, and temporary markings. Do not change lanes unless directed or clearly permitted.",
+          "example": "A flagger displays SLOW, so the driver proceeds at a controlled speed ready to stop.",
+          "mistake": "Following the vehicle ahead instead of the flagger\u2019s current instruction.",
+          "check": {
+            "q": "A flagger signals STOP while the car ahead continues. What should you do?",
+            "choices": [
+              "Follow the car",
+              "Obey the flagger and stop",
+              "Change lanes",
+              "Use the shoulder"
+            ],
+            "answer": 1,
+            "feedback": "Each driver must obey the flagger\u2019s direction."
+          },
+          "page": 18
+        },
+        {
+          "title": "Preventing rear-end and worker crashes",
+          "body": "Most work-zone conflicts involve late recognition, tailgating, speeding, distraction, or last-second merging. Scan ahead, merge as directed, maintain a cushion, and never use a phone to photograph activity while driving.",
+          "example": "Traffic narrows to one lane, so the driver identifies the merge early and moves smoothly when safe.",
+          "mistake": "Racing to the final cone and forcing into traffic at high speed.",
+          "check": {
+            "q": "Why is extra following distance important in a work zone?",
+            "choices": [
+              "Traffic may stop suddenly",
+              "Cones shorten vehicles",
+              "Brakes work better",
+              "Speed limits are optional"
+            ],
+            "answer": 0,
+            "feedback": "Queues, flaggers, and changing lanes can create abrupt stops."
+          },
+          "page": 47
+        },
+        {
+          "title": "Points, crashes, insurance, and reporting",
+          "body": "Traffic convictions can add points and lead to warnings, improvement requirements, suspension, or revocation. Drivers must maintain financial responsibility. After a crash, stop, remain as required, call for help, exchange driver, vehicle, and insurance information, and notify the insurer promptly.",
+          "example": "After a minor crash, both vehicles move safely out of the lane; the drivers remain, exchange information, and document the scene.",
+          "mistake": "Leaving because damage appears minor or because both drivers verbally agree.",
+          "check": {
+            "q": "What information should be exchanged after a crash?",
+            "choices": [
+              "Only first names",
+              "Driver, vehicle, and insurance information",
+              "Social-media names",
+              "Employment records"
+            ],
+            "answer": 1,
+            "feedback": "Complete identifying and insurance information supports legal and claim responsibilities."
+          },
+          "page": 85
+        }
       ],
-      "scenario": "Before driving, identify the hazards, decide who has the right-of-way, and choose the safest lawful action\u2014not merely the fastest action."
+      "summary": [
+        "Slow early and expect changing conditions.",
+        "Obey flaggers and temporary controls.",
+        "Space prevents rear-end crashes.",
+        "Driving privileges depend on continued lawful and responsible behavior."
+      ]
     }
   }
 };

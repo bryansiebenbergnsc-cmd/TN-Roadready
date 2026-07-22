@@ -47,3 +47,6 @@ VERSION 3.1 FIX
 - Corrects blank Lessons tab caused by an older cached data.js file.
 - Core application files now check the network for updates before using the offline cache.
 - Adds a visible lesson-update message instead of leaving the tab blank during a partial update.
+
+VERSION 4
+Expanded all 11 sections into full lessons with 44 teaching topics, examples, common mistakes, and embedded knowledge checks.
