@@ -42,3 +42,8 @@ VERSION 3 FEATURES
 - Achievement badges
 - Improved dashboard
 - Existing progress remains compatible
+
+VERSION 3.1 FIX
+- Corrects blank Lessons tab caused by an older cached data.js file.
+- Core application files now check the network for updates before using the offline cache.
+- Adds a visible lesson-update message instead of leaving the tab blank during a partial update.
