@@ -254,3 +254,15 @@ VERSION 7.2 — SHORTER SECTION QUIZZES
 - Section Quiz pass score remains 80%.
 - Mastery Exam remains a longer, higher-difficulty assessment.
 - Smart Review and Comprehensive Final continue using the complete question database.
+
+VERSION 7.3 — TOPIC-ALIGNED LESSON CHECKS
+- Replaced all 132 embedded lesson checks with the original topic-authored checks.
+- Every quick check now directly tests the lesson topic immediately above it.
+- Preserved the Version 7.2 assessment structure:
+  * 15-question Section Quiz
+  * 25-question Mastery Exam
+  * 50-question Comprehensive Final
+- Balanced every lesson at exactly 3 A, 3 B, 3 C, and 3 D correct answers.
+- Preserved feedback explaining the topic rule.
+- Added lesson-check alignment metadata.
+- Updated bundle and service-worker cache versions.
