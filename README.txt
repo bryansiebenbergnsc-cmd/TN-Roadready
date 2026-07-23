@@ -223,3 +223,11 @@ VERSION 7.1 — CURRICULUM CONSISTENCY AUDIT
 - Work Zones & Responsibility expanded from 4 to 12 topics and from 14 to 50 questions.
 - Added dedicated 25-question mastery exams for Interstate Driving and Work Zones & Responsibility.
 - All 11 knowledge sections now support the same full-experience format.
+
+VERSION 7.1.1 — LESSON RENDER FIX
+- Fixed the Version 7.1 lesson-data schema mismatch.
+- Normalized all 11 knowledge lessons to the same viewer structure.
+- Confirmed all 11 lessons contain 12 topics.
+- Fixed the undefined dashboard variable that interrupted section rendering.
+- Added backward-compatible lesson field handling.
+- Updated the service-worker cache and bundle version.

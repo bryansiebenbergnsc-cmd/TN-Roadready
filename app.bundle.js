@@ -12390,7 +12390,8 @@ window.APP_DATA = {
       "topics": [
         {
           "title": "1. Tennessee Graduated Driver Licensing",
-          "content": "Tennessee uses a graduated driver licensing system to give young drivers more responsibility in stages. The learner permit, intermediate restricted license, intermediate unrestricted license, and regular license each have different qualifications and restrictions.",
+          "page": 1,
+          "body": "Tennessee uses a graduated driver licensing system to give young drivers more responsibility in stages. The learner permit, intermediate restricted license, intermediate unrestricted license, and regular license each have different qualifications and restrictions.",
           "example": "Treat each licensing stage as a period for building supervised experience rather than simply waiting for time to pass.",
           "mistake": "Assuming every teen license has the same privileges.",
           "check": {
@@ -12402,12 +12403,13 @@ window.APP_DATA = {
               "To allow unrestricted driving immediately"
             ],
             "answer": 1,
-            "explain": "Tennessee uses a graduated driver licensing system to give young drivers more responsibility in stages."
+            "feedback": "Tennessee uses a graduated driver licensing system to give young drivers more responsibility in stages."
           }
         },
         {
           "title": "2. Learner Permit Eligibility",
-          "content": "A learner permit is the first driving stage for many Tennessee teens. Applicants must meet the current age, identity, residency, testing, vision, and parental or guardian requirements that apply to them.",
+          "page": 1,
+          "body": "A learner permit is the first driving stage for many Tennessee teens. Applicants must meet the current age, identity, residency, testing, vision, and parental or guardian requirements that apply to them.",
           "example": "Confirm current Driver Services requirements before visiting a testing center.",
           "mistake": "Relying on an older sibling's checklist without verifying current requirements.",
           "check": {
@@ -12419,12 +12421,13 @@ window.APP_DATA = {
               "Skip the vision requirement"
             ],
             "answer": 1,
-            "explain": "A learner permit is the first driving stage for many Tennessee teens."
+            "feedback": "A learner permit is the first driving stage for many Tennessee teens."
           }
         },
         {
           "title": "3. Required Documents",
-          "content": "Driver Services may require proof of identity, lawful presence, Tennessee residency, Social Security information when applicable, and school-related documentation for minors. Documents should be original or otherwise accepted under current state rules.",
+          "page": 1,
+          "body": "Driver Services may require proof of identity, lawful presence, Tennessee residency, Social Security information when applicable, and school-related documentation for minors. Documents should be original or otherwise accepted under current state rules.",
           "example": "Organize all required documents before the appointment and verify names match.",
           "mistake": "Bringing screenshots or unofficial copies without confirming acceptance.",
           "check": {
@@ -12436,12 +12439,13 @@ window.APP_DATA = {
               "To waive the vision test"
             ],
             "answer": 0,
-            "explain": "Driver Services may require proof of identity, lawful presence, Tennessee residency, Social Security information when applicable, and school-related documentation for minors."
+            "feedback": "Driver Services may require proof of identity, lawful presence, Tennessee residency, Social Security information when applicable, and school-related documentation for minors."
           }
         },
         {
           "title": "4. Knowledge and Vision Testing",
-          "content": "Applicants generally must demonstrate knowledge of traffic laws, signs, safe-driving practices, and vision standards. Passing a practice quiz does not replace the official state examination.",
+          "page": 1,
+          "body": "Applicants generally must demonstrate knowledge of traffic laws, signs, safe-driving practices, and vision standards. Passing a practice quiz does not replace the official state examination.",
           "example": "Use RoadReady to prepare, then follow the official testing instructions at Driver Services.",
           "mistake": "Assuming the app's mastery exam is the official state test.",
           "check": {
@@ -12453,12 +12457,13 @@ window.APP_DATA = {
               "A legal license document"
             ],
             "answer": 1,
-            "explain": "Applicants generally must demonstrate knowledge of traffic laws, signs, safe-driving practices, and vision standards."
+            "feedback": "Applicants generally must demonstrate knowledge of traffic laws, signs, safe-driving practices, and vision standards."
           }
         },
         {
           "title": "5. Supervised Driving",
-          "content": "A learner permit requires an appropriately licensed supervising driver and compliance with all restrictions. Supervised practice should include daylight, night, residential, highway, parking, and adverse-condition experience when safe.",
+          "page": 1,
+          "body": "A learner permit requires an appropriately licensed supervising driver and compliance with all restrictions. Supervised practice should include daylight, night, residential, highway, parking, and adverse-condition experience when safe.",
           "example": "Keep an accurate practice record and focus on varied real-world skills.",
           "mistake": "Practicing only on the easiest familiar roads.",
           "check": {
@@ -12470,12 +12475,13 @@ window.APP_DATA = {
               "To replace the road test"
             ],
             "answer": 1,
-            "explain": "A learner permit requires an appropriately licensed supervising driver and compliance with all restrictions."
+            "feedback": "A learner permit requires an appropriately licensed supervising driver and compliance with all restrictions."
           }
         },
         {
           "title": "6. Intermediate Restricted License",
-          "content": "The intermediate restricted stage allows more independence but still limits certain nighttime and passenger situations. Drivers must understand the current restrictions and exceptions that apply to school, work, emergencies, and approved activities.",
+          "page": 1,
+          "body": "The intermediate restricted stage allows more independence but still limits certain nighttime and passenger situations. Drivers must understand the current restrictions and exceptions that apply to school, work, emergencies, and approved activities.",
           "example": "Plan transportation before a late event rather than assuming an exception applies.",
           "mistake": "Treating an intermediate restricted license as fully unrestricted.",
           "check": {
@@ -12487,12 +12493,13 @@ window.APP_DATA = {
               "Take back roads"
             ],
             "answer": 1,
-            "explain": "The intermediate restricted stage allows more independence but still limits certain nighttime and passenger situations."
+            "feedback": "The intermediate restricted stage allows more independence but still limits certain nighttime and passenger situations."
           }
         },
         {
           "title": "7. Passenger Restrictions",
-          "content": "Young-driver passenger limits are intended to reduce distraction and crash risk. Family-member and other exceptions may exist, but the driver should verify the current rule instead of relying on informal advice.",
+          "page": 1,
+          "body": "Young-driver passenger limits are intended to reduce distraction and crash risk. Family-member and other exceptions may exist, but the driver should verify the current rule instead of relying on informal advice.",
           "example": "Check the current rule before transporting multiple friends.",
           "mistake": "Assuming every passenger counts the same or that permission overrides state law.",
           "check": {
@@ -12504,12 +12511,13 @@ window.APP_DATA = {
               "To prevent highway travel"
             ],
             "answer": 0,
-            "explain": "Young-driver passenger limits are intended to reduce distraction and crash risk."
+            "feedback": "Young-driver passenger limits are intended to reduce distraction and crash risk."
           }
         },
         {
           "title": "8. Nighttime Restrictions",
-          "content": "Night restrictions address the higher crash risk associated with darkness, fatigue, limited visibility, and late-night social driving. Exceptions should be interpreted narrowly and documented when required.",
+          "page": 1,
+          "body": "Night restrictions address the higher crash risk associated with darkness, fatigue, limited visibility, and late-night social driving. Exceptions should be interpreted narrowly and documented when required.",
           "example": "Use a parent, guardian, or other lawful transportation plan for late events.",
           "mistake": "Assuming a short distance makes a restricted trip legal.",
           "check": {
@@ -12521,12 +12529,13 @@ window.APP_DATA = {
               "Only with passengers"
             ],
             "answer": 1,
-            "explain": "Night restrictions address the higher crash risk associated with darkness, fatigue, limited visibility, and late-night social driving."
+            "feedback": "Night restrictions address the higher crash risk associated with darkness, fatigue, limited visibility, and late-night social driving."
           }
         },
         {
           "title": "9. Electronic Devices for Young Drivers",
-          "content": "Young drivers should avoid handheld and hands-free distractions and comply with all Tennessee device restrictions. A notification, text, call, or navigation change should be handled before driving or after safely parking.",
+          "page": 1,
+          "body": "Young drivers should avoid handheld and hands-free distractions and comply with all Tennessee device restrictions. A notification, text, call, or navigation change should be handled before driving or after safely parking.",
           "example": "Use Do Not Disturb and let a passenger manage navigation.",
           "mistake": "Believing hands-free use removes all distraction.",
           "check": {
@@ -12538,12 +12547,13 @@ window.APP_DATA = {
               "Use it only on familiar roads"
             ],
             "answer": 1,
-            "explain": "Young drivers should avoid handheld and hands-free distractions and comply with all Tennessee device restrictions."
+            "feedback": "Young drivers should avoid handheld and hands-free distractions and comply with all Tennessee device restrictions."
           }
         },
         {
           "title": "10. Violations and License Progression",
-          "content": "Traffic violations, crashes, seat-belt violations, school attendance issues, or other disqualifying events can delay progression or lead to suspension or revocation. Safe driving protects both people and future driving privileges.",
+          "page": 1,
+          "body": "Traffic violations, crashes, seat-belt violations, school attendance issues, or other disqualifying events can delay progression or lead to suspension or revocation. Safe driving protects both people and future driving privileges.",
           "example": "Treat every citation seriously and understand how it affects licensing status.",
           "mistake": "Assuming one violation cannot affect the next licensing stage.",
           "check": {
@@ -12555,12 +12565,13 @@ window.APP_DATA = {
               "Only after age 18"
             ],
             "answer": 0,
-            "explain": "Traffic violations, crashes, seat-belt violations, school attendance issues, or other disqualifying events can delay progression or lead to suspension or revocation."
+            "feedback": "Traffic violations, crashes, seat-belt violations, school attendance issues, or other disqualifying events can delay progression or lead to suspension or revocation."
           }
         },
         {
           "title": "11. Insurance and Financial Responsibility",
-          "content": "Drivers and vehicle owners must comply with Tennessee financial-responsibility requirements. Proof of insurance should be current and available as required. Driving without required coverage can create legal and financial consequences.",
+          "page": 1,
+          "body": "Drivers and vehicle owners must comply with Tennessee financial-responsibility requirements. Proof of insurance should be current and available as required. Driving without required coverage can create legal and financial consequences.",
           "example": "Confirm coverage and proof before driving any vehicle.",
           "mistake": "Assuming the vehicle is covered because it belongs to a friend.",
           "check": {
@@ -12572,12 +12583,13 @@ window.APP_DATA = {
               "The vehicle has tinted windows"
             ],
             "answer": 1,
-            "explain": "Drivers and vehicle owners must comply with Tennessee financial-responsibility requirements."
+            "feedback": "Drivers and vehicle owners must comply with Tennessee financial-responsibility requirements."
           }
         },
         {
           "title": "12. Moving Toward Full Privileges",
-          "content": "Advancing to unrestricted privileges requires meeting the current age, time, driving-record, and other state requirements. Eligibility does not guarantee readiness; students should also demonstrate consistent safe judgment.",
+          "page": 1,
+          "body": "Advancing to unrestricted privileges requires meeting the current age, time, driving-record, and other state requirements. Eligibility does not guarantee readiness; students should also demonstrate consistent safe judgment.",
           "example": "Use mastery scores and supervised-driving performance together when deciding readiness.",
           "mistake": "Treating the minimum legal date as proof of driving maturity.",
           "check": {
@@ -12589,9 +12601,17 @@ window.APP_DATA = {
               "Passing one practice quiz"
             ],
             "answer": 1,
-            "explain": "Advancing to unrestricted privileges requires meeting the current age, time, driving-record, and other state requirements."
+            "feedback": "Advancing to unrestricted privileges requires meeting the current age, time, driving-record, and other state requirements."
           }
         }
+      ],
+      "intro": "A teen with a learner permit is invited to a late event, plans to drive friends, cannot find the insurance card, and has not confirmed whether the supervising adult qualifies. A lawful decision requires checking each restriction before starting the vehicle.",
+      "summary": [
+        "Graduated licensing increases privileges as experience and responsibility grow.",
+        "Verify current Driver Services requirements before applying.",
+        "Learner driving requires qualified supervision and compliance with restrictions.",
+        "Passenger, nighttime, and device restrictions are safety rules\u2014not technicalities.",
+        "Violations can delay progression or remove driving privileges."
       ]
     },
     "Vehicle & Occupant Safety": {
@@ -12609,7 +12629,8 @@ window.APP_DATA = {
       "topics": [
         {
           "title": "1. Preparing Before Movement",
-          "content": "Before moving, adjust the seat, mirrors, steering position, head restraint, and seat belt. Check the area around the vehicle for children, pets, objects, low obstacles, and other vehicles. Set navigation and secure loose items before leaving the parking space.",
+          "page": 24,
+          "body": "Before moving, adjust the seat, mirrors, steering position, head restraint, and seat belt. Check the area around the vehicle for children, pets, objects, low obstacles, and other vehicles. Set navigation and secure loose items before leaving the parking space.",
           "example": "Walk around the vehicle when visibility is limited or children may be nearby.",
           "mistake": "Beginning to move while still adjusting mirrors or fastening the seat belt.",
           "check": {
@@ -12621,12 +12642,13 @@ window.APP_DATA = {
               "Window adjustment during the first turn"
             ],
             "answer": 1,
-            "explain": "Before moving, adjust the seat, mirrors, steering position, head restraint, and seat belt."
+            "feedback": "Before moving, adjust the seat, mirrors, steering position, head restraint, and seat belt."
           }
         },
         {
           "title": "2. Backing Safely",
-          "content": "Backing creates severe visibility limitations. Look behind the vehicle before entering, turn your body and look through the rear window when possible, move at walking speed, and repeatedly check mirrors and surroundings. Backup cameras assist but do not show every hazard.",
+          "page": 24,
+          "body": "Backing creates severe visibility limitations. Look behind the vehicle before entering, turn your body and look through the rear window when possible, move at walking speed, and repeatedly check mirrors and surroundings. Backup cameras assist but do not show every hazard.",
           "example": "Pause and recheck if a pedestrian walks behind the vehicle during backing.",
           "mistake": "Watching only the backup-camera display.",
           "check": {
@@ -12638,12 +12660,13 @@ window.APP_DATA = {
               "Back quickly to reduce exposure"
             ],
             "answer": 1,
-            "explain": "Backing creates severe visibility limitations."
+            "feedback": "Backing creates severe visibility limitations."
           }
         },
         {
           "title": "3. Backing from Driveways",
-          "content": "Whenever practical, position the vehicle so you can drive forward into traffic. When backing from a driveway, stop before the sidewalk, check for pedestrians, bicyclists, children, and traffic, then move slowly only when every path is clear.",
+          "page": 24,
+          "body": "Whenever practical, position the vehicle so you can drive forward into traffic. When backing from a driveway, stop before the sidewalk, check for pedestrians, bicyclists, children, and traffic, then move slowly only when every path is clear.",
           "example": "Stop before crossing the sidewalk and look in both directions.",
           "mistake": "Backing across the sidewalk while checking only roadway traffic.",
           "check": {
@@ -12655,12 +12678,13 @@ window.APP_DATA = {
               "The speed-limit sign"
             ],
             "answer": 1,
-            "explain": "Whenever practical, position the vehicle so you can drive forward into traffic."
+            "feedback": "Whenever practical, position the vehicle so you can drive forward into traffic."
           }
         },
         {
           "title": "4. Parking-Lot Hazards",
-          "content": "Parking lots contain pedestrians, reversing vehicles, shopping carts, blind corners, and drivers searching for spaces. Travel slowly, avoid cutting across parking rows, watch vehicle lights and wheel movement, and be ready to stop.",
+          "page": 24,
+          "body": "Parking lots contain pedestrians, reversing vehicles, shopping carts, blind corners, and drivers searching for spaces. Travel slowly, avoid cutting across parking rows, watch vehicle lights and wheel movement, and be ready to stop.",
           "example": "When a parked vehicle's reverse lights appear, slow and prepare for it to move.",
           "mistake": "Driving diagonally across empty spaces at normal roadway speed.",
           "check": {
@@ -12672,12 +12696,13 @@ window.APP_DATA = {
               "Drive behind it quickly"
             ],
             "answer": 1,
-            "explain": "Parking lots contain pedestrians, reversing vehicles, shopping carts, blind corners, and drivers searching for spaces."
+            "feedback": "Parking lots contain pedestrians, reversing vehicles, shopping carts, blind corners, and drivers searching for spaces."
           }
         },
         {
           "title": "5. Parallel Parking",
-          "content": "Parallel parking should be completed slowly with signals, mirror checks, blind-spot checks, and careful steering. Finish close and parallel to the curb without contacting surrounding vehicles. Recheck traffic before opening the door or leaving the space.",
+          "page": 24,
+          "body": "Parallel parking should be completed slowly with signals, mirror checks, blind-spot checks, and careful steering. Finish close and parallel to the curb without contacting surrounding vehicles. Recheck traffic before opening the door or leaving the space.",
           "example": "Signal before stopping beside the vehicle ahead of the open space.",
           "mistake": "Swinging into traffic without checking mirrors after parking.",
           "check": {
@@ -12689,12 +12714,13 @@ window.APP_DATA = {
               "Use hazard lights instead of checking"
             ],
             "answer": 1,
-            "explain": "Parallel parking should be completed slowly with signals, mirror checks, blind-spot checks, and careful steering."
+            "feedback": "Parallel parking should be completed slowly with signals, mirror checks, blind-spot checks, and careful steering."
           }
         },
         {
           "title": "6. Parking on Hills",
-          "content": "Secure the vehicle with the parking brake and proper wheel direction. When parked downhill with a curb, turn the wheels toward the curb. When parked uphill with a curb, turn the wheels away from the curb. Without a curb, turn the wheels toward the edge of the road.",
+          "page": 24,
+          "body": "Secure the vehicle with the parking brake and proper wheel direction. When parked downhill with a curb, turn the wheels toward the curb. When parked uphill with a curb, turn the wheels away from the curb. Without a curb, turn the wheels toward the edge of the road.",
           "example": "After setting the wheels, allow the vehicle to settle gently before fully securing it.",
           "mistake": "Depending only on the transmission to hold the vehicle.",
           "check": {
@@ -12706,12 +12732,13 @@ window.APP_DATA = {
               "Toward the center line"
             ],
             "answer": 1,
-            "explain": "Secure the vehicle with the parking brake and proper wheel direction."
+            "feedback": "Secure the vehicle with the parking brake and proper wheel direction."
           }
         },
         {
           "title": "7. Parking Restrictions",
-          "content": "Do not park where the vehicle blocks traffic, sight distance, driveways, fire hydrants, crosswalks, sidewalks, railroad tracks, marked fire lanes, accessible spaces without authorization, or other prohibited areas. Always read posted signs.",
+          "page": 24,
+          "body": "Do not park where the vehicle blocks traffic, sight distance, driveways, fire hydrants, crosswalks, sidewalks, railroad tracks, marked fire lanes, accessible spaces without authorization, or other prohibited areas. Always read posted signs.",
           "example": "Choose another space rather than partly blocking a driveway.",
           "mistake": "Assuming a short stop is allowed in a fire lane.",
           "check": {
@@ -12723,12 +12750,13 @@ window.APP_DATA = {
               "Only with hazard lights"
             ],
             "answer": 1,
-            "explain": "Do not park where the vehicle blocks traffic, sight distance, driveways, fire hydrants, crosswalks, sidewalks, railroad tracks, marked fire lanes, accessible spaces without authorization, or other prohibited areas."
+            "feedback": "Do not park where the vehicle blocks traffic, sight distance, driveways, fire hydrants, crosswalks, sidewalks, railroad tracks, marked fire lanes, accessible spaces without authorization, or other prohibited areas."
           }
         },
         {
           "title": "8. Three-Point Turns and U-Turns",
-          "content": "A three-point turn should be used only where legal, visible, and free of traffic. Signal, check every direction, and complete each movement slowly. Never attempt a U-turn near hills, curves, heavy traffic, restricted areas, or anywhere sight distance is inadequate.",
+          "page": 24,
+          "body": "A three-point turn should be used only where legal, visible, and free of traffic. Signal, check every direction, and complete each movement slowly. Never attempt a U-turn near hills, curves, heavy traffic, restricted areas, or anywhere sight distance is inadequate.",
           "example": "Continue to a safer location rather than turning near a blind curve.",
           "mistake": "Beginning a turn simply because no vehicle is visible at that moment.",
           "check": {
@@ -12740,12 +12768,13 @@ window.APP_DATA = {
               "An empty parking area"
             ],
             "answer": 1,
-            "explain": "A three-point turn should be used only where legal, visible, and free of traffic."
+            "feedback": "A three-point turn should be used only where legal, visible, and free of traffic."
           }
         },
         {
           "title": "9. Turning and Low-Speed Steering",
-          "content": "Slow before beginning a turn, signal early, check the intended path, and steer smoothly. Avoid cutting corners, crossing lane lines, or turning so widely that the vehicle enters another lane. Complete the turn in the proper lawful lane.",
+          "page": 24,
+          "body": "Slow before beginning a turn, signal early, check the intended path, and steer smoothly. Avoid cutting corners, crossing lane lines, or turning so widely that the vehicle enters another lane. Complete the turn in the proper lawful lane.",
           "example": "Finish a right turn in the nearest lawful lane unless markings direct otherwise.",
           "mistake": "Turning the wheel while stopped against a curb or obstacle without checking clearance.",
           "check": {
@@ -12757,12 +12786,13 @@ window.APP_DATA = {
               "The shoulder"
             ],
             "answer": 1,
-            "explain": "Slow before beginning a turn, signal early, check the intended path, and steer smoothly."
+            "feedback": "Slow before beginning a turn, signal early, check the intended path, and steer smoothly."
           }
         },
         {
           "title": "10. Curbside Entry and Exit",
-          "content": "Before leaving a curb, signal, check mirrors, look over the shoulder, and wait for a safe opening. When pulling to the curb, signal early, reduce speed smoothly, and avoid blocking bicycle lanes or traffic.",
+          "page": 24,
+          "body": "Before leaving a curb, signal, check mirrors, look over the shoulder, and wait for a safe opening. When pulling to the curb, signal early, reduce speed smoothly, and avoid blocking bicycle lanes or traffic.",
           "example": "Make a blind-spot check immediately before leaving the curb.",
           "mistake": "Pulling away because the mirror appears clear.",
           "check": {
@@ -12774,12 +12804,13 @@ window.APP_DATA = {
               "Rear-seat belt only"
             ],
             "answer": 1,
-            "explain": "Before leaving a curb, signal, check mirrors, look over the shoulder, and wait for a safe opening."
+            "feedback": "Before leaving a curb, signal, check mirrors, look over the shoulder, and wait for a safe opening."
           }
         },
         {
           "title": "11. Doors, Children, Pets, and Cargo",
-          "content": "Before opening a door, check mirrors and behind for bicycles, motorcycles, and traffic. Never leave children or pets unattended in a vehicle. Secure cargo so it cannot obstruct vision, interfere with controls, or become dangerous during sudden braking.",
+          "page": 24,
+          "body": "Before opening a door, check mirrors and behind for bicycles, motorcycles, and traffic. Never leave children or pets unattended in a vehicle. Secure cargo so it cannot obstruct vision, interfere with controls, or become dangerous during sudden braking.",
           "example": "Use the far hand to open a roadside door so your body turns and improves the rearward check.",
           "mistake": "Opening the door immediately after parking.",
           "check": {
@@ -12791,12 +12822,13 @@ window.APP_DATA = {
               "Turn on high beams"
             ],
             "answer": 1,
-            "explain": "Before opening a door, check mirrors and behind for bicycles, motorcycles, and traffic."
+            "feedback": "Before opening a door, check mirrors and behind for bicycles, motorcycles, and traffic."
           }
         },
         {
           "title": "12. Low-Speed Judgment",
-          "content": "Low speed does not eliminate risk. Many serious pedestrian and child injuries occur in driveways, parking lots, and neighborhood areas. Move slowly enough to stop immediately, avoid distractions, and never assume a small obstacle or person remains visible.",
+          "page": 24,
+          "body": "Low speed does not eliminate risk. Many serious pedestrian and child injuries occur in driveways, parking lots, and neighborhood areas. Move slowly enough to stop immediately, avoid distractions, and never assume a small obstacle or person remains visible.",
           "example": "Stop and get out to check when unsure whether an object is behind the vehicle.",
           "mistake": "Continuing because the vehicle is moving only a few miles per hour.",
           "check": {
@@ -12808,9 +12840,17 @@ window.APP_DATA = {
               "Rely on the backup sensor"
             ],
             "answer": 1,
-            "explain": "Low speed does not eliminate risk."
+            "feedback": "Low speed does not eliminate risk."
           }
         }
+      ],
+      "intro": "You are backing from a crowded parking space. A shopping cart blocks one side, a child is walking behind a nearby vehicle, and another driver activates reverse lights. A safe driver stops, checks every direction, moves at walking speed, and abandons the maneuver if the path becomes uncertain.",
+      "summary": [
+        "Complete seat, mirror, restraint, and surrounding-area checks before moving.",
+        "Backup cameras supplement\u2014not replace\u2014direct observation.",
+        "Move at walking speed in parking lots, driveways, and backing situations.",
+        "Use the parking brake and correct wheel direction on hills.",
+        "Low speed does not eliminate danger to pedestrians, children, or bicyclists."
       ]
     },
     "Signs, Signals & Markings": {
@@ -12828,7 +12868,8 @@ window.APP_DATA = {
       "topics": [
         {
           "title": "1. The Visual Language of Traffic Control",
-          "content": "Traffic controls include signs, signals, pavement markings, and directions from police officers, flaggers, and school crossing guards. An authorized person\u2019s direction takes priority when it conflicts with a sign or signal. Signs are designed so drivers can recognize their purpose from a distance. Shape identifies the general type of message, while color narrows the meaning.",
+          "page": 35,
+          "body": "Traffic controls include signs, signals, pavement markings, and directions from police officers, flaggers, and school crossing guards. An authorized person\u2019s direction takes priority when it conflicts with a sign or signal. Signs are designed so drivers can recognize their purpose from a distance. Shape identifies the general type of message, while color narrows the meaning.",
           "example": "A stop sign partly covered by snow is still recognizable by its eight-sided shape and red background.",
           "mistake": "Waiting until you can read every word before reacting. By then, you may have too little time to slow, stop, merge, or change lanes safely.",
           "check": {
@@ -12840,12 +12881,13 @@ window.APP_DATA = {
               "The vehicle ahead"
             ],
             "answer": 1,
-            "explain": "Authorized traffic direction takes priority over the normal sign or signal indication."
+            "feedback": "Authorized traffic direction takes priority over the normal sign or signal indication."
           }
         },
         {
           "title": "2. Sign Colors",
-          "content": "Red communicates stop, yield, do-not-enter, wrong-way, or prohibition. Yellow gives general warnings. Orange identifies construction and maintenance. Fluorescent yellow-green highlights school zones and pedestrian areas. White and black commonly indicate regulations. Green gives route and directional guidance. Blue identifies motorist services. Brown identifies recreational and cultural destinations. Fluorescent pink may mark incident-management areas.",
+          "page": 35,
+          "body": "Red communicates stop, yield, do-not-enter, wrong-way, or prohibition. Yellow gives general warnings. Orange identifies construction and maintenance. Fluorescent yellow-green highlights school zones and pedestrian areas. White and black commonly indicate regulations. Green gives route and directional guidance. Blue identifies motorist services. Brown identifies recreational and cultural destinations. Fluorescent pink may mark incident-management areas.",
           "example": "An orange diamond sign indicates a temporary work-zone condition, while a yellow diamond generally warns of a permanent or ordinary roadway hazard.",
           "mistake": "Assuming every bright yellow or green sign means the same thing. Fluorescent yellow-green deserves special attention because pedestrians, bicyclists, or school traffic may be present.",
           "check": {
@@ -12857,12 +12899,13 @@ window.APP_DATA = {
               "A hospital or fuel service"
             ],
             "answer": 1,
-            "explain": "Orange is reserved for construction and maintenance warnings."
+            "feedback": "Orange is reserved for construction and maintenance warnings."
           }
         },
         {
           "title": "3. Sign Shapes",
-          "content": "An octagon always means STOP. A downward-pointing triangle means YIELD. A round sign warns of a railroad crossing ahead. A crossbuck marks the railroad tracks. A diamond warns of a hazard or unexpected condition. Rectangles provide regulations, lane-use rules, or guide information. A pennant-shaped sign on the left marks a no-passing zone. A pentagon identifies school-related warnings.",
+          "page": 35,
+          "body": "An octagon always means STOP. A downward-pointing triangle means YIELD. A round sign warns of a railroad crossing ahead. A crossbuck marks the railroad tracks. A diamond warns of a hazard or unexpected condition. Rectangles provide regulations, lane-use rules, or guide information. A pennant-shaped sign on the left marks a no-passing zone. A pentagon identifies school-related warnings.",
           "example": "At night, the silhouette of a round sign tells you to prepare for a railroad crossing even before the symbol is readable.",
           "mistake": "Treating shape as decoration. Shape is an early warning system that remains useful when the sign is faded, dirty, obstructed, or viewed from an angle.",
           "check": {
@@ -12874,12 +12917,13 @@ window.APP_DATA = {
               "A divided highway"
             ],
             "answer": 1,
-            "explain": "The pennant shape is used to mark a no-passing zone."
+            "feedback": "The pennant shape is used to mark a no-passing zone."
           }
         },
         {
           "title": "4. Regulatory Signs",
-          "content": "Regulatory signs communicate laws and required movements. They include speed limits, lane-use arrows, one-way signs, keep-right instructions, parking restrictions, turn prohibitions, HOV restrictions, and do-not-enter or wrong-way signs. A red circle with a diagonal slash means the pictured action is prohibited.",
+          "page": 35,
+          "body": "Regulatory signs communicate laws and required movements. They include speed limits, lane-use arrows, one-way signs, keep-right instructions, parking restrictions, turn prohibitions, HOV restrictions, and do-not-enter or wrong-way signs. A red circle with a diagonal slash means the pictured action is prohibited.",
           "example": "A lane marked with a curved arrow and ONLY requires the driver to turn in that direction.",
           "mistake": "Treating a regulatory sign as a suggestion because traffic is light. The rule applies even when no other road user is visible.",
           "check": {
@@ -12891,12 +12935,13 @@ window.APP_DATA = {
               "Choose any movement after signaling"
             ],
             "answer": 0,
-            "explain": "A single arrow with ONLY requires the movement shown."
+            "feedback": "A single arrow with ONLY requires the movement shown."
           }
         },
         {
           "title": "5. Warning Signs and Advisory Speeds",
-          "content": "Yellow diamond signs warn about curves, turns, intersections, merging traffic, narrowing lanes or bridges, slippery pavement, animals, bicycles, schools, stop or yield signs ahead, and many other hazards. A smaller advisory-speed plaque beneath a warning sign states a recommended safe speed for that condition; it is not the same as the general posted speed limit.",
+          "page": 35,
+          "body": "Yellow diamond signs warn about curves, turns, intersections, merging traffic, narrowing lanes or bridges, slippery pavement, animals, bicycles, schools, stop or yield signs ahead, and many other hazards. A smaller advisory-speed plaque beneath a warning sign states a recommended safe speed for that condition; it is not the same as the general posted speed limit.",
           "example": "A curve warning sign with a 25 mph advisory plaque means the curve should generally be entered at no more than the recommended 25 mph under favorable conditions.",
           "mistake": "Maintaining the highway speed limit because the advisory plaque is not a regulatory speed-limit sign. Safe drivers reduce speed before the hazard.",
           "check": {
@@ -12908,12 +12953,13 @@ window.APP_DATA = {
               "The speed required only in rain"
             ],
             "answer": 1,
-            "explain": "An advisory-speed plaque recommends a safe maximum speed for the condition ahead."
+            "feedback": "An advisory-speed plaque recommends a safe maximum speed for the condition ahead."
           }
         },
         {
           "title": "6. Work-Zone Signs, Flaggers, and Channelizing Devices",
-          "content": "Orange signs warn of construction, maintenance, detours, lane closures, workers, equipment, or changing traffic patterns. Arrow boards tell drivers to merge into open lanes well before the closure. Cones, drums, barricades, and panels guide traffic through the temporary path. Flaggers may display STOP or SLOW paddles and their directions must be obeyed.",
+          "page": 35,
+          "body": "Orange signs warn of construction, maintenance, detours, lane closures, workers, equipment, or changing traffic patterns. Arrow boards tell drivers to merge into open lanes well before the closure. Cones, drums, barricades, and panels guide traffic through the temporary path. Flaggers may display STOP or SLOW paddles and their directions must be obeyed.",
           "example": "When an arrow board indicates the right lane is closing, signal and merge into the open lane early rather than racing to the end.",
           "mistake": "Watching equipment instead of the lane path and traffic ahead. Work zones frequently produce sudden stops and rear-end crashes.",
           "check": {
@@ -12925,12 +12971,13 @@ window.APP_DATA = {
               "Accelerate before opposing traffic arrives"
             ],
             "answer": 1,
-            "explain": "SLOW means proceed cautiously at reduced speed while prepared to stop."
+            "feedback": "SLOW means proceed cautiously at reduced speed while prepared to stop."
           }
         },
         {
           "title": "7. Guide, Route, Service, and Special Markers",
-          "content": "Green signs provide directions, destinations, exits, and lane guidance. Blue signs identify services such as hospitals, fuel, food, lodging, police, and rest areas. Brown signs direct drivers to parks, recreation, or cultural sites. Interstate markers are red, white, and blue shields. Emergency reference markers provide route, direction, and precise location information. A slow-moving-vehicle emblem is a fluorescent orange triangle with reflective red borders.",
+          "page": 35,
+          "body": "Green signs provide directions, destinations, exits, and lane guidance. Blue signs identify services such as hospitals, fuel, food, lodging, police, and rest areas. Brown signs direct drivers to parks, recreation, or cultural sites. Interstate markers are red, white, and blue shields. Emergency reference markers provide route, direction, and precise location information. A slow-moving-vehicle emblem is a fluorescent orange triangle with reflective red borders.",
           "example": "An EXIT ONLY panel beneath a lane arrow means every vehicle in that lane must leave the main roadway.",
           "mistake": "Remaining in an EXIT ONLY lane because the destination sign also points forward. The lane-control panel governs the required movement.",
           "check": {
@@ -12942,12 +12989,13 @@ window.APP_DATA = {
               "A recreational route"
             ],
             "answer": 1,
-            "explain": "Blue signs direct motorists to services and useful facilities."
+            "feedback": "Blue signs direct motorists to services and useful facilities."
           }
         },
         {
           "title": "8. Steady and Flashing Traffic Signals",
-          "content": "Red means stop behind the stop line or crosswalk. A right turn on red may be allowed after a complete stop unless prohibited, but drivers must yield to pedestrians and cross traffic. Yellow means the signal is changing to red; stop if it can be done safely and do not accelerate to beat it. Green permits movement only when the intersection is clear. Flashing red is treated like a stop sign. Flashing yellow means slow and proceed cautiously.",
+          "page": 35,
+          "body": "Red means stop behind the stop line or crosswalk. A right turn on red may be allowed after a complete stop unless prohibited, but drivers must yield to pedestrians and cross traffic. Yellow means the signal is changing to red; stop if it can be done safely and do not accelerate to beat it. Green permits movement only when the intersection is clear. Flashing red is treated like a stop sign. Flashing yellow means slow and proceed cautiously.",
           "example": "A green light does not permit you to enter a blocked intersection where you would become stranded.",
           "mistake": "Treating green as an absolute right-of-way. Drivers still yield to pedestrians, vehicles already in the intersection, and oncoming traffic when turning left.",
           "check": {
@@ -12959,12 +13007,13 @@ window.APP_DATA = {
               "Follow the vehicle ahead into the intersection"
             ],
             "answer": 1,
-            "explain": "Do not enter unless you can clear the intersection."
+            "feedback": "Do not enter unless you can clear the intersection."
           }
         },
         {
           "title": "9. Turn Arrows and Malfunctioning Signals",
-          "content": "A green protected arrow permits movement only in the arrow\u2019s direction after yielding to anyone already in the intersection. A yellow arrow warns that the protected movement is ending. A red arrow prohibits the movement. A flashing yellow arrow permits the turn only after yielding to oncoming traffic, bicyclists, and pedestrians. A completely dark or malfunctioning signal is treated as an all-way stop.",
+          "page": 35,
+          "body": "A green protected arrow permits movement only in the arrow\u2019s direction after yielding to anyone already in the intersection. A yellow arrow warns that the protected movement is ending. A red arrow prohibits the movement. A flashing yellow arrow permits the turn only after yielding to oncoming traffic, bicyclists, and pedestrians. A completely dark or malfunctioning signal is treated as an all-way stop.",
           "example": "At a flashing yellow left arrow, wait for a safe gap rather than assuming oncoming traffic will stop.",
           "mistake": "Following another lane\u2019s green light when your turn arrow is red. Each signal controls the lane or movement it faces.",
           "check": {
@@ -12976,12 +13025,13 @@ window.APP_DATA = {
               "Proceed straight only"
             ],
             "answer": 1,
-            "explain": "A flashing yellow arrow allows a permissive turn after yielding."
+            "feedback": "A flashing yellow arrow allows a permissive turn after yielding."
           }
         },
         {
           "title": "10. Pedestrian and Lane-Control Signals",
-          "content": "A WALK symbol permits pedestrians to begin crossing. A raised hand or DON\u2019T WALK means pedestrians should not begin crossing, though people already in the crosswalk continue to the other side. Drivers should watch pedestrian signals to anticipate movement. Overhead lane-control signals may use a green arrow for an open lane, a yellow X for a lane whose use is changing or turning only, and a red X for a closed lane.",
+          "page": 35,
+          "body": "A WALK symbol permits pedestrians to begin crossing. A raised hand or DON\u2019T WALK means pedestrians should not begin crossing, though people already in the crosswalk continue to the other side. Drivers should watch pedestrian signals to anticipate movement. Overhead lane-control signals may use a green arrow for an open lane, a yellow X for a lane whose use is changing or turning only, and a red X for a closed lane.",
           "example": "Even when your traffic light turns green, a pedestrian who began crossing legally must be allowed to finish.",
           "mistake": "Assuming a DON\u2019T WALK display means the crosswalk is empty. Pedestrians may still be completing their crossing.",
           "check": {
@@ -12993,12 +13043,13 @@ window.APP_DATA = {
               "Use the lane if no vehicle is ahead"
             ],
             "answer": 1,
-            "explain": "A red X means driving in that lane is not permitted."
+            "feedback": "A red X means driving in that lane is not permitted."
           }
         },
         {
           "title": "11. Yellow and White Pavement Lines",
-          "content": "Yellow lines separate traffic moving in opposite directions or mark the left edge near a median. Broken yellow allows passing when safe. Double solid yellow prohibits passing in either direction, though crossing to enter a driveway or side road may be allowed when safe. With one solid and one broken yellow line, passing is allowed only on the broken-line side. White lines separate traffic moving in the same direction. Broken white allows lane changes when safe; solid white discourages crossing; double solid white should not be crossed.",
+          "page": 35,
+          "body": "Yellow lines separate traffic moving in opposite directions or mark the left edge near a median. Broken yellow allows passing when safe. Double solid yellow prohibits passing in either direction, though crossing to enter a driveway or side road may be allowed when safe. With one solid and one broken yellow line, passing is allowed only on the broken-line side. White lines separate traffic moving in the same direction. Broken white allows lane changes when safe; solid white discourages crossing; double solid white should not be crossed.",
           "example": "If yellow is on your right and white is on your left, you may be traveling the wrong way.",
           "mistake": "Crossing a solid yellow line to pass because no oncoming vehicle is visible. Sight distance may be limited by a hill, curve, driveway, or intersection.",
           "check": {
@@ -13010,12 +13061,13 @@ window.APP_DATA = {
               "Only if the vehicle ahead is slow"
             ],
             "answer": 1,
-            "explain": "The solid line on your side prohibits passing."
+            "feedback": "The solid line on your side prohibits passing."
           }
         },
         {
           "title": "12. Crosswalks, Stop Lines, HOV Diamonds, and Roadway Arrows",
-          "content": "Crosswalk markings identify pedestrian crossing areas, but crosswalks may also exist without paint. Stop lines show where the vehicle must stop. Without a stop line, stop before the crosswalk; without either, stop before entering the cross street. Diamond lane markings identify HOV or other reserved lanes, with signs stating occupancy and time restrictions. Lane arrows show required or permitted movements. RR and crossbuck pavement markings warn of railroad crossings.",
+          "page": 35,
+          "body": "Crosswalk markings identify pedestrian crossing areas, but crosswalks may also exist without paint. Stop lines show where the vehicle must stop. Without a stop line, stop before the crosswalk; without either, stop before entering the cross street. Diamond lane markings identify HOV or other reserved lanes, with signs stating occupancy and time restrictions. Lane arrows show required or permitted movements. RR and crossbuck pavement markings warn of railroad crossings.",
           "example": "At a stop sign with a white stop line, the first stop is behind the line. If visibility is blocked, move forward cautiously after stopping.",
           "mistake": "Stopping with the front of the vehicle across the crosswalk, forcing pedestrians into traffic.",
           "check": {
@@ -13027,9 +13079,17 @@ window.APP_DATA = {
               "At the center of the intersection"
             ],
             "answer": 1,
-            "explain": "The vehicle must stop behind the stop line."
+            "feedback": "The vehicle must stop behind the stop line."
           }
         }
+      ],
+      "intro": "You are approaching an unfamiliar intersection in rain. A yellow warning sign, a flashing signal, lane arrows, and a marked crosswalk all provide different pieces of information. A safe driver interprets each control early and combines them into one driving decision.",
+      "summary": [
+        "Use shape and color together so you can recognize a sign even when words are hard to read.",
+        "Regulatory signs communicate laws; warning signs identify hazards; guide signs provide route and service information.",
+        "Traffic signals never remove the duty to yield to pedestrians, vehicles already in the intersection, or oncoming traffic when turning left.",
+        "Yellow markings separate opposing traffic; white markings separate traffic moving in the same direction.",
+        "Stop lines, crosswalks, lane arrows, HOV diamonds, and railroad pavement markings tell drivers where to position the vehicle and what movements are allowed."
       ]
     },
     "Speed, Space & Stopping": {
@@ -13047,7 +13107,8 @@ window.APP_DATA = {
       "topics": [
         {
           "title": "1. Safe Speed vs. Posted Speed",
-          "content": "The posted speed is the maximum under favorable conditions. The basic speed rule requires drivers to reduce speed for curves, hills, traffic, limited visibility, pedestrians, rain, snow, ice, fog, or any condition that reduces safety.",
+          "page": 46,
+          "body": "The posted speed is the maximum under favorable conditions. The basic speed rule requires drivers to reduce speed for curves, hills, traffic, limited visibility, pedestrians, rain, snow, ice, fog, or any condition that reduces safety.",
           "example": "A 55 mph road may require 35 mph in heavy rain or near a hidden curve.",
           "mistake": "Treating the posted number as a required speed.",
           "check": {
@@ -13059,12 +13120,13 @@ window.APP_DATA = {
               "Use cruise control"
             ],
             "answer": 1,
-            "explain": "The posted speed is the maximum under favorable conditions."
+            "feedback": "The posted speed is the maximum under favorable conditions."
           }
         },
         {
           "title": "2. Traffic Flow and Minimum Speed",
-          "content": "Drivers should move with lawful traffic flow without exceeding the posted limit. Driving far below the normal flow can also create hazards, especially on interstates.",
+          "page": 46,
+          "body": "Drivers should move with lawful traffic flow without exceeding the posted limit. Driving far below the normal flow can also create hazards, especially on interstates.",
           "example": "Use the right lane when traveling slower than surrounding traffic.",
           "mistake": "Speeding to match drivers who exceed the limit.",
           "check": {
@@ -13076,12 +13138,13 @@ window.APP_DATA = {
               "Use hazard lights continuously"
             ],
             "answer": 0,
-            "explain": "Drivers should move with lawful traffic flow without exceeding the posted limit."
+            "feedback": "Drivers should move with lawful traffic flow without exceeding the posted limit."
           }
         },
         {
           "title": "3. Following Distance",
-          "content": "A minimum two-second interval is the manual's basic starting point in favorable conditions. Increase it substantially at night, in bad weather, at higher speeds, while towing, or behind motorcycles and large vehicles.",
+          "page": 46,
+          "body": "A minimum two-second interval is the manual's basic starting point in favorable conditions. Increase it substantially at night, in bad weather, at higher speeds, while towing, or behind motorcycles and large vehicles.",
           "example": "Choose a roadside point and count after the vehicle ahead passes it.",
           "mistake": "Counting distance only in car lengths.",
           "check": {
@@ -13093,12 +13156,13 @@ window.APP_DATA = {
               "Only on interstates"
             ],
             "answer": 1,
-            "explain": "A minimum two-second interval is the manual's basic starting point in favorable conditions."
+            "feedback": "A minimum two-second interval is the manual's basic starting point in favorable conditions."
           }
         },
         {
           "title": "4. Reaction and Braking Distance",
-          "content": "Total stopping distance includes perception, reaction, and braking. Greater speed increases both the distance traveled before braking and the braking distance itself.",
+          "page": 46,
+          "body": "Total stopping distance includes perception, reaction, and braking. Greater speed increases both the distance traveled before braking and the braking distance itself.",
           "example": "At higher speed, the vehicle covers more road before the driver even touches the brake.",
           "mistake": "Assuming braking distance only doubles when speed doubles.",
           "check": {
@@ -13110,12 +13174,13 @@ window.APP_DATA = {
               "The road appears shorter"
             ],
             "answer": 1,
-            "explain": "Total stopping distance includes perception, reaction, and braking."
+            "feedback": "Total stopping distance includes perception, reaction, and braking."
           }
         },
         {
           "title": "5. Space Ahead",
-          "content": "A front safety cushion gives time to see brake lights, slowing traffic, debris, pedestrians, and other hazards. Look well ahead rather than focusing only on the vehicle directly in front.",
+          "page": 46,
+          "body": "A front safety cushion gives time to see brake lights, slowing traffic, debris, pedestrians, and other hazards. Look well ahead rather than focusing only on the vehicle directly in front.",
           "example": "Scan 15\u201320 seconds ahead on faster roads while preserving following space.",
           "mistake": "Following closely to prevent others from merging.",
           "check": {
@@ -13127,12 +13192,13 @@ window.APP_DATA = {
               "Look only in the rearview mirror"
             ],
             "answer": 1,
-            "explain": "A front safety cushion gives time to see brake lights, slowing traffic, debris, pedestrians, and other hazards."
+            "feedback": "A front safety cushion gives time to see brake lights, slowing traffic, debris, pedestrians, and other hazards."
           }
         },
         {
           "title": "6. Space Behind and Tailgaters",
-          "content": "You cannot fully control rear space, but you can reduce risk by maintaining steady speed, signaling early, increasing space ahead, moving right when safe, and allowing a tailgater to pass. Never brake-check.",
+          "page": 46,
+          "body": "You cannot fully control rear space, but you can reduce risk by maintaining steady speed, signaling early, increasing space ahead, moving right when safe, and allowing a tailgater to pass. Never brake-check.",
           "example": "Create extra room ahead so you can slow gradually.",
           "mistake": "Tapping the brakes aggressively to punish a tailgater.",
           "check": {
@@ -13144,12 +13210,13 @@ window.APP_DATA = {
               "Block passing opportunities"
             ],
             "answer": 1,
-            "explain": "You cannot fully control rear space, but you can reduce risk by maintaining steady speed, signaling early, increasing space ahead, moving right when safe, and allowing a tailgater to pass."
+            "feedback": "You cannot fully control rear space, but you can reduce risk by maintaining steady speed, signaling early, increasing space ahead, moving right when safe, and allowing a tailgater to pass."
           }
         },
         {
           "title": "7. Side Space and Escape Routes",
-          "content": "Maintain room on both sides whenever possible. Avoid blind spots, parked cars, roadside pedestrians, bicyclists, and large vehicles. Preserve at least one escape route.",
+          "page": 46,
+          "body": "Maintain room on both sides whenever possible. Avoid blind spots, parked cars, roadside pedestrians, bicyclists, and large vehicles. Preserve at least one escape route.",
           "example": "Split the difference between hazards, giving extra room to the more dangerous side.",
           "mistake": "Driving beside another vehicle for long periods.",
           "check": {
@@ -13161,12 +13228,13 @@ window.APP_DATA = {
               "Accelerate between both hazards"
             ],
             "answer": 1,
-            "explain": "Maintain room on both sides whenever possible."
+            "feedback": "Maintain room on both sides whenever possible."
           }
         },
         {
           "title": "8. Lane Changes",
-          "content": "Every lane change requires mirrors, signal, blind-spot check, and a smooth move into a clear gap. Do not change lanes suddenly or inside an intersection.",
+          "page": 46,
+          "body": "Every lane change requires mirrors, signal, blind-spot check, and a smooth move into a clear gap. Do not change lanes suddenly or inside an intersection.",
           "example": "Signal early, check mirrors, glance over the shoulder, then move smoothly.",
           "mistake": "Relying only on mirrors or blind-spot alerts.",
           "check": {
@@ -13178,12 +13246,13 @@ window.APP_DATA = {
               "Flash headlights"
             ],
             "answer": 1,
-            "explain": "Every lane change requires mirrors, signal, blind-spot check, and a smooth move into a clear gap."
+            "feedback": "Every lane change requires mirrors, signal, blind-spot check, and a smooth move into a clear gap."
           }
         },
         {
           "title": "9. Passing",
-          "content": "Pass only where legal and where enough sight distance exists to complete the maneuver. Return only when both headlights of the passed vehicle are visible in the mirror. Never exceed the speed limit to pass.",
+          "page": 46,
+          "body": "Pass only where legal and where enough sight distance exists to complete the maneuver. Return only when both headlights of the passed vehicle are visible in the mirror. Never exceed the speed limit to pass.",
           "example": "Wait for a legal passing zone and a long, clear view.",
           "mistake": "Starting a pass near a hill because no vehicle is visible.",
           "check": {
@@ -13195,12 +13264,13 @@ window.APP_DATA = {
               "When the other driver slows"
             ],
             "answer": 1,
-            "explain": "Pass only where legal and where enough sight distance exists to complete the maneuver."
+            "feedback": "Pass only where legal and where enough sight distance exists to complete the maneuver."
           }
         },
         {
           "title": "10. Defensive Space Management",
-          "content": "Defensive driving means scanning, predicting errors, and preserving time and space. You cannot control traffic, but you can control your reaction.",
+          "page": 46,
+          "body": "Defensive driving means scanning, predicting errors, and preserving time and space. You cannot control traffic, but you can control your reaction.",
           "example": "Slow and create room when another driver merges suddenly.",
           "mistake": "Matching aggressive behavior with aggressive behavior.",
           "check": {
@@ -13212,12 +13282,13 @@ window.APP_DATA = {
               "Use high beams continuously"
             ],
             "answer": 1,
-            "explain": "Defensive driving means scanning, predicting errors, and preserving time and space."
+            "feedback": "Defensive driving means scanning, predicting errors, and preserving time and space."
           }
         },
         {
           "title": "11. Curves, Hills, and Limited Sight Distance",
-          "content": "Reduce speed before curves, hillcrests, and other places where sight distance is limited. Entering too fast leaves little room to respond to stopped traffic, animals, debris, or an oncoming vehicle.",
+          "page": 46,
+          "body": "Reduce speed before curves, hillcrests, and other places where sight distance is limited. Entering too fast leaves little room to respond to stopped traffic, animals, debris, or an oncoming vehicle.",
           "example": "Slow before reaching a blind curve rather than braking hard after entering it.",
           "mistake": "Assuming the posted limit is safe when the roadway ahead cannot be seen.",
           "check": {
@@ -13229,12 +13300,13 @@ window.APP_DATA = {
               "At the curve exit"
             ],
             "answer": 1,
-            "explain": "Slowing before the curve preserves traction and stopping distance."
+            "feedback": "Slowing before the curve preserves traction and stopping distance."
           }
         },
         {
           "title": "12. Being Passed and Cooperative Driving",
-          "content": "When another vehicle passes, maintain a steady lawful speed and provide space. Do not accelerate, move left, or compete. Cooperative driving reduces the time both vehicles remain exposed to conflict.",
+          "page": 46,
+          "body": "When another vehicle passes, maintain a steady lawful speed and provide space. Do not accelerate, move left, or compete. Cooperative driving reduces the time both vehicles remain exposed to conflict.",
           "example": "Hold a steady speed while the passing vehicle completes the maneuver.",
           "mistake": "Accelerating because you do not want another driver to pass.",
           "check": {
@@ -13246,9 +13318,17 @@ window.APP_DATA = {
               "Use the shoulder"
             ],
             "answer": 1,
-            "explain": "A steady speed allows the other driver to complete the pass safely."
+            "feedback": "A steady speed allows the other driver to complete the pass safely."
           }
         }
+      ],
+      "intro": "You are driving 45 mph on a wet two-lane road. A pickup is tailgating, brake lights appear ahead, and parked cars narrow your side space. A safe response requires speed reduction, extra front space, smooth braking, and a plan to let the tailgater pass.",
+      "summary": [
+        "The posted limit is a maximum under good conditions, not a required speed.",
+        "Use at least a two-second following interval in favorable conditions and more when risk increases.",
+        "Stopping distance grows rapidly as speed increases.",
+        "Maintain front, rear, and side space plus an escape route.",
+        "Never brake-check a tailgater or rush a pass."
       ]
     },
     "Intersections & Right-of-Way": {
@@ -13266,7 +13346,8 @@ window.APP_DATA = {
       "topics": [
         {
           "title": "1. Intersection Types",
-          "content": "Controlled intersections use signs, signals, or authorized traffic direction. Uncontrolled and blind intersections require slower speeds and a careful search.",
+          "page": 41,
+          "body": "Controlled intersections use signs, signals, or authorized traffic direction. Uncontrolled and blind intersections require slower speeds and a careful search.",
           "example": "At a blind intersection, cover the brake and creep forward only when you can see.",
           "mistake": "Assuming light traffic means no hazard.",
           "check": {
@@ -13278,12 +13359,13 @@ window.APP_DATA = {
               "Use the horn only"
             ],
             "answer": 1,
-            "explain": "Controlled intersections use signs, signals, or authorized traffic direction."
+            "feedback": "Controlled intersections use signs, signals, or authorized traffic direction."
           }
         },
         {
           "title": "2. Right-of-Way Is Not Absolute",
-          "content": "Right-of-way creates order, but it never gives permission to cause a collision. Yield when another road user makes a mistake.",
+          "page": 41,
+          "body": "Right-of-way creates order, but it never gives permission to cause a collision. Yield when another road user makes a mistake.",
           "example": "Wait when another driver rolls through, even if you arrived first.",
           "mistake": "Continuing simply because you are legally correct.",
           "check": {
@@ -13295,12 +13377,13 @@ window.APP_DATA = {
               "Use opposing traffic lane"
             ],
             "answer": 1,
-            "explain": "Right-of-way creates order, but it never gives permission to cause a collision."
+            "feedback": "Right-of-way creates order, but it never gives permission to cause a collision."
           }
         },
         {
           "title": "3. Four-Way Stops",
-          "content": "The first vehicle to stop normally proceeds first. At the same arrival time, the driver on the left yields to the driver on the right.",
+          "page": 41,
+          "body": "The first vehicle to stop normally proceeds first. At the same arrival time, the driver on the left yields to the driver on the right.",
           "example": "You and a vehicle on your right stop together; it normally goes first.",
           "mistake": "Assuming the largest vehicle goes first.",
           "check": {
@@ -13312,12 +13395,13 @@ window.APP_DATA = {
               "Whoever signals"
             ],
             "answer": 1,
-            "explain": "The first vehicle to stop normally proceeds first."
+            "feedback": "The first vehicle to stop normally proceeds first."
           }
         },
         {
           "title": "4. Left Turns",
-          "content": "A left-turning driver generally yields to approaching traffic close enough to be a hazard, even on a steady green light.",
+          "page": 41,
+          "body": "A left-turning driver generally yields to approaching traffic close enough to be a hazard, even on a steady green light.",
           "example": "Wait for a clearly safe gap before crossing oncoming traffic.",
           "mistake": "Trusting an oncoming turn signal without seeing the vehicle slow.",
           "check": {
@@ -13329,12 +13413,13 @@ window.APP_DATA = {
               "Use horn"
             ],
             "answer": 1,
-            "explain": "A left-turning driver generally yields to approaching traffic close enough to be a hazard, even on a steady green light."
+            "feedback": "A left-turning driver generally yields to approaching traffic close enough to be a hazard, even on a steady green light."
           }
         },
         {
           "title": "5. Right Turns on Red",
-          "content": "A permitted right turn on red requires a complete stop, checking for prohibitions, and yielding to cross traffic, pedestrians, and bicyclists.",
+          "page": 41,
+          "body": "A permitted right turn on red requires a complete stop, checking for prohibitions, and yielding to cross traffic, pedestrians, and bicyclists.",
           "example": "Stop first, then check every conflict area.",
           "mistake": "Rolling through because traffic appears clear.",
           "check": {
@@ -13346,12 +13431,13 @@ window.APP_DATA = {
               "Enter crosswalk"
             ],
             "answer": 1,
-            "explain": "A permitted right turn on red requires a complete stop, checking for prohibitions, and yielding to cross traffic, pedestrians, and bicyclists."
+            "feedback": "A permitted right turn on red requires a complete stop, checking for prohibitions, and yielding to cross traffic, pedestrians, and bicyclists."
           }
         },
         {
           "title": "6. Pedestrians and Bicyclists",
-          "content": "Drivers yield to pedestrians in marked and unmarked crosswalks and must not turn across a bicyclist traveling beside the vehicle.",
+          "page": 41,
+          "body": "Drivers yield to pedestrians in marked and unmarked crosswalks and must not turn across a bicyclist traveling beside the vehicle.",
           "example": "Let a pedestrian finish crossing and let a cyclist clear before turning right.",
           "mistake": "Assuming green means pedestrians must disappear immediately.",
           "check": {
@@ -13363,12 +13449,13 @@ window.APP_DATA = {
               "Pass in intersection"
             ],
             "answer": 1,
-            "explain": "Drivers yield to pedestrians in marked and unmarked crosswalks and must not turn across a bicyclist traveling beside the vehicle."
+            "feedback": "Drivers yield to pedestrians in marked and unmarked crosswalks and must not turn across a bicyclist traveling beside the vehicle."
           }
         },
         {
           "title": "7. Driveways and T-Intersections",
-          "content": "Drivers entering from private property yield to roadway and sidewalk users. At a T-intersection, the road that ends generally yields to the through road.",
+          "page": 41,
+          "body": "Drivers entering from private property yield to roadway and sidewalk users. At a T-intersection, the road that ends generally yields to the through road.",
           "example": "Stop before a sidewalk and choose a safe gap.",
           "mistake": "Checking only for vehicles and missing pedestrians.",
           "check": {
@@ -13380,12 +13467,13 @@ window.APP_DATA = {
               "Faster vehicle"
             ],
             "answer": 1,
-            "explain": "Drivers entering from private property yield to roadway and sidewalk users."
+            "feedback": "Drivers entering from private property yield to roadway and sidewalk users."
           }
         },
         {
           "title": "8. Roundabouts",
-          "content": "Entering drivers yield to circulating traffic, choose the proper lane before entry, travel counterclockwise, and continue around if they miss an exit.",
+          "page": 41,
+          "body": "Entering drivers yield to circulating traffic, choose the proper lane before entry, travel counterclockwise, and continue around if they miss an exit.",
           "example": "Wait for a vehicle circulating from your left.",
           "mistake": "Entering because you are on the right.",
           "check": {
@@ -13397,12 +13485,13 @@ window.APP_DATA = {
               "Largest vehicle"
             ],
             "answer": 1,
-            "explain": "Entering drivers yield to circulating traffic, choose the proper lane before entry, travel counterclockwise, and continue around if they miss an exit."
+            "feedback": "Entering drivers yield to circulating traffic, choose the proper lane before entry, travel counterclockwise, and continue around if they miss an exit."
           }
         },
         {
           "title": "9. Blocked Intersections",
-          "content": "Never enter unless there is enough room to clear the intersection, crosswalk, or railroad tracks completely.",
+          "page": 41,
+          "body": "Never enter unless there is enough room to clear the intersection, crosswalk, or railroad tracks completely.",
           "example": "Wait behind the line when traffic is stopped beyond a green light.",
           "mistake": "Following traffic into an intersection and becoming trapped.",
           "check": {
@@ -13414,12 +13503,13 @@ window.APP_DATA = {
               "Follow closely"
             ],
             "answer": 1,
-            "explain": "Never enter unless there is enough room to clear the intersection, crosswalk, or railroad tracks completely."
+            "feedback": "Never enter unless there is enough room to clear the intersection, crosswalk, or railroad tracks completely."
           }
         },
         {
           "title": "10. Emergency and Authorized Direction",
-          "content": "Clear an intersection before yielding to an emergency vehicle. Directions from officers, flaggers, and crossing guards override normal signs and signals.",
+          "page": 41,
+          "body": "Clear an intersection before yielding to an emergency vehicle. Directions from officers, flaggers, and crossing guards override normal signs and signals.",
           "example": "Clear the intersection, then pull right for an ambulance.",
           "mistake": "Stopping inside the intersection or ignoring a crossing guard.",
           "check": {
@@ -13431,12 +13521,13 @@ window.APP_DATA = {
               "Use horn"
             ],
             "answer": 1,
-            "explain": "Clear an intersection before yielding to an emergency vehicle."
+            "feedback": "Clear an intersection before yielding to an emergency vehicle."
           }
         },
         {
           "title": "11. Multi-Lane and Offset Intersections",
-          "content": "At wide or offset intersections, choose the correct lane before entering, follow lane arrows, and avoid changing lanes while turning. Watch for vehicles hidden by adjacent traffic.",
+          "page": 41,
+          "body": "At wide or offset intersections, choose the correct lane before entering, follow lane arrows, and avoid changing lanes while turning. Watch for vehicles hidden by adjacent traffic.",
           "example": "Complete a left turn into the proper lane before making a separate lane change.",
           "mistake": "Crossing several lanes during the turn to reach an exit or driveway.",
           "check": {
@@ -13448,12 +13539,13 @@ window.APP_DATA = {
               "During the sharpest part of the turn"
             ],
             "answer": 1,
-            "explain": "Finish the turn predictably before making a separate lane change."
+            "feedback": "Finish the turn predictably before making a separate lane change."
           }
         },
         {
           "title": "12. Courtesy, Communication, and Uncertain Intentions",
-          "content": "Signals, eye contact, and courtesy waves may help communicate, but they never guarantee that every lane or pedestrian path is clear. Confirm safety independently before moving.",
+          "page": 41,
+          "body": "Signals, eye contact, and courtesy waves may help communicate, but they never guarantee that every lane or pedestrian path is clear. Confirm safety independently before moving.",
           "example": "A driver waves you through, but you still check the next lane for a motorcycle.",
           "mistake": "Treating another driver's wave as permission to ignore hidden hazards.",
           "check": {
@@ -13465,9 +13557,17 @@ window.APP_DATA = {
               "Accelerate before the wave changes"
             ],
             "answer": 1,
-            "explain": "A courtesy wave does not guarantee that all lanes are safe."
+            "feedback": "A courtesy wave does not guarantee that all lanes are safe."
           }
         }
+      ],
+      "intro": "At a busy intersection, combine arrival order, vehicle position, pedestrians, bicyclists, signals, and collision avoidance before proceeding.",
+      "summary": [
+        "Right-of-way is not permission to cause a collision.",
+        "Arrival order and the vehicle-on-the-right rule govern four-way stops.",
+        "Left turns yield to oncoming traffic and pedestrians.",
+        "Private-property traffic yields to roadway and sidewalk users.",
+        "Never enter a blocked intersection."
       ]
     },
     "Required Stops & Emergencies": {
@@ -13485,7 +13585,8 @@ window.APP_DATA = {
       "topics": [
         {
           "title": "1. Pre-Trip Vehicle Check",
-          "content": "Before driving, check tires, lights, mirrors, glass, wipers, fluid leaks, fuel or charge level, and anything that could interfere with safe operation.",
+          "page": 24,
+          "body": "Before driving, check tires, lights, mirrors, glass, wipers, fluid leaks, fuel or charge level, and anything that could interfere with safe operation.",
           "example": "Walk around the vehicle before a long trip or after it has been parked in an unfamiliar place.",
           "mistake": "Assuming warning lights reveal every problem.",
           "check": {
@@ -13497,12 +13598,13 @@ window.APP_DATA = {
               "Only the seat position"
             ],
             "answer": 1,
-            "explain": "Before driving, check tires, lights, mirrors, glass, wipers, fluid leaks, fuel or charge level, and anything that could interfere with safe operation."
+            "feedback": "Before driving, check tires, lights, mirrors, glass, wipers, fluid leaks, fuel or charge level, and anything that could interfere with safe operation."
           }
         },
         {
           "title": "2. Tires and Tread",
-          "content": "Proper tire pressure and adequate tread support steering, braking, and wet-road traction. Use the vehicle manufacturer recommended pressure.",
+          "page": 24,
+          "body": "Proper tire pressure and adequate tread support steering, braking, and wet-road traction. Use the vehicle manufacturer recommended pressure.",
           "example": "Inspect tires for cuts, bulges, exposed cords, or uneven wear.",
           "mistake": "Inflating every tire to the sidewall maximum.",
           "check": {
@@ -13514,12 +13616,13 @@ window.APP_DATA = {
               "A friend vehicle pressure"
             ],
             "answer": 1,
-            "explain": "Proper tire pressure and adequate tread support steering, braking, and wet-road traction."
+            "feedback": "Proper tire pressure and adequate tread support steering, braking, and wet-road traction."
           }
         },
         {
           "title": "3. Dashboard Warning Lights",
-          "content": "Warning lights can indicate problems with oil pressure, engine temperature, brakes, charging, tires, airbags, or other systems. Serious red warnings deserve immediate attention.",
+          "page": 24,
+          "body": "Warning lights can indicate problems with oil pressure, engine temperature, brakes, charging, tires, airbags, or other systems. Serious red warnings deserve immediate attention.",
           "example": "Move safely off the road when an oil-pressure or temperature warning appears.",
           "mistake": "Covering a warning light and continuing.",
           "check": {
@@ -13531,12 +13634,13 @@ window.APP_DATA = {
               "Turn up the radio"
             ],
             "answer": 1,
-            "explain": "Warning lights can indicate problems with oil pressure, engine temperature, brakes, charging, tires, airbags, or other systems."
+            "feedback": "Warning lights can indicate problems with oil pressure, engine temperature, brakes, charging, tires, airbags, or other systems."
           }
         },
         {
           "title": "4. Normal Braking and ABS",
-          "content": "Brake early and smoothly. With ABS, apply firm continuous pressure during an emergency and continue steering toward a safe path.",
+          "page": 24,
+          "body": "Brake early and smoothly. With ABS, apply firm continuous pressure during an emergency and continue steering toward a safe path.",
           "example": "Press firmly and steer rather than pumping the ABS pedal.",
           "mistake": "Releasing the pedal because it vibrates.",
           "check": {
@@ -13548,12 +13652,13 @@ window.APP_DATA = {
               "Turn off engine"
             ],
             "answer": 1,
-            "explain": "Brake early and smoothly."
+            "feedback": "Brake early and smoothly."
           }
         },
         {
           "title": "5. Brake Failure",
-          "content": "If the brake pedal does not slow the vehicle, remain calm, pump the pedal if pressure may be lost, downshift, use the parking brake gradually, warn others, and steer toward safety.",
+          "page": 24,
+          "body": "If the brake pedal does not slow the vehicle, remain calm, pump the pedal if pressure may be lost, downshift, use the parking brake gradually, warn others, and steer toward safety.",
           "example": "Apply the parking brake gradually while maintaining control.",
           "mistake": "Jerking the parking brake.",
           "check": {
@@ -13565,12 +13670,13 @@ window.APP_DATA = {
               "Close your eyes"
             ],
             "answer": 1,
-            "explain": "If the brake pedal does not slow the vehicle, remain calm, pump the pedal if pressure may be lost, downshift, use the parking brake gradually, warn others, and steer toward safety."
+            "feedback": "If the brake pedal does not slow the vehicle, remain calm, pump the pedal if pressure may be lost, downshift, use the parking brake gradually, warn others, and steer toward safety."
           }
         },
         {
           "title": "6. Tire Blowout",
-          "content": "A blowout may cause pulling, vibration, and noise. Hold the wheel firmly, ease off the accelerator, avoid sudden braking, allow the vehicle to slow, then move off the roadway when stable.",
+          "page": 24,
+          "body": "A blowout may cause pulling, vibration, and noise. Hold the wheel firmly, ease off the accelerator, avoid sudden braking, allow the vehicle to slow, then move off the roadway when stable.",
           "example": "Maintain a straight path until speed decreases.",
           "mistake": "Braking hard immediately.",
           "check": {
@@ -13582,12 +13688,13 @@ window.APP_DATA = {
               "Accelerate"
             ],
             "answer": 1,
-            "explain": "A blowout may cause pulling, vibration, and noise."
+            "feedback": "A blowout may cause pulling, vibration, and noise."
           }
         },
         {
           "title": "7. Engine Overheating",
-          "content": "A high temperature gauge, warning light, steam, or coolant smell can indicate overheating. Move safely out of traffic, shut down, and allow cooling. Never remove a hot radiator cap.",
+          "page": 24,
+          "body": "A high temperature gauge, warning light, steam, or coolant smell can indicate overheating. Move safely out of traffic, shut down, and allow cooling. Never remove a hot radiator cap.",
           "example": "Wait until the system cools before inspection.",
           "mistake": "Opening the radiator cap immediately.",
           "check": {
@@ -13599,12 +13706,13 @@ window.APP_DATA = {
               "Tires may deflate"
             ],
             "answer": 1,
-            "explain": "A high temperature gauge, warning light, steam, or coolant smell can indicate overheating."
+            "feedback": "A high temperature gauge, warning light, steam, or coolant smell can indicate overheating."
           }
         },
         {
           "title": "8. Engine Stall and Loss of Power",
-          "content": "If the engine stalls, steering and braking may require more effort. Signal, maintain control, and use remaining momentum to move out of traffic.",
+          "page": 24,
+          "body": "If the engine stalls, steering and braking may require more effort. Signal, maintain control, and use remaining momentum to move out of traffic.",
           "example": "Use remaining momentum to reach a shoulder.",
           "mistake": "Stopping in the travel lane without hazards.",
           "check": {
@@ -13616,12 +13724,13 @@ window.APP_DATA = {
               "Signals brighten"
             ],
             "answer": 0,
-            "explain": "If the engine stalls, steering and braking may require more effort."
+            "feedback": "If the engine stalls, steering and braking may require more effort."
           }
         },
         {
           "title": "9. Breakdowns and Roadside Safety",
-          "content": "Move as far from traffic as possible, activate hazards, remain visible, and call for assistance. Avoid standing near moving traffic.",
+          "page": 24,
+          "body": "Move as far from traffic as possible, activate hazards, remain visible, and call for assistance. Avoid standing near moving traffic.",
           "example": "Exit on the side away from traffic if leaving is necessary.",
           "mistake": "Standing behind the vehicle in the travel lane.",
           "check": {
@@ -13633,12 +13742,13 @@ window.APP_DATA = {
               "In an intersection"
             ],
             "answer": 1,
-            "explain": "Move as far from traffic as possible, activate hazards, remain visible, and call for assistance."
+            "feedback": "Move as far from traffic as possible, activate hazards, remain visible, and call for assistance."
           }
         },
         {
           "title": "10. Crash Response",
-          "content": "After a crash, stop, assess injuries, call emergency services when needed, protect the scene, and exchange required information.",
+          "page": 24,
+          "body": "After a crash, stop, assess injuries, call emergency services when needed, protect the scene, and exchange required information.",
           "example": "Use hazards and move minor crashes out of travel lanes when safe and lawful.",
           "mistake": "Standing in traffic to inspect damage.",
           "check": {
@@ -13650,12 +13760,13 @@ window.APP_DATA = {
               "Leave quickly"
             ],
             "answer": 1,
-            "explain": "After a crash, stop, assess injuries, call emergency services when needed, protect the scene, and exchange required information."
+            "feedback": "After a crash, stop, assess injuries, call emergency services when needed, protect the scene, and exchange required information."
           }
         },
         {
           "title": "11. Required Emergency Stops",
-          "content": "Drivers must stop for red signals, stop signs, school buses as required, railroad warnings, police directions, and other lawful controls. A complete stop means the wheels cease moving.",
+          "page": 24,
+          "body": "Drivers must stop for red signals, stop signs, school buses as required, railroad warnings, police directions, and other lawful controls. A complete stop means the wheels cease moving.",
           "example": "Stop behind the line, then creep forward if visibility is blocked.",
           "mistake": "Treating a rolling movement as a complete stop.",
           "check": {
@@ -13667,12 +13778,13 @@ window.APP_DATA = {
               "Looking both ways"
             ],
             "answer": 1,
-            "explain": "Drivers must stop for red signals, stop signs, school buses as required, railroad warnings, police directions, and other lawful controls."
+            "feedback": "Drivers must stop for red signals, stop signs, school buses as required, railroad warnings, police directions, and other lawful controls."
           }
         },
         {
           "title": "12. Emergency Judgment",
-          "content": "Vehicle emergencies require calm priorities: maintain control, reduce speed smoothly, communicate, move away from traffic, and seek help.",
+          "page": 24,
+          "body": "Vehicle emergencies require calm priorities: maintain control, reduce speed smoothly, communicate, move away from traffic, and seek help.",
           "example": "Control the vehicle before reaching for a phone.",
           "mistake": "Diagnosing while moving at highway speed.",
           "check": {
@@ -13684,9 +13796,17 @@ window.APP_DATA = {
               "Exit immediately"
             ],
             "answer": 1,
-            "explain": "Vehicle emergencies require calm priorities: maintain control, reduce speed smoothly, communicate, move away from traffic, and seek help."
+            "feedback": "Vehicle emergencies require calm priorities: maintain control, reduce speed smoothly, communicate, move away from traffic, and seek help."
           }
         }
+      ],
+      "intro": "You are driving at highway speed when a tire fails and a warning light appears. Traffic is close behind and the shoulder is narrow. A safe response requires steady steering, gradual deceleration, hazard communication, and careful movement away from traffic.",
+      "summary": [
+        "Inspect the vehicle before problems become emergencies.",
+        "Use firm continuous braking with ABS and smooth control during failures.",
+        "A blowout requires steady steering and gradual deceleration.",
+        "Move disabled vehicles away from traffic and make them visible.",
+        "After a crash, protect life and prevent a secondary collision first."
       ]
     },
     "Interstate Driving": {
@@ -13704,7 +13824,8 @@ window.APP_DATA = {
       "topics": [
         {
           "title": "1. Ramp Preparation",
-          "content": "Before entering the interstate, check mirrors, secure distractions, identify the ramp type, and begin searching for traffic and available gaps.",
+          "page": 68,
+          "body": "Before entering the interstate, check mirrors, secure distractions, identify the ramp type, and begin searching for traffic and available gaps.",
           "example": "Use the ramp view to identify a likely gap before reaching the acceleration lane.",
           "mistake": "Waiting until the merge point to begin looking.",
           "check": {
@@ -13716,12 +13837,13 @@ window.APP_DATA = {
               "Once inside the travel lane"
             ],
             "answer": 1,
-            "explain": "Early observation gives time to adjust speed and choose a gap."
+            "feedback": "Early observation gives time to adjust speed and choose a gap."
           }
         },
         {
           "title": "2. Acceleration Lanes",
-          "content": "Use the acceleration lane to build speed close to the lawful traffic flow. Entering too slowly forces other drivers to react and reduces available gaps.",
+          "page": 68,
+          "body": "Use the acceleration lane to build speed close to the lawful traffic flow. Entering too slowly forces other drivers to react and reduces available gaps.",
           "example": "Accelerate smoothly while checking mirrors and the blind spot.",
           "mistake": "Entering at a much lower speed than traffic.",
           "check": {
@@ -13733,12 +13855,13 @@ window.APP_DATA = {
               "Stopping for directions"
             ],
             "answer": 1,
-            "explain": "The lane prepares the vehicle for a smooth merge."
+            "feedback": "The lane prepares the vehicle for a smooth merge."
           }
         },
         {
           "title": "3. Yielding and Merging",
-          "content": "Entering traffic yields to vehicles already on the interstate. Signal, select a gap, adjust speed, and merge without forcing through traffic to brake sharply.",
+          "page": 68,
+          "body": "Entering traffic yields to vehicles already on the interstate. Signal, select a gap, adjust speed, and merge without forcing through traffic to brake sharply.",
           "example": "Merge behind a vehicle when the original gap closes.",
           "mistake": "Assuming through traffic must move over.",
           "check": {
@@ -13750,12 +13873,13 @@ window.APP_DATA = {
               "The vehicle on the left"
             ],
             "answer": 1,
-            "explain": "Entering traffic must find a safe gap."
+            "feedback": "Entering traffic must find a safe gap."
           }
         },
         {
           "title": "4. Lane Discipline",
-          "content": "Keep right except to pass, avoid unnecessary lane changes, and do not remain in the left lane when not passing or preparing for a lawful movement.",
+          "page": 68,
+          "body": "Keep right except to pass, avoid unnecessary lane changes, and do not remain in the left lane when not passing or preparing for a lawful movement.",
           "example": "Return right after completing a pass and establishing clearance.",
           "mistake": "Using the left lane as a permanent travel lane.",
           "check": {
@@ -13767,12 +13891,13 @@ window.APP_DATA = {
               "Any lane without regard to traffic"
             ],
             "answer": 1,
-            "explain": "Keeping right supports predictable traffic flow."
+            "feedback": "Keeping right supports predictable traffic flow."
           }
         },
         {
           "title": "5. Passing and Blind Spots",
-          "content": "Check mirrors and blind spots, signal, pass without lingering, and avoid staying beside trucks or other vehicles. Return only after adequate clearance.",
+          "page": 68,
+          "body": "Check mirrors and blind spots, signal, pass without lingering, and avoid staying beside trucks or other vehicles. Return only after adequate clearance.",
           "example": "See both headlights of the passed vehicle before returning.",
           "mistake": "Driving beside a trailer for a long distance.",
           "check": {
@@ -13784,12 +13909,13 @@ window.APP_DATA = {
               "Near a service sign"
             ],
             "answer": 1,
-            "explain": "Large trucks have extensive side blind spots."
+            "feedback": "Large trucks have extensive side blind spots."
           }
         },
         {
           "title": "6. Following Distance at High Speed",
-          "content": "Higher speed increases reaction and braking distance. Preserve a larger following interval and scan well beyond the vehicle directly ahead.",
+          "page": 68,
+          "body": "Higher speed increases reaction and braking distance. Preserve a larger following interval and scan well beyond the vehicle directly ahead.",
           "example": "React to brake lights several vehicles ahead by easing off early.",
           "mistake": "Using the same short gap as on a neighborhood street.",
           "check": {
@@ -13801,12 +13927,13 @@ window.APP_DATA = {
               "Vehicles become lighter"
             ],
             "answer": 1,
-            "explain": "Higher speed requires more reaction and braking distance."
+            "feedback": "Higher speed requires more reaction and braking distance."
           }
         },
         {
           "title": "7. Interchanges and Exit-Only Lanes",
-          "content": "Read overhead signs early, identify lane arrows and EXIT ONLY panels, and move into the proper lane well before the interchange.",
+          "page": 68,
+          "body": "Read overhead signs early, identify lane arrows and EXIT ONLY panels, and move into the proper lane well before the interchange.",
           "example": "Leave an exit-only lane early when continuing on the interstate.",
           "mistake": "Crossing several lanes at the last second.",
           "check": {
@@ -13818,12 +13945,13 @@ window.APP_DATA = {
               "Trucks only may exit"
             ],
             "answer": 1,
-            "explain": "The lane leaves the main roadway."
+            "feedback": "The lane leaves the main roadway."
           }
         },
         {
           "title": "8. Deceleration and Exiting",
-          "content": "Signal before the exit, enter the deceleration lane, and reduce speed there rather than slowing abruptly in the through lane.",
+          "page": 68,
+          "body": "Signal before the exit, enter the deceleration lane, and reduce speed there rather than slowing abruptly in the through lane.",
           "example": "Maintain interstate speed until established in the exit lane when conditions allow.",
           "mistake": "Braking sharply before entering the deceleration lane.",
           "check": {
@@ -13835,12 +13963,13 @@ window.APP_DATA = {
               "After stopping"
             ],
             "answer": 1,
-            "explain": "The deceleration lane separates slowing traffic from through traffic."
+            "feedback": "The deceleration lane separates slowing traffic from through traffic."
           }
         },
         {
           "title": "9. Missed Exits and Route Errors",
-          "content": "If an exit is missed, continue to the next one. Never stop, reverse, cross the gore, or use an emergency crossover.",
+          "page": 68,
+          "body": "If an exit is missed, continue to the next one. Never stop, reverse, cross the gore, or use an emergency crossover.",
           "example": "Use the next interchange to correct the route.",
           "mistake": "Backing on the shoulder toward a missed exit.",
           "check": {
@@ -13852,12 +13981,13 @@ window.APP_DATA = {
               "Stop in the travel lane"
             ],
             "answer": 1,
-            "explain": "Continuing avoids a dangerous sudden maneuver."
+            "feedback": "Continuing avoids a dangerous sudden maneuver."
           }
         },
         {
           "title": "10. Congestion and Sudden Stops",
-          "content": "Scan far ahead, increase following distance, avoid repeated abrupt lane changes, and expect queues near work zones, crashes, and interchanges.",
+          "page": 68,
+          "body": "Scan far ahead, increase following distance, avoid repeated abrupt lane changes, and expect queues near work zones, crashes, and interchanges.",
           "example": "Ease off when brake lights appear far ahead.",
           "mistake": "Tailgating to keep another vehicle from merging.",
           "check": {
@@ -13869,12 +13999,13 @@ window.APP_DATA = {
               "Use the shoulder"
             ],
             "answer": 1,
-            "explain": "Early response reduces the need for hard braking."
+            "feedback": "Early response reduces the need for hard braking."
           }
         },
         {
           "title": "11. Breakdowns and Shoulder Safety",
-          "content": "If the vehicle fails, move as far from traffic as possible, activate hazards, and seek help from a protected location. Do not stop on the shoulder except for emergencies.",
+          "page": 68,
+          "body": "If the vehicle fails, move as far from traffic as possible, activate hazards, and seek help from a protected location. Do not stop on the shoulder except for emergencies.",
           "example": "Remain belted inside when safely off the lane and outside traffic is more dangerous.",
           "mistake": "Standing behind the vehicle near high-speed traffic.",
           "check": {
@@ -13886,12 +14017,13 @@ window.APP_DATA = {
               "In the center lane"
             ],
             "answer": 1,
-            "explain": "Separation from high-speed traffic reduces secondary-collision risk."
+            "feedback": "Separation from high-speed traffic reduces secondary-collision risk."
           }
         },
         {
           "title": "12. Fatigue and Long-Distance Driving",
-          "content": "Fatigue reduces attention and can cause microsleep. Stop safely and rest or change drivers when drowsiness begins; music and open windows are not cures.",
+          "page": 68,
+          "body": "Fatigue reduces attention and can cause microsleep. Stop safely and rest or change drivers when drowsiness begins; music and open windows are not cures.",
           "example": "Exit to a safe rest area after repeated yawning and lane drift.",
           "mistake": "Continuing because the destination is close.",
           "check": {
@@ -13903,9 +14035,17 @@ window.APP_DATA = {
               "Use high beams"
             ],
             "answer": 1,
-            "explain": "Rest or an alert replacement driver is required."
+            "feedback": "Rest or an alert replacement driver is required."
           }
         }
+      ],
+      "intro": "You enter a busy interstate behind a truck while traffic is moving quickly. Your intended gap closes, an exit-only lane begins ahead, and brake lights appear in the distance. Safe driving requires speed adjustment, lane planning, scanning, and patience.",
+      "summary": [
+        "Use acceleration lanes to match traffic speed and select a safe gap.",
+        "Keep right except when passing or when another lane is appropriate.",
+        "Read interchange signs early and never make sudden last-second movements.",
+        "Increase space around trucks, merging traffic, congestion, and bad weather.",
+        "If an exit is missed, continue to the next exit."
       ]
     },
     "Night & Weather Driving": {
@@ -13923,7 +14063,8 @@ window.APP_DATA = {
       "topics": [
         {
           "title": "1. Why Night Driving Is Harder",
-          "content": "At night, drivers see less roadway detail, have reduced depth perception, and may not detect pedestrians, animals, curves, debris, or disabled vehicles until much later. Speed should never exceed the distance illuminated by the headlights.",
+          "page": 96,
+          "body": "At night, drivers see less roadway detail, have reduced depth perception, and may not detect pedestrians, animals, curves, debris, or disabled vehicles until much later. Speed should never exceed the distance illuminated by the headlights.",
           "example": "On an unlit rural road, reduce speed enough that you can stop within the visible headlight area.",
           "mistake": "Driving the daytime speed simply because the road is familiar.",
           "check": {
@@ -13935,12 +14076,13 @@ window.APP_DATA = {
               "Use high beams continuously"
             ],
             "answer": 1,
-            "explain": "At night, drivers see less roadway detail, have reduced depth perception, and may not detect pedestrians, animals, curves, debris, or disabled vehicles until much later."
+            "feedback": "At night, drivers see less roadway detail, have reduced depth perception, and may not detect pedestrians, animals, curves, debris, or disabled vehicles until much later."
           }
         },
         {
           "title": "2. Low Beams and High Beams",
-          "content": "High beams improve forward visibility on dark open roads, but they must be dimmed for oncoming traffic and when following another vehicle closely. Low beams are safer in rain, fog, snow, and other conditions where reflected light can reduce visibility.",
+          "page": 96,
+          "body": "High beams improve forward visibility on dark open roads, but they must be dimmed for oncoming traffic and when following another vehicle closely. Low beams are safer in rain, fog, snow, and other conditions where reflected light can reduce visibility.",
           "example": "Use high beams on an empty rural road, then dim them when an oncoming vehicle approaches.",
           "mistake": "Leaving high beams on because your own visibility is better.",
           "check": {
@@ -13952,12 +14094,13 @@ window.APP_DATA = {
               "Flash repeatedly"
             ],
             "answer": 1,
-            "explain": "High beams improve forward visibility on dark open roads, but they must be dimmed for oncoming traffic and when following another vehicle closely."
+            "feedback": "High beams improve forward visibility on dark open roads, but they must be dimmed for oncoming traffic and when following another vehicle closely."
           }
         },
         {
           "title": "3. Glare and Recovery",
-          "content": "When glare from oncoming headlights makes it hard to see, reduce speed, look toward the right edge of your lane, and avoid staring directly into the lights. Clean windshields, mirrors, and headlights also reduce glare.",
+          "page": 96,
+          "body": "When glare from oncoming headlights makes it hard to see, reduce speed, look toward the right edge of your lane, and avoid staring directly into the lights. Clean windshields, mirrors, and headlights also reduce glare.",
           "example": "Use the right edge line as a visual guide until the oncoming vehicle passes.",
           "mistake": "Looking directly at bright headlights.",
           "check": {
@@ -13969,12 +14112,13 @@ window.APP_DATA = {
               "At the dashboard"
             ],
             "answer": 1,
-            "explain": "When glare from oncoming headlights makes it hard to see, reduce speed, look toward the right edge of your lane, and avoid staring directly into the lights."
+            "feedback": "When glare from oncoming headlights makes it hard to see, reduce speed, look toward the right edge of your lane, and avoid staring directly into the lights."
           }
         },
         {
           "title": "4. Pedestrians, Bicycles, and Wildlife at Night",
-          "content": "People, bicycles, animals, and dark objects can be difficult to see at night. Scan both shoulders, watch for reflections, reduce speed near warning signs, and cover the brake when a hazard may enter the roadway.",
+          "page": 96,
+          "body": "People, bicycles, animals, and dark objects can be difficult to see at night. Scan both shoulders, watch for reflections, reduce speed near warning signs, and cover the brake when a hazard may enter the roadway.",
           "example": "After a deer-crossing sign, scan both shoulders and reduce speed before reaching the likely crossing area.",
           "mistake": "Swerving suddenly without checking adjacent space.",
           "check": {
@@ -13986,12 +14130,13 @@ window.APP_DATA = {
               "Sound the horn continuously while maintaining speed"
             ],
             "answer": 1,
-            "explain": "People, bicycles, animals, and dark objects can be difficult to see at night."
+            "feedback": "People, bicycles, animals, and dark objects can be difficult to see at night."
           }
         },
         {
           "title": "5. Rain and Wet Roads",
-          "content": "Rain reduces visibility and traction. Slow down, increase following distance, turn on headlights, and avoid abrupt steering or braking. The first part of a rainfall can be especially slippery because water mixes with oil and debris.",
+          "page": 96,
+          "body": "Rain reduces visibility and traction. Slow down, increase following distance, turn on headlights, and avoid abrupt steering or braking. The first part of a rainfall can be especially slippery because water mixes with oil and debris.",
           "example": "Increase following distance before approaching standing water or heavy spray.",
           "mistake": "Using cruise control in heavy rain.",
           "check": {
@@ -14003,12 +14148,13 @@ window.APP_DATA = {
               "Follow the vehicle ahead more closely"
             ],
             "answer": 1,
-            "explain": "Rain reduces visibility and traction."
+            "feedback": "Rain reduces visibility and traction."
           }
         },
         {
           "title": "6. Hydroplaning",
-          "content": "Hydroplaning occurs when tires ride on water and lose contact with the pavement. If it begins, ease off the accelerator, keep the steering wheel steady, and avoid hard braking until traction returns.",
+          "page": 96,
+          "body": "Hydroplaning occurs when tires ride on water and lose contact with the pavement. If it begins, ease off the accelerator, keep the steering wheel steady, and avoid hard braking until traction returns.",
           "example": "If the steering feels light in standing water, ease off the accelerator and hold a steady course.",
           "mistake": "Braking hard or making a sharp steering correction.",
           "check": {
@@ -14020,12 +14166,13 @@ window.APP_DATA = {
               "Turn sharply toward the shoulder"
             ],
             "answer": 1,
-            "explain": "Hydroplaning occurs when tires ride on water and lose contact with the pavement."
+            "feedback": "Hydroplaning occurs when tires ride on water and lose contact with the pavement."
           }
         },
         {
           "title": "7. Fog",
-          "content": "Fog can reduce visibility to only a short distance. Use low beams, reduce speed, increase following distance, and use the right edge line for guidance. High beams reflect from fog and can make visibility worse.",
+          "page": 96,
+          "body": "Fog can reduce visibility to only a short distance. Use low beams, reduce speed, increase following distance, and use the right edge line for guidance. High beams reflect from fog and can make visibility worse.",
           "example": "If visibility becomes too poor, leave the roadway at a safe location rather than stopping in a travel lane.",
           "mistake": "Following another vehicle's taillights too closely.",
           "check": {
@@ -14037,12 +14184,13 @@ window.APP_DATA = {
               "No lights"
             ],
             "answer": 1,
-            "explain": "Fog can reduce visibility to only a short distance."
+            "feedback": "Fog can reduce visibility to only a short distance."
           }
         },
         {
           "title": "8. Snow, Ice, and Black Ice",
-          "content": "Snow and ice dramatically reduce traction. Slow before curves and stops, leave much more distance, and make steering, braking, and acceleration inputs gently. Bridges, overpasses, shaded areas, and low spots may freeze before other pavement.",
+          "page": 96,
+          "body": "Snow and ice dramatically reduce traction. Slow before curves and stops, leave much more distance, and make steering, braking, and acceleration inputs gently. Bridges, overpasses, shaded areas, and low spots may freeze before other pavement.",
           "example": "Approach a bridge cautiously when temperatures are near freezing, even if the road before it looks wet rather than icy.",
           "mistake": "Using cruise control on ice.",
           "check": {
@@ -14054,12 +14202,13 @@ window.APP_DATA = {
               "Only where snow is visible"
             ],
             "answer": 1,
-            "explain": "Snow and ice dramatically reduce traction."
+            "feedback": "Snow and ice dramatically reduce traction."
           }
         },
         {
           "title": "9. Skids",
-          "content": "If the rear of the vehicle begins to skid, look and steer in the direction you want the vehicle to travel, ease off the accelerator, and avoid overcorrecting. The goal is to regain traction smoothly.",
+          "page": 96,
+          "body": "If the rear of the vehicle begins to skid, look and steer in the direction you want the vehicle to travel, ease off the accelerator, and avoid overcorrecting. The goal is to regain traction smoothly.",
           "example": "If the rear slides right, look and steer toward the path you want rather than making a sudden opposite correction.",
           "mistake": "Staring at the object you want to avoid.",
           "check": {
@@ -14071,12 +14220,13 @@ window.APP_DATA = {
               "Turn away from the direction you want to go"
             ],
             "answer": 1,
-            "explain": "If the rear of the vehicle begins to skid, look and steer in the direction you want the vehicle to travel, ease off the accelerator, and avoid overcorrecting."
+            "feedback": "If the rear of the vehicle begins to skid, look and steer in the direction you want the vehicle to travel, ease off the accelerator, and avoid overcorrecting."
           }
         },
         {
           "title": "10. Flooded Roads and Severe Weather",
-          "content": "Never drive through moving or deep water when depth and road condition are uncertain. Water can hide washouts, move a vehicle, or stall the engine. Heavy wind, hail, lightning, or extreme rain may require leaving the roadway and waiting in a safe location.",
+          "page": 96,
+          "body": "Never drive through moving or deep water when depth and road condition are uncertain. Water can hide washouts, move a vehicle, or stall the engine. Heavy wind, hail, lightning, or extreme rain may require leaving the roadway and waiting in a safe location.",
           "example": "Turn around rather than entering water flowing across the road.",
           "mistake": "Assuming a large vehicle can safely cross because another vehicle did.",
           "check": {
@@ -14088,12 +14238,13 @@ window.APP_DATA = {
               "Accelerate to prevent stalling"
             ],
             "answer": 1,
-            "explain": "Never drive through moving or deep water when depth and road condition are uncertain."
+            "feedback": "Never drive through moving or deep water when depth and road condition are uncertain."
           }
         },
         {
           "title": "11. Fatigue and Nighttime Judgment",
-          "content": "Fatigue reduces attention, slows reaction time, and can cause lane drift or brief sleep episodes. Open windows, loud music, or caffeine do not replace rest. Stop in a safe place when drowsiness begins.",
+          "page": 96,
+          "body": "Fatigue reduces attention, slows reaction time, and can cause lane drift or brief sleep episodes. Open windows, loud music, or caffeine do not replace rest. Stop in a safe place when drowsiness begins.",
           "example": "If you struggle to keep your eyes open, exit and rest rather than trying to continue.",
           "mistake": "Believing that a short drive is safe despite heavy drowsiness.",
           "check": {
@@ -14105,12 +14256,13 @@ window.APP_DATA = {
               "Follow another vehicle closely"
             ],
             "answer": 1,
-            "explain": "Fatigue reduces attention, slows reaction time, and can cause lane drift or brief sleep episodes."
+            "feedback": "Fatigue reduces attention, slows reaction time, and can cause lane drift or brief sleep episodes."
           }
         },
         {
           "title": "12. Nighttime Emergencies",
-          "content": "If headlights fail, slow, activate hazard lights, and move off the roadway as safely as possible. If the vehicle becomes disabled, get completely out of the travel lane, use hazard lights, and remain visible without standing in traffic.",
+          "page": 96,
+          "body": "If headlights fail, slow, activate hazard lights, and move off the roadway as safely as possible. If the vehicle becomes disabled, get completely out of the travel lane, use hazard lights, and remain visible without standing in traffic.",
           "example": "A stalled vehicle should be moved as far from the travel lane as possible before occupants seek help.",
           "mistake": "Stopping in the travel lane with only parking lights.",
           "check": {
@@ -14122,9 +14274,17 @@ window.APP_DATA = {
               "Follow the center line without slowing"
             ],
             "answer": 1,
-            "explain": "If headlights fail, slow, activate hazard lights, and move off the roadway as safely as possible."
+            "feedback": "If headlights fail, slow, activate hazard lights, and move off the roadway as safely as possible."
           }
         }
+      ],
+      "intro": "You are driving at night in light rain. An oncoming vehicle creates glare, spray reduces visibility, a deer warning sign appears, and the pavement begins to hold water. A safe response requires lower speed, low beams, added following space, careful shoulder scanning, and smooth control.",
+      "summary": [
+        "Never drive faster than the distance you can see and stop within.",
+        "Use low beams in fog, rain, and snow when reflected glare reduces visibility.",
+        "Increase following distance whenever traction or visibility decreases.",
+        "Hydroplaning, skids, and black ice require smooth inputs rather than sudden corrections.",
+        "Fatigue is a driving impairment; stop and rest when drowsiness begins."
       ]
     },
     "Distraction & Impairment": {
@@ -14142,7 +14302,8 @@ window.APP_DATA = {
       "topics": [
         {
           "title": "1. Alcohol and Driving Ability",
-          "content": "Alcohol reduces judgment, vision, coordination, attention, and reaction time before a driver may feel obviously impaired. The safest rule is not to drive after drinking and not to ride with an impaired driver.",
+          "page": 84,
+          "body": "Alcohol reduces judgment, vision, coordination, attention, and reaction time before a driver may feel obviously impaired. The safest rule is not to drive after drinking and not to ride with an impaired driver.",
           "example": "Choose a sober driver before anyone begins drinking.",
           "mistake": "Believing that feeling normal means driving ability is normal.",
           "check": {
@@ -14154,12 +14315,13 @@ window.APP_DATA = {
               "Wait fifteen minutes"
             ],
             "answer": 1,
-            "explain": "Alcohol reduces judgment, vision, coordination, attention, and reaction time before a driver may feel obviously impaired."
+            "feedback": "Alcohol reduces judgment, vision, coordination, attention, and reaction time before a driver may feel obviously impaired."
           }
         },
         {
           "title": "2. BAC and Impairment",
-          "content": "Blood alcohol concentration is affected by the amount consumed, time, body characteristics, food, and other factors. Even a BAC below the adult legal limit can impair driving, and stricter rules apply to drivers under 21.",
+          "page": 84,
+          "body": "Blood alcohol concentration is affected by the amount consumed, time, body characteristics, food, and other factors. Even a BAC below the adult legal limit can impair driving, and stricter rules apply to drivers under 21.",
           "example": "A teen driver should treat any alcohol use as incompatible with driving.",
           "mistake": "Using the legal limit as a target rather than an enforcement threshold.",
           "check": {
@@ -14171,12 +14333,13 @@ window.APP_DATA = {
               "Only for new drivers"
             ],
             "answer": 1,
-            "explain": "Blood alcohol concentration is affected by the amount consumed, time, body characteristics, food, and other factors."
+            "feedback": "Blood alcohol concentration is affected by the amount consumed, time, body characteristics, food, and other factors."
           }
         },
         {
           "title": "3. Sobering-Up Myths",
-          "content": "Coffee, cold showers, exercise, food, or fresh air do not remove alcohol from the bloodstream. Only time allows the body to process alcohol.",
+          "page": 84,
+          "body": "Coffee, cold showers, exercise, food, or fresh air do not remove alcohol from the bloodstream. Only time allows the body to process alcohol.",
           "example": "Arrange transportation instead of trying to become sober quickly.",
           "mistake": "Believing caffeine makes an impaired person safe to drive.",
           "check": {
@@ -14188,12 +14351,13 @@ window.APP_DATA = {
               "Exercise"
             ],
             "answer": 2,
-            "explain": "Coffee, cold showers, exercise, food, or fresh air do not remove alcohol from the bloodstream."
+            "feedback": "Coffee, cold showers, exercise, food, or fresh air do not remove alcohol from the bloodstream."
           }
         },
         {
           "title": "4. Cannabis and Other Drugs",
-          "content": "Cannabis and other drugs can alter judgment, coordination, perception, attention, and reaction time. Mixing substances can intensify impairment. A substance being prescribed, legal, or familiar does not make impaired driving safe.",
+          "page": 84,
+          "body": "Cannabis and other drugs can alter judgment, coordination, perception, attention, and reaction time. Mixing substances can intensify impairment. A substance being prescribed, legal, or familiar does not make impaired driving safe.",
           "example": "Do not drive after using a substance that changes alertness or coordination.",
           "mistake": "Assuming cannabis is safe because it does not affect everyone the same way.",
           "check": {
@@ -14205,12 +14369,13 @@ window.APP_DATA = {
               "Drive below the speed limit"
             ],
             "answer": 1,
-            "explain": "Cannabis and other drugs can alter judgment, coordination, perception, attention, and reaction time."
+            "feedback": "Cannabis and other drugs can alter judgment, coordination, perception, attention, and reaction time."
           }
         },
         {
           "title": "5. Prescription and Over-the-Counter Medicines",
-          "content": "Some medicines cause drowsiness, dizziness, blurred vision, slowed reactions, or confusion. Read labels, follow medical advice, and learn how a medicine affects you before driving.",
+          "page": 84,
+          "body": "Some medicines cause drowsiness, dizziness, blurred vision, slowed reactions, or confusion. Read labels, follow medical advice, and learn how a medicine affects you before driving.",
           "example": "Avoid driving after taking a cold medicine labeled 'may cause drowsiness.'",
           "mistake": "Assuming over-the-counter medicine cannot impair driving.",
           "check": {
@@ -14222,12 +14387,13 @@ window.APP_DATA = {
               "Open the windows"
             ],
             "answer": 1,
-            "explain": "Some medicines cause drowsiness, dizziness, blurred vision, slowed reactions, or confusion."
+            "feedback": "Some medicines cause drowsiness, dizziness, blurred vision, slowed reactions, or confusion."
           }
         },
         {
           "title": "6. Mixing Substances",
-          "content": "Combining alcohol with medicines, cannabis, or other drugs can produce greater impairment than either substance alone. Never assume one substance cancels another.",
+          "page": 84,
+          "body": "Combining alcohol with medicines, cannabis, or other drugs can produce greater impairment than either substance alone. Never assume one substance cancels another.",
           "example": "Use a sober ride when any combination may affect alertness.",
           "mistake": "Believing a stimulant cancels alcohol impairment.",
           "check": {
@@ -14239,12 +14405,13 @@ window.APP_DATA = {
               "Only prescription drugs create risk"
             ],
             "answer": 0,
-            "explain": "Combining alcohol with medicines, cannabis, or other drugs can produce greater impairment than either substance alone."
+            "feedback": "Combining alcohol with medicines, cannabis, or other drugs can produce greater impairment than either substance alone."
           }
         },
         {
           "title": "7. Visual, Manual, and Mental Distraction",
-          "content": "Distraction can take the eyes off the road, hands off the wheel, or mind away from driving. Texting is especially dangerous because it often combines all three forms.",
+          "page": 84,
+          "body": "Distraction can take the eyes off the road, hands off the wheel, or mind away from driving. Texting is especially dangerous because it often combines all three forms.",
           "example": "Silence the phone and set navigation before moving.",
           "mistake": "Believing a quick glance cannot matter.",
           "check": {
@@ -14256,12 +14423,13 @@ window.APP_DATA = {
               "It affects only one hand"
             ],
             "answer": 1,
-            "explain": "Distraction can take the eyes off the road, hands off the wheel, or mind away from driving."
+            "feedback": "Distraction can take the eyes off the road, hands off the wheel, or mind away from driving."
           }
         },
         {
           "title": "8. Phones and Electronic Devices",
-          "content": "A phone call, text, notification, video, or social-media message can wait. Pull completely off the roadway at a safe location before interacting with a device. Hands-free use can still create mental distraction.",
+          "page": 84,
+          "body": "A phone call, text, notification, video, or social-media message can wait. Pull completely off the roadway at a safe location before interacting with a device. Hands-free use can still create mental distraction.",
           "example": "Let a passenger manage navigation or wait until safely parked.",
           "mistake": "Using a red light as an opportunity to text.",
           "check": {
@@ -14273,12 +14441,13 @@ window.APP_DATA = {
               "Slow down and read it"
             ],
             "answer": 1,
-            "explain": "A phone call, text, notification, video, or social-media message can wait."
+            "feedback": "A phone call, text, notification, video, or social-media message can wait."
           }
         },
         {
           "title": "9. Passengers and In-Vehicle Distraction",
-          "content": "Passengers, food, pets, grooming, loud music, and reaching for objects can all interfere with safe driving. New drivers should set limits and ask passengers to help maintain a calm environment.",
+          "page": 84,
+          "body": "Passengers, food, pets, grooming, loud music, and reaching for objects can all interfere with safe driving. New drivers should set limits and ask passengers to help maintain a calm environment.",
           "example": "Tell passengers that the driver needs quiet during a difficult merge.",
           "mistake": "Turning around to deal with passengers while the vehicle is moving.",
           "check": {
@@ -14290,12 +14459,13 @@ window.APP_DATA = {
               "Use the phone to record them"
             ],
             "answer": 1,
-            "explain": "Passengers, food, pets, grooming, loud music, and reaching for objects can all interfere with safe driving."
+            "feedback": "Passengers, food, pets, grooming, loud music, and reaching for objects can all interfere with safe driving."
           }
         },
         {
           "title": "10. Fatigue and Microsleep",
-          "content": "Fatigue slows reaction time, reduces judgment, causes lane drift, and can lead to microsleep. Warning signs include frequent yawning, missing signs, heavy eyelids, wandering thoughts, and not remembering recent miles.",
+          "page": 84,
+          "body": "Fatigue slows reaction time, reduces judgment, causes lane drift, and can lead to microsleep. Warning signs include frequent yawning, missing signs, heavy eyelids, wandering thoughts, and not remembering recent miles.",
           "example": "Exit and rest when you begin drifting or missing signs.",
           "mistake": "Relying on music, cold air, or caffeine to replace sleep.",
           "check": {
@@ -14307,12 +14477,13 @@ window.APP_DATA = {
               "Follow another vehicle closely"
             ],
             "answer": 1,
-            "explain": "Fatigue slows reaction time, reduces judgment, causes lane drift, and can lead to microsleep."
+            "feedback": "Fatigue slows reaction time, reduces judgment, causes lane drift, and can lead to microsleep."
           }
         },
         {
           "title": "11. Emotions, Anger, and Road Rage",
-          "content": "Anger, stress, fear, excitement, and sadness can narrow attention and lead to aggressive choices. Do not respond to gestures, tailgating, or insults. Create distance and seek a public or safe location if another driver follows or threatens you.",
+          "page": 84,
+          "body": "Anger, stress, fear, excitement, and sadness can narrow attention and lead to aggressive choices. Do not respond to gestures, tailgating, or insults. Create distance and seek a public or safe location if another driver follows or threatens you.",
           "example": "Let an aggressive driver pass and avoid eye contact or gestures.",
           "mistake": "Brake-checking or blocking a driver who is behaving aggressively.",
           "check": {
@@ -14324,12 +14495,13 @@ window.APP_DATA = {
               "Block the lane"
             ],
             "answer": 1,
-            "explain": "Anger, stress, fear, excitement, and sadness can narrow attention and lead to aggressive choices."
+            "feedback": "Anger, stress, fear, excitement, and sadness can narrow attention and lead to aggressive choices."
           }
         },
         {
           "title": "12. Seat Belts, Airbags, and Occupant Readiness",
-          "content": "Seat belts should be worn correctly by every occupant on every trip. Sit upright, keep the lap belt low across the hips, place the shoulder belt across the chest, and maintain safe distance from the airbag.",
+          "page": 84,
+          "body": "Seat belts should be worn correctly by every occupant on every trip. Sit upright, keep the lap belt low across the hips, place the shoulder belt across the chest, and maintain safe distance from the airbag.",
           "example": "Buckle every passenger before moving the vehicle.",
           "mistake": "Putting the shoulder belt behind the back.",
           "check": {
@@ -14341,9 +14513,17 @@ window.APP_DATA = {
               "Across the neck"
             ],
             "answer": 1,
-            "explain": "Seat belts should be worn correctly by every occupant on every trip."
+            "feedback": "Seat belts should be worn correctly by every occupant on every trip."
           }
         }
+      ],
+      "intro": "You are preparing to drive home after a long evening. You took cold medicine, slept poorly, received several phone notifications, and a friend pressures you to leave immediately. A safe driver evaluates fitness before starting the vehicle and chooses another ride when necessary.",
+      "summary": [
+        "Alcohol and drugs can impair driving before the driver feels obviously affected.",
+        "Only time lowers alcohol concentration; coffee and cold showers do not.",
+        "Texting combines visual, manual, and mental distraction.",
+        "Fatigue can be as dangerous as other forms of impairment.",
+        "Seat belts and proper occupant positioning reduce injury risk."
       ]
     },
     "Defensive Driving & Sharing": {
@@ -14361,7 +14541,8 @@ window.APP_DATA = {
       "topics": [
         {
           "title": "1. Large Trucks and No-Zones",
-          "content": "Large trucks have wide blind areas in front, behind, and along both sides. Drivers should avoid lingering beside a truck, should not cut closely in front after passing, and should leave extra room because trucks need more distance to stop.",
+          "page": 74,
+          "body": "Large trucks have wide blind areas in front, behind, and along both sides. Drivers should avoid lingering beside a truck, should not cut closely in front after passing, and should leave extra room because trucks need more distance to stop.",
           "example": "Pass a truck steadily on the left and remain ahead until both truck headlights are visible in your mirror.",
           "mistake": "Driving beside a trailer for a long distance.",
           "check": {
@@ -14373,12 +14554,13 @@ window.APP_DATA = {
               "Your headlights may distract the driver"
             ],
             "answer": 1,
-            "explain": "Large trucks have wide blind areas in front, behind, and along both sides."
+            "feedback": "Large trucks have wide blind areas in front, behind, and along both sides."
           }
         },
         {
           "title": "2. Wide Turns by Large Vehicles",
-          "content": "Trucks and buses may swing left before turning right or may need more than one lane to complete a turn. Never squeeze between a turning truck and the curb, and do not assume an open space beside the truck is a usable lane.",
+          "page": 74,
+          "body": "Trucks and buses may swing left before turning right or may need more than one lane to complete a turn. Never squeeze between a turning truck and the curb, and do not assume an open space beside the truck is a usable lane.",
           "example": "Stay behind a truck displaying a right-turn signal rather than entering the space along its passenger side.",
           "mistake": "Passing a turning truck on the right.",
           "check": {
@@ -14390,12 +14572,13 @@ window.APP_DATA = {
               "Use the shoulder"
             ],
             "answer": 1,
-            "explain": "Trucks and buses may swing left before turning right or may need more than one lane to complete a turn."
+            "feedback": "Trucks and buses may swing left before turning right or may need more than one lane to complete a turn."
           }
         },
         {
           "title": "3. School Buses",
-          "content": "Flashing red lights and an extended stop arm indicate that children are loading or unloading. Drivers must stop as required by the roadway design and remain stopped until the lights stop, the arm retracts, and the way is safe.",
+          "page": 74,
+          "body": "Flashing red lights and an extended stop arm indicate that children are loading or unloading. Drivers must stop as required by the roadway design and remain stopped until the lights stop, the arm retracts, and the way is safe.",
           "example": "On an undivided road, traffic in both directions generally stops for a school bus displaying red lights.",
           "mistake": "Proceeding because no child is immediately visible.",
           "check": {
@@ -14407,12 +14590,13 @@ window.APP_DATA = {
               "After waiting ten seconds"
             ],
             "answer": 1,
-            "explain": "Flashing red lights and an extended stop arm indicate that children are loading or unloading."
+            "feedback": "Flashing red lights and an extended stop arm indicate that children are loading or unloading."
           }
         },
         {
           "title": "4. Motorcycles",
-          "content": "Motorcycles are entitled to a full lane but can be difficult to see and judge. Their smaller size may make them appear farther away or slower than they are. Increase following distance and look carefully before turning or changing lanes.",
+          "page": 74,
+          "body": "Motorcycles are entitled to a full lane but can be difficult to see and judge. Their smaller size may make them appear farther away or slower than they are. Increase following distance and look carefully before turning or changing lanes.",
           "example": "Before a left turn, make a deliberate second search for motorcycles approaching from the opposite direction.",
           "mistake": "Assuming a motorcycle can stop instantly because it is small.",
           "check": {
@@ -14424,12 +14608,13 @@ window.APP_DATA = {
               "They must travel on the shoulder"
             ],
             "answer": 0,
-            "explain": "Motorcycles are entitled to a full lane but can be difficult to see and judge."
+            "feedback": "Motorcycles are entitled to a full lane but can be difficult to see and judge."
           }
         },
         {
           "title": "5. Bicyclists",
-          "content": "Bicyclists are legitimate road users. Give substantial passing clearance, check blind spots before turning, and avoid opening a door into a bicycle's path. Do not pass a bicycle when oncoming traffic leaves insufficient room.",
+          "page": 74,
+          "body": "Bicyclists are legitimate road users. Give substantial passing clearance, check blind spots before turning, and avoid opening a door into a bicycle's path. Do not pass a bicycle when oncoming traffic leaves insufficient room.",
           "example": "Wait behind a bicyclist on a narrow road until the opposing lane is fully clear.",
           "mistake": "Squeezing past while remaining in the same narrow lane.",
           "check": {
@@ -14441,12 +14626,13 @@ window.APP_DATA = {
               "Pass within the same lane"
             ],
             "answer": 1,
-            "explain": "Bicyclists are legitimate road users."
+            "feedback": "Bicyclists are legitimate road users."
           }
         },
         {
           "title": "6. Pedestrians and People with Disabilities",
-          "content": "Drivers must yield to pedestrians in crosswalks and remain especially alert for children, older adults, wheelchair users, and people with visual or hearing impairments. A white cane or guide dog indicates a visually impaired pedestrian who may not see your vehicle.",
+          "page": 74,
+          "body": "Drivers must yield to pedestrians in crosswalks and remain especially alert for children, older adults, wheelchair users, and people with visual or hearing impairments. A white cane or guide dog indicates a visually impaired pedestrian who may not see your vehicle.",
           "example": "Stop and remain stopped for a person using a white cane who is entering the crosswalk.",
           "mistake": "Using the horn to signal a visually impaired person to hurry.",
           "check": {
@@ -14458,12 +14644,13 @@ window.APP_DATA = {
               "Drive around the person"
             ],
             "answer": 1,
-            "explain": "Drivers must yield to pedestrians in crosswalks and remain especially alert for children, older adults, wheelchair users, and people with visual or hearing impairments."
+            "feedback": "Drivers must yield to pedestrians in crosswalks and remain especially alert for children, older adults, wheelchair users, and people with visual or hearing impairments."
           }
         },
         {
           "title": "7. Emergency Vehicles",
-          "content": "When an emergency vehicle approaches with lights and siren, move right and stop when safe. If already in an intersection, clear it first. Do not follow closely behind emergency vehicles or enter a roadway area blocked for emergency operations.",
+          "page": 74,
+          "body": "When an emergency vehicle approaches with lights and siren, move right and stop when safe. If already in an intersection, clear it first. Do not follow closely behind emergency vehicles or enter a roadway area blocked for emergency operations.",
           "example": "Clear an intersection, then pull right for an approaching ambulance.",
           "mistake": "Stopping in the middle of an intersection.",
           "check": {
@@ -14475,12 +14662,13 @@ window.APP_DATA = {
               "Reverse"
             ],
             "answer": 1,
-            "explain": "When an emergency vehicle approaches with lights and siren, move right and stop when safe."
+            "feedback": "When an emergency vehicle approaches with lights and siren, move right and stop when safe."
           }
         },
         {
           "title": "8. Move Over Situations",
-          "content": "When approaching stopped emergency, service, recovery, or maintenance vehicles displaying warning lights, move to a farther lane when possible. If a safe lane change is not available, reduce speed and pass with caution.",
+          "page": 74,
+          "body": "When approaching stopped emergency, service, recovery, or maintenance vehicles displaying warning lights, move to a farther lane when possible. If a safe lane change is not available, reduce speed and pass with caution.",
           "example": "On a multilane highway, check traffic and move left before passing a stopped patrol vehicle on the shoulder.",
           "mistake": "Maintaining speed because the vehicle is outside the travel lane.",
           "check": {
@@ -14492,12 +14680,13 @@ window.APP_DATA = {
               "Accelerate past"
             ],
             "answer": 1,
-            "explain": "When approaching stopped emergency, service, recovery, or maintenance vehicles displaying warning lights, move to a farther lane when possible."
+            "feedback": "When approaching stopped emergency, service, recovery, or maintenance vehicles displaying warning lights, move to a farther lane when possible."
           }
         },
         {
           "title": "9. Work Zones and Flaggers",
-          "content": "Work zones may contain changing lanes, equipment, workers, uneven surfaces, and sudden stops. Temporary signs, arrow boards, cones, and flagger directions control movement. The flagger's direction overrides a normal traffic signal.",
+          "page": 74,
+          "body": "Work zones may contain changing lanes, equipment, workers, uneven surfaces, and sudden stops. Temporary signs, arrow boards, cones, and flagger directions control movement. The flagger's direction overrides a normal traffic signal.",
           "example": "Stop when a flagger displays STOP even if a nearby signal is green.",
           "mistake": "Watching construction equipment instead of traffic ahead.",
           "check": {
@@ -14509,12 +14698,13 @@ window.APP_DATA = {
               "The nearest speed sign"
             ],
             "answer": 1,
-            "explain": "Work zones may contain changing lanes, equipment, workers, uneven surfaces, and sudden stops."
+            "feedback": "Work zones may contain changing lanes, equipment, workers, uneven surfaces, and sudden stops."
           }
         },
         {
           "title": "10. Railroad Crossings",
-          "content": "Trains always have priority. Stop for flashing lights, gates, or an approaching train. Never drive around a gate or stop on tracks. At multiple tracks, wait until all tracks are clear before crossing.",
+          "page": 74,
+          "body": "Trains always have priority. Stop for flashing lights, gates, or an approaching train. Never drive around a gate or stop on tracks. At multiple tracks, wait until all tracks are clear before crossing.",
           "example": "After one train passes, continue waiting if lights flash or multiple tracks remain blocked from view.",
           "mistake": "Crossing as soon as the last train car passes.",
           "check": {
@@ -14526,12 +14716,13 @@ window.APP_DATA = {
               "When the gate begins rising"
             ],
             "answer": 1,
-            "explain": "Trains always have priority."
+            "feedback": "Trains always have priority."
           }
         },
         {
           "title": "11. Farm Equipment and Slow-Moving Vehicles",
-          "content": "Farm tractors, machinery, horse-drawn vehicles, and other slow vehicles may travel well below normal traffic speed. Their orange triangle emblem warns of slow movement, not permission to pass. Wait for adequate sight distance and legal passing conditions.",
+          "page": 74,
+          "body": "Farm tractors, machinery, horse-drawn vehicles, and other slow vehicles may travel well below normal traffic speed. Their orange triangle emblem warns of slow movement, not permission to pass. Wait for adequate sight distance and legal passing conditions.",
           "example": "Reduce speed early when approaching a tractor near the crest of a hill.",
           "mistake": "Passing near a curve because the tractor is slow.",
           "check": {
@@ -14543,12 +14734,13 @@ window.APP_DATA = {
               "The vehicle carries hazardous material"
             ],
             "answer": 1,
-            "explain": "Farm tractors, machinery, horse-drawn vehicles, and other slow vehicles may travel well below normal traffic speed."
+            "feedback": "Farm tractors, machinery, horse-drawn vehicles, and other slow vehicles may travel well below normal traffic speed."
           }
         },
         {
           "title": "12. Defensive Sharing",
-          "content": "Sharing the road means anticipating mistakes and preserving space. Avoid aggressive responses, do not compete for position, and create room for merging vehicles, confused drivers, pedestrians, and vulnerable road users.",
+          "page": 74,
+          "body": "Sharing the road means anticipating mistakes and preserving space. Avoid aggressive responses, do not compete for position, and create room for merging vehicles, confused drivers, pedestrians, and vulnerable road users.",
           "example": "Ease off the accelerator when another vehicle merges too closely.",
           "mistake": "Closing a gap to prevent another vehicle from entering.",
           "check": {
@@ -14560,9 +14752,17 @@ window.APP_DATA = {
               "Use high beams"
             ],
             "answer": 1,
-            "explain": "Sharing the road means anticipating mistakes and preserving space."
+            "feedback": "Sharing the road means anticipating mistakes and preserving space."
           }
         }
+      ],
+      "intro": "You are driving on a two-lane road behind a farm tractor. A bicyclist is near the shoulder, an oncoming truck approaches, and an emergency vehicle appears behind you. The safest decision requires patience, proper yielding, and enough room for every road user.",
+      "summary": [
+        "Avoid truck blind spots and never squeeze beside a wide-turning vehicle.",
+        "Give motorcycles and bicycles full respect, visibility, and extra space.",
+        "Stop and yield properly for school buses, pedestrians, trains, and emergency vehicles.",
+        "Obey flaggers and temporary work-zone controls.",
+        "Defensive driving means creating space instead of competing for it."
       ]
     },
     "Work Zones & Responsibility": {
@@ -14580,7 +14780,8 @@ window.APP_DATA = {
       "topics": [
         {
           "title": "1. Recognizing Work Zones",
-          "content": "Orange signs, cones, drums, barricades, arrow boards, workers, and equipment identify construction or maintenance conditions.",
+          "page": 18,
+          "body": "Orange signs, cones, drums, barricades, arrow boards, workers, and equipment identify construction or maintenance conditions.",
           "example": "Reduce speed before reaching the first cone.",
           "mistake": "Waiting until the lane physically ends to react.",
           "check": {
@@ -14592,12 +14793,13 @@ window.APP_DATA = {
               "Green"
             ],
             "answer": 1,
-            "explain": "Orange marks construction and maintenance controls."
+            "feedback": "Orange marks construction and maintenance controls."
           }
         },
         {
           "title": "2. Advance Warning and Speed",
-          "content": "Work-zone warnings often appear before workers or lane changes. Slow early and be prepared for sudden queues, uneven pavement, or narrowed lanes.",
+          "page": 18,
+          "body": "Work-zone warnings often appear before workers or lane changes. Slow early and be prepared for sudden queues, uneven pavement, or narrowed lanes.",
           "example": "Ease off when a ROAD WORK AHEAD sign appears even before cones are visible.",
           "mistake": "Maintaining speed until traffic stops.",
           "check": {
@@ -14609,12 +14811,13 @@ window.APP_DATA = {
               "After entering the narrowed lane"
             ],
             "answer": 1,
-            "explain": "Advance warnings provide time to slow smoothly."
+            "feedback": "Advance warnings provide time to slow smoothly."
           }
         },
         {
           "title": "3. Flaggers",
-          "content": "Flaggers use paddles and hand signals to stop, slow, or release traffic. Their directions override normal signs or signals in the controlled area.",
+          "page": 18,
+          "body": "Flaggers use paddles and hand signals to stop, slow, or release traffic. Their directions override normal signs or signals in the controlled area.",
           "example": "Stop for the flagger despite a nearby green signal.",
           "mistake": "Following the vehicle ahead instead of the current instruction.",
           "check": {
@@ -14626,12 +14829,13 @@ window.APP_DATA = {
               "Use the shoulder"
             ],
             "answer": 1,
-            "explain": "Authorized flagger direction controls traffic."
+            "feedback": "Authorized flagger direction controls traffic."
           }
         },
         {
           "title": "4. Cones, Drums, and Barricades",
-          "content": "Channelizing devices define the temporary travel path. Stay centered, do not cross closed areas, and expect lane widths or alignment to change.",
+          "page": 18,
+          "body": "Channelizing devices define the temporary travel path. Stay centered, do not cross closed areas, and expect lane widths or alignment to change.",
           "example": "Follow the lane formed by drums through a shift.",
           "mistake": "Straddling the temporary lane line.",
           "check": {
@@ -14643,12 +14847,13 @@ window.APP_DATA = {
               "Between two lanes"
             ],
             "answer": 1,
-            "explain": "Centering provides clearance from workers and adjacent traffic."
+            "feedback": "Centering provides clearance from workers and adjacent traffic."
           }
         },
         {
           "title": "5. Arrow Boards and Lane Closures",
-          "content": "Arrow boards direct traffic away from closed lanes. Signal, check for a gap, and merge smoothly without forcing another driver to brake.",
+          "page": 18,
+          "body": "Arrow boards direct traffic away from closed lanes. Signal, check for a gap, and merge smoothly without forcing another driver to brake.",
           "example": "Merge left when a flashing arrow directs traffic away from the right lane.",
           "mistake": "Racing to the final barrier at high speed.",
           "check": {
@@ -14660,12 +14865,13 @@ window.APP_DATA = {
               "Use the closed lane"
             ],
             "answer": 1,
-            "explain": "The arrow directs traffic into the open lane."
+            "feedback": "The arrow directs traffic into the open lane."
           }
         },
         {
           "title": "6. Following Distance and Rear-End Risk",
-          "content": "Work-zone traffic can stop suddenly because of flaggers, equipment, lane shifts, or congestion. Increase following distance and scan far ahead.",
+          "page": 18,
+          "body": "Work-zone traffic can stop suddenly because of flaggers, equipment, lane shifts, or congestion. Increase following distance and scan far ahead.",
           "example": "Leave room when brake lights appear several vehicles ahead.",
           "mistake": "Tailgating to prevent merging.",
           "check": {
@@ -14677,12 +14883,13 @@ window.APP_DATA = {
               "Brakes work better"
             ],
             "answer": 1,
-            "explain": "Queues and changing controls produce abrupt stops."
+            "feedback": "Queues and changing controls produce abrupt stops."
           }
         },
         {
           "title": "7. Workers and Equipment",
-          "content": "Workers may be close to traffic, and equipment may enter or cross the lane. Avoid distractions and obey reduced speed or stop instructions.",
+          "page": 18,
+          "body": "Workers may be close to traffic, and equipment may enter or cross the lane. Avoid distractions and obey reduced speed or stop instructions.",
           "example": "Cover the brake when a construction vehicle approaches the travel path.",
           "mistake": "Watching equipment instead of the lane and traffic ahead.",
           "check": {
@@ -14694,12 +14901,13 @@ window.APP_DATA = {
               "Using the phone"
             ],
             "answer": 1,
-            "explain": "Workers and equipment create unpredictable hazards."
+            "feedback": "Workers and equipment create unpredictable hazards."
           }
         },
         {
           "title": "8. Temporary Pavement and Uneven Surfaces",
-          "content": "Grooved pavement, steel plates, gravel, drop-offs, and uneven lanes can reduce traction or affect steering. Slow and avoid abrupt movement.",
+          "page": 18,
+          "body": "Grooved pavement, steel plates, gravel, drop-offs, and uneven lanes can reduce traction or affect steering. Slow and avoid abrupt movement.",
           "example": "Hold the wheel steadily across a grooved surface.",
           "mistake": "Braking or steering sharply on loose material.",
           "check": {
@@ -14711,12 +14919,13 @@ window.APP_DATA = {
               "Change lanes suddenly"
             ],
             "answer": 1,
-            "explain": "Smooth control reduces traction loss."
+            "feedback": "Smooth control reduces traction loss."
           }
         },
         {
           "title": "9. Night and Weather Work Zones",
-          "content": "Rain, darkness, glare, and reflective devices can make temporary paths harder to read. Reduce speed further and use low beams when appropriate.",
+          "page": 18,
+          "body": "Rain, darkness, glare, and reflective devices can make temporary paths harder to read. Reduce speed further and use low beams when appropriate.",
           "example": "Increase distance when rain hides lane markings and spray obscures cones.",
           "mistake": "Using high beams in fog or heavy spray.",
           "check": {
@@ -14728,12 +14937,13 @@ window.APP_DATA = {
               "Use cruise control"
             ],
             "answer": 1,
-            "explain": "Reduced visibility requires additional speed reduction."
+            "feedback": "Reduced visibility requires additional speed reduction."
           }
         },
         {
           "title": "10. Move-Over and Roadside Operations",
-          "content": "Move away from stopped emergency, recovery, maintenance, or service vehicles displaying warning lights when safe. If unable to move over, slow and pass cautiously.",
+          "page": 18,
+          "body": "Move away from stopped emergency, recovery, maintenance, or service vehicles displaying warning lights when safe. If unable to move over, slow and pass cautiously.",
           "example": "Change lanes before passing a patrol vehicle on the shoulder.",
           "mistake": "Maintaining full speed because the vehicle is outside the lane.",
           "check": {
@@ -14745,12 +14955,13 @@ window.APP_DATA = {
               "Use the shoulder"
             ],
             "answer": 1,
-            "explain": "Speed reduction protects roadside personnel."
+            "feedback": "Speed reduction protects roadside personnel."
           }
         },
         {
           "title": "11. Violations, Points, and Responsibility",
-          "content": "Traffic convictions can add points, delay licensing progress, or lead to suspension. Safe choices protect both people and driving privileges.",
+          "page": 18,
+          "body": "Traffic convictions can add points, delay licensing progress, or lead to suspension. Safe choices protect both people and driving privileges.",
           "example": "Review the consequences of a citation rather than ignoring it.",
           "mistake": "Assuming one violation cannot affect a teen license.",
           "check": {
@@ -14762,12 +14973,13 @@ window.APP_DATA = {
               "Only parking violations"
             ],
             "answer": 1,
-            "explain": "Violations may delay progression or cause sanctions."
+            "feedback": "Violations may delay progression or cause sanctions."
           }
         },
         {
           "title": "12. Crashes, Insurance, and Reporting",
-          "content": "After a crash, stop, protect life, call for help when needed, exchange required driver, vehicle, and insurance information, and complete required reporting.",
+          "page": 18,
+          "body": "After a crash, stop, protect life, call for help when needed, exchange required driver, vehicle, and insurance information, and complete required reporting.",
           "example": "Move a minor drivable crash from the lane when lawful and safe.",
           "mistake": "Leaving because damage appears minor.",
           "check": {
@@ -14779,9 +14991,17 @@ window.APP_DATA = {
               "Employment records"
             ],
             "answer": 1,
-            "explain": "Required identifying and insurance information supports lawful reporting."
+            "feedback": "Required identifying and insurance information supports lawful reporting."
           }
         }
+      ],
+      "intro": "You approach a work zone where the right lane closes, an arrow board directs traffic left, a flagger displays SLOW, and traffic stops beyond a curve. Safe driving requires early speed reduction, a controlled merge, and full attention.",
+      "summary": [
+        "Orange signs and channelizing devices identify temporary roadway conditions.",
+        "Flaggers and authorized workers control traffic even when normal signals conflict.",
+        "Slow early, increase following distance, and expect queues or lane shifts.",
+        "Protect workers, emergency responders, and stopped roadside vehicles.",
+        "Crashes, violations, insurance, and reporting responsibilities continue after driving stops."
       ]
     }
   },
@@ -15577,8 +15797,7 @@ function renderMetrics(){
  document.querySelector('#passedCount').textContent=`${passed} of ${DATA.sections.length} passed`;
 }
 function renderSections(){
- const wrap=document.querySelector('#sectionProgress'), btns=document.querySelector('#sectionButtons');wrap.innerHTML='';btns.innerHTML='';
- w.innerHTML='';DATA.sections.forEach(s=>{
+ const wrap=document.querySelector('#sectionProgress'), btns=document.querySelector('#sectionButtons');wrap.innerHTML='';btns.innerHTML='';DATA.sections.forEach(s=>{
   const x=sectionInfo(s);
   wrap.insertAdjacentHTML('beforeend',`<div class="progress-row"><div class="progress-label"><span>${s}</span><span class="${x.passed?'passed':''}">${x.passed?'Passed • ':''}${x.best||x.score}%</span></div><div class="bar"><i style="width:${Math.min(100,x.best||x.score)}%"></i></div></div>`);
   const b=document.createElement('button');b.innerHTML=`${s}<br><small>${x.passed?'Passed':(x.answered?`${x.score}% practice accuracy`:'Not started')}</small>`;
@@ -15609,7 +15828,11 @@ function lessonStatus(section){
  return {label:'Not Started',className:'not-started',button:'Begin lesson'};
 }
 function renderLessons(){const w=document.querySelector('#lessonCards');if(!w){console.error('lessonCards container missing');return;}w.innerHTML='<p class="lesson-status">Loading '+(DATA?.sections?.length||0)+' course sections…</p>';if(!DATA||!DATA.lessons){w.innerHTML='<div class="feedback"><h3>Lesson files did not update together</h3><p>This page is not running the current course data. Re-upload every file, then refresh.</p></div>';return;}w.innerHTML='';DATA.sections.forEach(s=>{const l=DATA.lessons[s];if(!l)return;const x=sectionInfo(s),status=lessonStatus(s),d=document.createElement('div');d.className='lesson-card';const quizNote=x.passed?'<span>Section quiz passed</span>':(x.attempts?'<span>Best quiz: '+x.best+'%</span>':'');d.innerHTML=`<span class="eyebrow">${l.topics.length} TOPICS • PAGES ${l.manualPages}</span><h3>${l.title}</h3><p>${l.objective}</p><div class="lesson-card-status ${status.className}"><b>${status.label}</b>${quizNote}</div><button>${status.button}</button>`;d.querySelector('button').onclick=()=>openLesson(s);w.appendChild(d)});if(!w.children.length)w.innerHTML='<div class="feedback"><h3>No lessons rendered</h3><p>No matching lesson records were found.</p></div>'}
-function openLesson(s){const l=DATA.lessons[s],v=document.querySelector('#lessonViewer');if(!currentProfile.lessonsViewed.includes(s)){currentProfile.lessonsViewed.push(s);save()}document.querySelector('#lessonListCard').hidden=true;v.hidden=false;let checks=l.topics.map((t,i)=>`<article class="topic-block"><div class="topic-number">${i+1}</div><div class="topic-content"><span class="eyebrow">TOPIC ${i+1} • MANUAL PAGE ${t.page}</span><h3>${t.title}</h3><p>${t.body}</p><div class="example-box"><b>Real-world example</b><p>${t.example}</p></div><div class="mistake-box"><b>Common mistake</b><p>${t.mistake}</p></div><div class="mini-check" data-topic="${i}"><b>Quick check</b><p>${t.check.q}</p><div class="mini-choices">${t.check.choices.map((c,j)=>`<button data-answer="${j}">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="mini-feedback"></div></div></div></article>`).join('');v.innerHTML=`<div class="card lesson-view"><span class="eyebrow">${s} • MANUAL PAGES ${l.manualPages}</span><h2>${l.title}</h2><div class="lesson-objective"><b>Learning objective:</b> ${l.objective}</div><p class="lesson-intro">${l.intro}</p><div class="lesson-toc"><b>In this lesson</b>${l.topics.map((t,i)=>`<a href="#topic-${i}">${i+1}. ${t.title}</a>`).join('')}</div>${checks}<div class="lesson-summary"><h3>Lesson summary</h3><ul class="lesson-points">${l.summary.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="lesson-actions"><button id="lessonComplete">Mark lesson complete</button><button class="secondary" id="lessonQuiz">Take section quiz</button><button class="secondary" id="lessonManual">Open manual</button><button class="secondary" id="lessonBack">Back to lessons</button></div></div>`;v.querySelectorAll('.topic-block').forEach((el,i)=>el.id='topic-'+i);v.querySelectorAll('.mini-check').forEach((box,i)=>{box.querySelectorAll('button').forEach(btn=>btn.onclick=()=>{if(box.dataset.done)return;box.dataset.done='1';const chosen=Number(btn.dataset.answer),correct=l.topics[i].check.answer;box.querySelectorAll('button').forEach(b=>{b.disabled=true;if(Number(b.dataset.answer)===correct)b.classList.add('correct');if(b===btn&&chosen!==correct)b.classList.add('wrong')});box.querySelector('.mini-feedback').innerHTML=`<div class="feedback ${chosen===correct?'good':''}"><b>${chosen===correct?'Correct':'Correct answer: '+l.topics[i].check.choices[correct]}</b><p>${l.topics[i].check.feedback}</p></div>`})});v.querySelector('#lessonComplete').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();renderLessons();v.querySelector('#lessonComplete').textContent='Lesson completed ✓';v.querySelector('#lessonComplete').disabled=true};v.querySelector('#lessonQuiz').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();document.querySelector('#lessonListCard').hidden=false;v.hidden=true;startSection(s);switchTab('test')};v.querySelector('#lessonManual').onclick=()=>openManual(parseInt(l.manualPages)||1);v.querySelector('#lessonBack').onclick=()=>{v.hidden=true;document.querySelector('#lessonListCard').hidden=false;renderLessons()};renderBadges();window.scrollTo({top:0,behavior:'smooth'})}
+function openLesson(s){const l=DATA.lessons[s],v=document.querySelector('#lessonViewer');
+ if(!l||!Array.isArray(l.topics)){v.innerHTML='<div class="feedback"><h3>Lesson data unavailable</h3><p>Please upload the complete release and refresh.</p></div>';v.hidden=false;return}
+ l.intro=l.intro||l.scenario||'';
+ l.summary=Array.isArray(l.summary)?l.summary:(l.points||[]);
+ l.topics=l.topics.map(t=>({...t,page:t.page||parseInt(l.manualPages)||1,body:t.body||t.content||'',check:{...(t.check||{}),feedback:t.check?.feedback||t.check?.explain||''}}));if(!currentProfile.lessonsViewed.includes(s)){currentProfile.lessonsViewed.push(s);save()}document.querySelector('#lessonListCard').hidden=true;v.hidden=false;let checks=l.topics.map((t,i)=>`<article class="topic-block"><div class="topic-number">${i+1}</div><div class="topic-content"><span class="eyebrow">TOPIC ${i+1} • MANUAL PAGE ${t.page}</span><h3>${t.title}</h3><p>${t.body}</p><div class="example-box"><b>Real-world example</b><p>${t.example}</p></div><div class="mistake-box"><b>Common mistake</b><p>${t.mistake}</p></div><div class="mini-check" data-topic="${i}"><b>Quick check</b><p>${t.check.q}</p><div class="mini-choices">${t.check.choices.map((c,j)=>`<button data-answer="${j}">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="mini-feedback"></div></div></div></article>`).join('');v.innerHTML=`<div class="card lesson-view"><span class="eyebrow">${s} • MANUAL PAGES ${l.manualPages}</span><h2>${l.title}</h2><div class="lesson-objective"><b>Learning objective:</b> ${l.objective}</div><p class="lesson-intro">${l.intro}</p><div class="lesson-toc"><b>In this lesson</b>${l.topics.map((t,i)=>`<a href="#topic-${i}">${i+1}. ${t.title}</a>`).join('')}</div>${checks}<div class="lesson-summary"><h3>Lesson summary</h3><ul class="lesson-points">${l.summary.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="lesson-actions"><button id="lessonComplete">Mark lesson complete</button><button class="secondary" id="lessonQuiz">Take section quiz</button><button class="secondary" id="lessonManual">Open manual</button><button class="secondary" id="lessonBack">Back to lessons</button></div></div>`;v.querySelectorAll('.topic-block').forEach((el,i)=>el.id='topic-'+i);v.querySelectorAll('.mini-check').forEach((box,i)=>{box.querySelectorAll('button').forEach(btn=>btn.onclick=()=>{if(box.dataset.done)return;box.dataset.done='1';const chosen=Number(btn.dataset.answer),correct=l.topics[i].check.answer;box.querySelectorAll('button').forEach(b=>{b.disabled=true;if(Number(b.dataset.answer)===correct)b.classList.add('correct');if(b===btn&&chosen!==correct)b.classList.add('wrong')});box.querySelector('.mini-feedback').innerHTML=`<div class="feedback ${chosen===correct?'good':''}"><b>${chosen===correct?'Correct':'Correct answer: '+l.topics[i].check.choices[correct]}</b><p>${l.topics[i].check.feedback}</p></div>`})});v.querySelector('#lessonComplete').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();renderLessons();v.querySelector('#lessonComplete').textContent='Lesson completed ✓';v.querySelector('#lessonComplete').disabled=true};v.querySelector('#lessonQuiz').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();document.querySelector('#lessonListCard').hidden=false;v.hidden=true;startSection(s);switchTab('test')};v.querySelector('#lessonManual').onclick=()=>openManual(parseInt(l.manualPages)||1);v.querySelector('#lessonBack').onclick=()=>{v.hidden=true;document.querySelector('#lessonListCard').hidden=false;renderLessons()};renderBadges();window.scrollTo({top:0,behavior:'smooth'})}
 function renderAll(){
  const jobs=[['lessons',renderLessons],['metrics',renderMetrics],['sections',renderSections],['history',renderHistory],['goal',renderGoalAndReadiness],['badges',renderBadges],['examStatus',renderExamStatus],['learningInsights',renderLearningInsights],['learningCoach',renderLearningCoach],['readinessCenter',renderReadinessCenter]];
  jobs.forEach(([name,fn])=>{try{fn()}catch(err){console.error('Render failure:',name,err);if(name==='lessons'){const w=document.querySelector('#lessonCards');if(w)w.innerHTML='<div class="feedback"><h3>Lesson rendering error</h3><p>'+String(err.message||err)+'</p></div>';}}});
