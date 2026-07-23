@@ -274,3 +274,11 @@ VERSION 7.4 — AUDIO INSTRUCTOR LESSONS
 - Preferred speed saved locally.
 - Instructor-led narrative added to every topic.
 - Device voices; no audio files, API, account, or subscription required.
+
+VERSION 7.4.1 — READ QUESTION FIX
+- Corrected the Read Question button so it only reads the prompt and choices.
+- Quick-check grading now listens only to answer buttons inside .mini-choices.
+- Added preventDefault and stopPropagation to all lesson audio controls.
+- Added explicit type="button" to topic and question audio buttons.
+- Audio controls no longer select answers, reveal feedback, disable choices, or alter progress.
+- Updated the bundle query and service-worker cache.
