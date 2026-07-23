@@ -231,3 +231,15 @@ VERSION 7.1.1 — LESSON RENDER FIX
 - Fixed the undefined dashboard variable that interrupted section rendering.
 - Added backward-compatible lesson field handling.
 - Updated the service-worker cache and bundle version.
+
+VERSION 7.1.2 — LESSON CHECK HARDENING
+- Rebuilt all 132 embedded lesson knowledge checks using the stronger scenario-based main question bank.
+- Every 12-topic lesson now has exactly:
+  * A correct: 3
+  * B correct: 3
+  * C correct: 3
+  * D correct: 3
+- Preferentially selected understanding, applied, and judgment questions.
+- Reduced answer-length clues by avoiding candidates whose correct choice was uniquely longest when possible.
+- Added source question ID, difficulty, and question type to lesson-check metadata.
+- Updated bundle and service-worker cache versions.
