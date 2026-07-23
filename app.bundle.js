@@ -16357,6 +16357,22 @@ function lessonStatus(section){
 }
 function renderLessons(){const w=document.querySelector('#lessonCards');if(!w){console.error('lessonCards container missing');return;}w.innerHTML='<p class="lesson-status">Loading '+(DATA?.sections?.length||0)+' course sections…</p>';if(!DATA||!DATA.lessons){w.innerHTML='<div class="feedback"><h3>Lesson files did not update together</h3><p>This page is not running the current course data. Re-upload every file, then refresh.</p></div>';return;}w.innerHTML='';DATA.sections.forEach(s=>{const l=DATA.lessons[s];if(!l)return;const x=sectionInfo(s),status=lessonStatus(s),d=document.createElement('div');d.className='lesson-card';const quizNote=x.passed?'<span>Section quiz passed</span>':(x.attempts?'<span>Best quiz: '+x.best+'%</span>':'');d.innerHTML=`<span class="eyebrow">${l.topics.length} TOPICS • PAGES ${l.manualPages}</span><h3>${l.title}</h3><p>${l.objective}</p><div class="lesson-card-status ${status.className}"><b>${status.label}</b>${quizNote}</div><button>${status.button}</button>`;d.querySelector('button').onclick=()=>openLesson(s);w.appendChild(d)});if(!w.children.length)w.innerHTML='<div class="feedback"><h3>No lessons rendered</h3><p>No matching lesson records were found.</p></div>'}
 
+
+// ===== VERSION 7.5 ASSESSMENT QUESTION AUDIO =====
+function assessmentSpeechText(question){
+ return `Question. ${question.q}. Choices. ${question.choices.map((choice,index)=>`${String.fromCharCode(65+index)}. ${choice}`).join('. ')}`;
+}
+function bindAssessmentReadButton(container,question){
+ const button=container?.querySelector('#readAssessmentQuestion');
+ if(!button)return;
+ button.onclick=event=>{
+  event.preventDefault();
+  event.stopPropagation();
+  speakLessonText(assessmentSpeechText(question),null,'Reading question');
+ };
+}
+// ===== END VERSION 7.5 =====
+
 // ===== VERSION 7.4 LESSON AUDIO AND INSTRUCTOR NARRATIVE =====
 let lessonSpeechState={utterance:null,topicIndex:null,paused:false};
 function speechSupported(){return 'speechSynthesis' in window&&'SpeechSynthesisUtterance' in window}
@@ -16510,12 +16526,14 @@ function renderQuestion(){
  area.innerHTML=`<div class="card question-card">
  <div class="quiz-head"><span>${quiz.type}</span><b>${quiz.index+1} / ${quiz.questions.length}</b></div>
  <span class="eyebrow">${q.section} • MANUAL PAGE ${q.page}</span>
+ <button type="button" class="secondary assessment-read" id="readAssessmentQuestion">🔊 Read Question</button>
  <h2>${q.q}</h2><div class="choice-list">${q.choices.map((c,i)=>`<button class="choice" data-i="${i}">${String.fromCharCode(65+i)}. ${c}</button>`).join('')}</div>
  <div id="feedback"></div><div class="quiz-actions"><button class="secondary" id="quitQuiz">Exit test</button><button id="submitAnswer" disabled>Check answer</button></div></div>`;
  let selected=null;
+ bindAssessmentReadButton(area,q);
  area.querySelectorAll('.choice').forEach(b=>b.onclick=()=>{if(area.dataset.locked)return;selected=Number(b.dataset.i);area.querySelectorAll('.choice').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');area.querySelector('#submitAnswer').disabled=false});
- area.querySelector('#quitQuiz').onclick=()=>finishQuiz(true);
- area.querySelector('#submitAnswer').onclick=()=>{
+ area.querySelector('#quitQuiz').onclick=()=>{stopLessonSpeech();finishQuiz(true)};
+ area.querySelector('#submitAnswer').onclick=()=>{stopLessonSpeech();
   if(selected===null)return;area.dataset.locked='1';
   const correct=selected===q.answer;if(correct){quiz.correct++;currentProfile.correct++}else if(!currentProfile.missed.includes(q.id))currentProfile.missed.push(q.id);
   if(correct&&quiz.review)currentProfile.missed=currentProfile.missed.filter(id=>id!==q.id);
@@ -16734,6 +16752,7 @@ function renderExamQuestion(){
  </div>
  <div class="card question-card">
    <span class="eyebrow">${q.section}</span>
+   <button type="button" class="secondary assessment-read" id="readAssessmentQuestion">🔊 Read Question</button>
    <h2>Question ${examSession.index+1}: ${q.q}</h2>
    <div class="choice-list">${q.choices.map((c,i)=>`<button class="choice ${saved?.selected===i?'selected':''}" data-i="${i}" ${locked?'disabled':''}>${String.fromCharCode(65+i)}. ${c}</button>`).join('')}</div>
    ${examSession.isFinal?'<div class="final-lock-note">Final Exam rule: once you move forward, this answer is locked.</div>':''}
@@ -16747,8 +16766,10 @@ function renderExamQuestion(){
    </div>
  </div></div>`;
  updateExamTimer();
+ bindAssessmentReadButton(area,q);
 
  area.querySelectorAll('.choice').forEach(btn=>btn.onclick=()=>{
+   stopLessonSpeech();
    if(locked)return;
    const selected=Number(btn.dataset.i);
    examSession.answers[examSession.index]={selected,responseSeconds:Math.max(1,Math.round((Date.now()-(examSession.questionStarted||Date.now()))/1000)),locked:false};
@@ -16769,7 +16790,7 @@ function renderExamQuestion(){
    }
  };
  const prev=area.querySelector('#prevExam');
- if(prev)prev.onclick=()=>{examSession.index--;renderExamQuestion()};
+ if(prev)prev.onclick=()=>{stopLessonSpeech();examSession.index--;renderExamQuestion()};
  area.querySelector('#reviewExam').onclick=renderExamReview;
  area.querySelector('#nextExam').onclick=()=>{
    if(!examSession.answers[examSession.index]){

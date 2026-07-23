@@ -282,3 +282,19 @@ VERSION 7.4.1 — READ QUESTION FIX
 - Added explicit type="button" to topic and question audio buttons.
 - Audio controls no longer select answers, reveal feedback, disable choices, or alter progress.
 - Updated the bundle query and service-worker cache.
+
+VERSION 7.5 — READ ALL ASSESSMENTS
+- Added Read Question to all standard quizzes and exams.
+- Covers:
+  * 15-question Section Quizzes
+  * 25-question Mastery Exams
+  * Short Practice Tests
+  * Missed Question Review
+  * Permit Practice Exams
+  * Adaptive Final Exam
+  * Comprehensive Permit Readiness Final
+- Reads the question followed by choices A through D.
+- Does not select, grade, reveal, disable, or change any answer.
+- Uses the student's saved narration speed.
+- Narration stops when the student submits an answer, changes questions, or exits.
+- No other accessibility or interface changes were included.

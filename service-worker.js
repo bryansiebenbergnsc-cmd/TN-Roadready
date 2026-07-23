@@ -1,4 +1,4 @@
-const CACHE='tn-roadready-v7-4-1-read-question-fix';
+const CACHE='tn-roadready-v7-5-read-assessments';
 const CORE=['./','./index.html?v=4.3','./styles.css?v=4.3','./app.bundle.js?v=4.3','./manifest.json','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting()));

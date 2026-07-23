@@ -169,3 +169,5 @@ body.exam-active #quizArea{display:block!important}
 .topic-block{transition:box-shadow .2s ease,transform .2s ease,border-color .2s ease}
 .topic-block.speaking{box-shadow:0 0 0 4px #2f80ed33,0 8px 24px #0002;border-color:#2f80ed;transform:translateY(-2px)}
 @media(max-width:600px){.lesson-audio-toolbar{align-items:stretch}.lesson-audio-toolbar button{flex:1 1 42%}.lesson-audio-toolbar label{width:100%;justify-content:space-between}.audio-controls button{flex:1}}
+
+.assessment-read{margin:10px 0 14px}
