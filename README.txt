@@ -266,3 +266,11 @@ VERSION 7.3 — TOPIC-ALIGNED LESSON CHECKS
 - Preserved feedback explaining the topic rule.
 - Added lesson-check alignment metadata.
 - Updated bundle and service-worker cache versions.
+
+VERSION 7.4 — AUDIO INSTRUCTOR LESSONS
+- Text-to-speech for all 132 lesson topics.
+- Full lesson, individual topic, and quick-check narration.
+- Pause, resume, stop, and four speed options.
+- Preferred speed saved locally.
+- Instructor-led narrative added to every topic.
+- Device voices; no audio files, API, account, or subscription required.

@@ -12407,7 +12407,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Tennessee Graduated Driver Licensing. Picture this: Treat each licensing stage as a period for building supervised experience rather than simply waiting for time to pass. Here is the rule I want you to understand: Tennessee uses a graduated driver licensing system to give young drivers more responsibility in stages. The learner permit, intermediate restricted license, intermediate unrestricted license, and regular license each have different qualifications and restrictions. The mistake I commonly see from new drivers is this: Assuming every teen license has the same privileges. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "2. Learner Permit Eligibility",
@@ -12428,7 +12429,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Learner Permit Eligibility. Picture this: Confirm current Driver Services requirements before visiting a testing center. Here is the rule I want you to understand: A learner permit is the first driving stage for many Tennessee teens. Applicants must meet the current age, identity, residency, testing, vision, and parental or guardian requirements that apply to them. The mistake I commonly see from new drivers is this: Relying on an older sibling's checklist without verifying current requirements. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "3. Required Documents",
@@ -12449,7 +12451,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Required Documents. Picture this: Organize all required documents before the appointment and verify names match. Here is the rule I want you to understand: Driver Services may require proof of identity, lawful presence, Tennessee residency, Social Security information when applicable, and school-related documentation for minors. Documents should be original or otherwise accepted under current state rules. The mistake I commonly see from new drivers is this: Bringing screenshots or unofficial copies without confirming acceptance. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "4. Knowledge and Vision Testing",
@@ -12470,7 +12473,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Knowledge and Vision Testing. Picture this: Use RoadReady to prepare, then follow the official testing instructions at Driver Services. Here is the rule I want you to understand: Applicants generally must demonstrate knowledge of traffic laws, signs, safe-driving practices, and vision standards. Passing a practice quiz does not replace the official state examination. The mistake I commonly see from new drivers is this: Assuming the app's mastery exam is the official state test. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "5. Supervised Driving",
@@ -12491,7 +12495,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Supervised Driving. Picture this: Keep an accurate practice record and focus on varied real-world skills. Here is the rule I want you to understand: A learner permit requires an appropriately licensed supervising driver and compliance with all restrictions. Supervised practice should include daylight, night, residential, highway, parking, and adverse-condition experience when safe. The mistake I commonly see from new drivers is this: Practicing only on the easiest familiar roads. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "6. Intermediate Restricted License",
@@ -12512,7 +12517,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Intermediate Restricted License. Picture this: Plan transportation before a late event rather than assuming an exception applies. Here is the rule I want you to understand: The intermediate restricted stage allows more independence but still limits certain nighttime and passenger situations. Drivers must understand the current restrictions and exceptions that apply to school, work, emergencies, and approved activities. The mistake I commonly see from new drivers is this: Treating an intermediate restricted license as fully unrestricted. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "7. Passenger Restrictions",
@@ -12533,7 +12539,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Passenger Restrictions. Picture this: Check the current rule before transporting multiple friends. Here is the rule I want you to understand: Young-driver passenger limits are intended to reduce distraction and crash risk. Family-member and other exceptions may exist, but the driver should verify the current rule instead of relying on informal advice. The mistake I commonly see from new drivers is this: Assuming every passenger counts the same or that permission overrides state law. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "8. Nighttime Restrictions",
@@ -12554,7 +12561,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Nighttime Restrictions. Picture this: Use a parent, guardian, or other lawful transportation plan for late events. Here is the rule I want you to understand: Night restrictions address the higher crash risk associated with darkness, fatigue, limited visibility, and late-night social driving. Exceptions should be interpreted narrowly and documented when required. The mistake I commonly see from new drivers is this: Assuming a short distance makes a restricted trip legal. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "9. Electronic Devices for Young Drivers",
@@ -12575,7 +12583,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Electronic Devices for Young Drivers. Picture this: Use Do Not Disturb and let a passenger manage navigation. Here is the rule I want you to understand: Young drivers should avoid handheld and hands-free distractions and comply with all Tennessee device restrictions. A notification, text, call, or navigation change should be handled before driving or after safely parking. The mistake I commonly see from new drivers is this: Believing hands-free use removes all distraction. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "10. Violations and License Progression",
@@ -12596,7 +12605,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Violations and License Progression. Picture this: Treat every citation seriously and understand how it affects licensing status. Here is the rule I want you to understand: Traffic violations, crashes, seat-belt violations, school attendance issues, or other disqualifying events can delay progression or lead to suspension or revocation. Safe driving protects both people and future driving privileges. The mistake I commonly see from new drivers is this: Assuming one violation cannot affect the next licensing stage. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "11. Insurance and Financial Responsibility",
@@ -12617,7 +12627,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Insurance and Financial Responsibility. Picture this: Confirm coverage and proof before driving any vehicle. Here is the rule I want you to understand: Drivers and vehicle owners must comply with Tennessee financial-responsibility requirements. Proof of insurance should be current and available as required. Driving without required coverage can create legal and financial consequences. The mistake I commonly see from new drivers is this: Assuming the vehicle is covered because it belongs to a friend. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "12. Moving Toward Full Privileges",
@@ -12638,7 +12649,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Moving Toward Full Privileges. Picture this: Use mastery scores and supervised-driving performance together when deciding readiness. Here is the rule I want you to understand: Advancing to unrestricted privileges requires meeting the current age, time, driving-record, and other state requirements. Eligibility does not guarantee readiness; students should also demonstrate consistent safe judgment. The mistake I commonly see from new drivers is this: Treating the minimum legal date as proof of driving maturity. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         }
       ],
       "intro": "A teen with a learner permit is invited to a late event, plans to drive friends, cannot find the insurance card, and has not confirmed whether the supervising adult qualifies. A lawful decision requires checking each restriction before starting the vehicle.",
@@ -12682,7 +12694,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Preparing Before Movement. Picture this: Walk around the vehicle when visibility is limited or children may be nearby. Here is the rule I want you to understand: Before moving, adjust the seat, mirrors, steering position, head restraint, and seat belt. Check the area around the vehicle for children, pets, objects, low obstacles, and other vehicles. Set navigation and secure loose items before leaving the parking space. The mistake I commonly see from new drivers is this: Beginning to move while still adjusting mirrors or fastening the seat belt. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "2. Backing Safely",
@@ -12703,7 +12716,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Backing Safely. Picture this: Pause and recheck if a pedestrian walks behind the vehicle during backing. Here is the rule I want you to understand: Backing creates severe visibility limitations. Look behind the vehicle before entering, turn your body and look through the rear window when possible, move at walking speed, and repeatedly check mirrors and surroundings. Backup cameras assist but do not show every hazard. The mistake I commonly see from new drivers is this: Watching only the backup-camera display. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "3. Backing from Driveways",
@@ -12724,7 +12738,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Backing from Driveways. Picture this: Stop before crossing the sidewalk and look in both directions. Here is the rule I want you to understand: Whenever practical, position the vehicle so you can drive forward into traffic. When backing from a driveway, stop before the sidewalk, check for pedestrians, bicyclists, children, and traffic, then move slowly only when every path is clear. The mistake I commonly see from new drivers is this: Backing across the sidewalk while checking only roadway traffic. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "4. Parking-Lot Hazards",
@@ -12745,7 +12760,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Parking-Lot Hazards. Picture this: When a parked vehicle's reverse lights appear, slow and prepare for it to move. Here is the rule I want you to understand: Parking lots contain pedestrians, reversing vehicles, shopping carts, blind corners, and drivers searching for spaces. Travel slowly, avoid cutting across parking rows, watch vehicle lights and wheel movement, and be ready to stop. The mistake I commonly see from new drivers is this: Driving diagonally across empty spaces at normal roadway speed. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "5. Parallel Parking",
@@ -12766,7 +12782,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Parallel Parking. Picture this: Signal before stopping beside the vehicle ahead of the open space. Here is the rule I want you to understand: Parallel parking should be completed slowly with signals, mirror checks, blind-spot checks, and careful steering. Finish close and parallel to the curb without contacting surrounding vehicles. Recheck traffic before opening the door or leaving the space. The mistake I commonly see from new drivers is this: Swinging into traffic without checking mirrors after parking. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "6. Parking on Hills",
@@ -12787,7 +12804,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Parking on Hills. Picture this: After setting the wheels, allow the vehicle to settle gently before fully securing it. Here is the rule I want you to understand: Secure the vehicle with the parking brake and proper wheel direction. When parked downhill with a curb, turn the wheels toward the curb. When parked uphill with a curb, turn the wheels away from the curb. Without a curb, turn the wheels toward the edge of the road. The mistake I commonly see from new drivers is this: Depending only on the transmission to hold the vehicle. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "7. Parking Restrictions",
@@ -12808,7 +12826,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Parking Restrictions. Picture this: Choose another space rather than partly blocking a driveway. Here is the rule I want you to understand: Do not park where the vehicle blocks traffic, sight distance, driveways, fire hydrants, crosswalks, sidewalks, railroad tracks, marked fire lanes, accessible spaces without authorization, or other prohibited areas. Always read posted signs. The mistake I commonly see from new drivers is this: Assuming a short stop is allowed in a fire lane. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "8. Three-Point Turns and U-Turns",
@@ -12829,7 +12848,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Three-Point Turns and U-Turns. Picture this: Continue to a safer location rather than turning near a blind curve. Here is the rule I want you to understand: A three-point turn should be used only where legal, visible, and free of traffic. Signal, check every direction, and complete each movement slowly. Never attempt a U-turn near hills, curves, heavy traffic, restricted areas, or anywhere sight distance is inadequate. The mistake I commonly see from new drivers is this: Beginning a turn simply because no vehicle is visible at that moment. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "9. Turning and Low-Speed Steering",
@@ -12850,7 +12870,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Turning and Low-Speed Steering. Picture this: Finish a right turn in the nearest lawful lane unless markings direct otherwise. Here is the rule I want you to understand: Slow before beginning a turn, signal early, check the intended path, and steer smoothly. Avoid cutting corners, crossing lane lines, or turning so widely that the vehicle enters another lane. Complete the turn in the proper lawful lane. The mistake I commonly see from new drivers is this: Turning the wheel while stopped against a curb or obstacle without checking clearance. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "10. Curbside Entry and Exit",
@@ -12871,7 +12892,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Curbside Entry and Exit. Picture this: Make a blind-spot check immediately before leaving the curb. Here is the rule I want you to understand: Before leaving a curb, signal, check mirrors, look over the shoulder, and wait for a safe opening. When pulling to the curb, signal early, reduce speed smoothly, and avoid blocking bicycle lanes or traffic. The mistake I commonly see from new drivers is this: Pulling away because the mirror appears clear. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "11. Doors, Children, Pets, and Cargo",
@@ -12892,7 +12914,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Doors, Children, Pets, and Cargo. Picture this: Use the far hand to open a roadside door so your body turns and improves the rearward check. Here is the rule I want you to understand: Before opening a door, check mirrors and behind for bicycles, motorcycles, and traffic. Never leave children or pets unattended in a vehicle. Secure cargo so it cannot obstruct vision, interfere with controls, or become dangerous during sudden braking. The mistake I commonly see from new drivers is this: Opening the door immediately after parking. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "12. Low-Speed Judgment",
@@ -12913,7 +12936,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Low-Speed Judgment. Picture this: Stop and get out to check when unsure whether an object is behind the vehicle. Here is the rule I want you to understand: Low speed does not eliminate risk. Many serious pedestrian and child injuries occur in driveways, parking lots, and neighborhood areas. Move slowly enough to stop immediately, avoid distractions, and never assume a small obstacle or person remains visible. The mistake I commonly see from new drivers is this: Continuing because the vehicle is moving only a few miles per hour. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         }
       ],
       "intro": "You are backing from a crowded parking space. A shopping cart blocks one side, a child is walking behind a nearby vehicle, and another driver activates reverse lights. A safe driver stops, checks every direction, moves at walking speed, and abandons the maneuver if the path becomes uncertain.",
@@ -12957,7 +12981,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through The Visual Language of Traffic Control. Picture this: A stop sign partly covered by snow is still recognizable by its eight-sided shape and red background. Here is the rule I want you to understand: Traffic controls include signs, signals, pavement markings, and directions from police officers, flaggers, and school crossing guards. An authorized person\u2019s direction takes priority when it conflicts with a sign or signal. Signs are designed so drivers can recognize their purpose from a distance. Shape identifies the general type of message, while color narrows the meaning. The mistake I commonly see from new drivers is this: Waiting until you can read every word before reacting. By then, you may have too little time to slow, stop, merge, or change lanes safely. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "2. Sign Colors",
@@ -12978,7 +13003,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Sign Colors. Picture this: An orange diamond sign indicates a temporary work-zone condition, while a yellow diamond generally warns of a permanent or ordinary roadway hazard. Here is the rule I want you to understand: Red communicates stop, yield, do-not-enter, wrong-way, or prohibition. Yellow gives general warnings. Orange identifies construction and maintenance. Fluorescent yellow-green highlights school zones and pedestrian areas. White and black commonly indicate regulations. Green gives route and directional guidance. Blue identifies motorist services. Brown identifies recreational and cultural destinations. Fluorescent pink may mark incident-management areas. The mistake I commonly see from new drivers is this: Assuming every bright yellow or green sign means the same thing. Fluorescent yellow-green deserves special attention because pedestrians, bicyclists, or school traffic may be present. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "3. Sign Shapes",
@@ -12999,7 +13025,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Sign Shapes. Picture this: At night, the silhouette of a round sign tells you to prepare for a railroad crossing even before the symbol is readable. Here is the rule I want you to understand: An octagon always means STOP. A downward-pointing triangle means YIELD. A round sign warns of a railroad crossing ahead. A crossbuck marks the railroad tracks. A diamond warns of a hazard or unexpected condition. Rectangles provide regulations, lane-use rules, or guide information. A pennant-shaped sign on the left marks a no-passing zone. A pentagon identifies school-related warnings. The mistake I commonly see from new drivers is this: Treating shape as decoration. Shape is an early warning system that remains useful when the sign is faded, dirty, obstructed, or viewed from an angle. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "4. Regulatory Signs",
@@ -13020,7 +13047,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Regulatory Signs. Picture this: A lane marked with a curved arrow and ONLY requires the driver to turn in that direction. Here is the rule I want you to understand: Regulatory signs communicate laws and required movements. They include speed limits, lane-use arrows, one-way signs, keep-right instructions, parking restrictions, turn prohibitions, HOV restrictions, and do-not-enter or wrong-way signs. A red circle with a diagonal slash means the pictured action is prohibited. The mistake I commonly see from new drivers is this: Treating a regulatory sign as a suggestion because traffic is light. The rule applies even when no other road user is visible. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "5. Warning Signs and Advisory Speeds",
@@ -13041,7 +13069,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Warning Signs and Advisory Speeds. Picture this: A curve warning sign with a 25 mph advisory plaque means the curve should generally be entered at no more than the recommended 25 mph under favorable conditions. Here is the rule I want you to understand: Yellow diamond signs warn about curves, turns, intersections, merging traffic, narrowing lanes or bridges, slippery pavement, animals, bicycles, schools, stop or yield signs ahead, and many other hazards. A smaller advisory-speed plaque beneath a warning sign states a recommended safe speed for that condition; it is not the same as the general posted speed limit. The mistake I commonly see from new drivers is this: Maintaining the highway speed limit because the advisory plaque is not a regulatory speed-limit sign. Safe drivers reduce speed before the hazard. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "6. Work-Zone Signs, Flaggers, and Channelizing Devices",
@@ -13062,7 +13091,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Work-Zone Signs, Flaggers, and Channelizing Devices. Picture this: When an arrow board indicates the right lane is closing, signal and merge into the open lane early rather than racing to the end. Here is the rule I want you to understand: Orange signs warn of construction, maintenance, detours, lane closures, workers, equipment, or changing traffic patterns. Arrow boards tell drivers to merge into open lanes well before the closure. Cones, drums, barricades, and panels guide traffic through the temporary path. Flaggers may display STOP or SLOW paddles and their directions must be obeyed. The mistake I commonly see from new drivers is this: Watching equipment instead of the lane path and traffic ahead. Work zones frequently produce sudden stops and rear-end crashes. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "7. Guide, Route, Service, and Special Markers",
@@ -13083,7 +13113,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Guide, Route, Service, and Special Markers. Picture this: An EXIT ONLY panel beneath a lane arrow means every vehicle in that lane must leave the main roadway. Here is the rule I want you to understand: Green signs provide directions, destinations, exits, and lane guidance. Blue signs identify services such as hospitals, fuel, food, lodging, police, and rest areas. Brown signs direct drivers to parks, recreation, or cultural sites. Interstate markers are red, white, and blue shields. Emergency reference markers provide route, direction, and precise location information. A slow-moving-vehicle emblem is a fluorescent orange triangle with reflective red borders. The mistake I commonly see from new drivers is this: Remaining in an EXIT ONLY lane because the destination sign also points forward. The lane-control panel governs the required movement. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "8. Steady and Flashing Traffic Signals",
@@ -13104,7 +13135,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Steady and Flashing Traffic Signals. Picture this: A green light does not permit you to enter a blocked intersection where you would become stranded. Here is the rule I want you to understand: Red means stop behind the stop line or crosswalk. A right turn on red may be allowed after a complete stop unless prohibited, but drivers must yield to pedestrians and cross traffic. Yellow means the signal is changing to red; stop if it can be done safely and do not accelerate to beat it. Green permits movement only when the intersection is clear. Flashing red is treated like a stop sign. Flashing yellow means slow and proceed cautiously. The mistake I commonly see from new drivers is this: Treating green as an absolute right-of-way. Drivers still yield to pedestrians, vehicles already in the intersection, and oncoming traffic when turning left. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "9. Turn Arrows and Malfunctioning Signals",
@@ -13125,7 +13157,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Turn Arrows and Malfunctioning Signals. Picture this: At a flashing yellow left arrow, wait for a safe gap rather than assuming oncoming traffic will stop. Here is the rule I want you to understand: A green protected arrow permits movement only in the arrow\u2019s direction after yielding to anyone already in the intersection. A yellow arrow warns that the protected movement is ending. A red arrow prohibits the movement. A flashing yellow arrow permits the turn only after yielding to oncoming traffic, bicyclists, and pedestrians. A completely dark or malfunctioning signal is treated as an all-way stop. The mistake I commonly see from new drivers is this: Following another lane\u2019s green light when your turn arrow is red. Each signal controls the lane or movement it faces. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "10. Pedestrian and Lane-Control Signals",
@@ -13146,7 +13179,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Pedestrian and Lane-Control Signals. Picture this: Even when your traffic light turns green, a pedestrian who began crossing legally must be allowed to finish. Here is the rule I want you to understand: A WALK symbol permits pedestrians to begin crossing. A raised hand or DON\u2019T WALK means pedestrians should not begin crossing, though people already in the crosswalk continue to the other side. Drivers should watch pedestrian signals to anticipate movement. Overhead lane-control signals may use a green arrow for an open lane, a yellow X for a lane whose use is changing or turning only, and a red X for a closed lane. The mistake I commonly see from new drivers is this: Assuming a DON\u2019T WALK display means the crosswalk is empty. Pedestrians may still be completing their crossing. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "11. Yellow and White Pavement Lines",
@@ -13167,7 +13201,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Yellow and White Pavement Lines. Picture this: If yellow is on your right and white is on your left, you may be traveling the wrong way. Here is the rule I want you to understand: Yellow lines separate traffic moving in opposite directions or mark the left edge near a median. Broken yellow allows passing when safe. Double solid yellow prohibits passing in either direction, though crossing to enter a driveway or side road may be allowed when safe. With one solid and one broken yellow line, passing is allowed only on the broken-line side. White lines separate traffic moving in the same direction. Broken white allows lane changes when safe; solid white discourages crossing; double solid white should not be crossed. The mistake I commonly see from new drivers is this: Crossing a solid yellow line to pass because no oncoming vehicle is visible. Sight distance may be limited by a hill, curve, driveway, or intersection. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "12. Crosswalks, Stop Lines, HOV Diamonds, and Roadway Arrows",
@@ -13188,7 +13223,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Crosswalks, Stop Lines, HOV Diamonds, and Roadway Arrows. Picture this: At a stop sign with a white stop line, the first stop is behind the line. If visibility is blocked, move forward cautiously after stopping. Here is the rule I want you to understand: Crosswalk markings identify pedestrian crossing areas, but crosswalks may also exist without paint. Stop lines show where the vehicle must stop. Without a stop line, stop before the crosswalk; without either, stop before entering the cross street. Diamond lane markings identify HOV or other reserved lanes, with signs stating occupancy and time restrictions. Lane arrows show required or permitted movements. RR and crossbuck pavement markings warn of railroad crossings. The mistake I commonly see from new drivers is this: Stopping with the front of the vehicle across the crosswalk, forcing pedestrians into traffic. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         }
       ],
       "intro": "You are approaching an unfamiliar intersection in rain. A yellow warning sign, a flashing signal, lane arrows, and a marked crosswalk all provide different pieces of information. A safe driver interprets each control early and combines them into one driving decision.",
@@ -13232,7 +13268,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Safe Speed vs. Posted Speed. Picture this: A 55 mph road may require 35 mph in heavy rain or near a hidden curve. Here is the rule I want you to understand: The posted speed is the maximum under favorable conditions. The basic speed rule requires drivers to reduce speed for curves, hills, traffic, limited visibility, pedestrians, rain, snow, ice, fog, or any condition that reduces safety. The mistake I commonly see from new drivers is this: Treating the posted number as a required speed. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "2. Traffic Flow and Minimum Speed",
@@ -13253,7 +13290,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Traffic Flow and Minimum Speed. Picture this: Use the right lane when traveling slower than surrounding traffic. Here is the rule I want you to understand: Drivers should move with lawful traffic flow without exceeding the posted limit. Driving far below the normal flow can also create hazards, especially on interstates. The mistake I commonly see from new drivers is this: Speeding to match drivers who exceed the limit. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "3. Following Distance",
@@ -13274,7 +13312,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Following Distance. Picture this: Choose a roadside point and count after the vehicle ahead passes it. Here is the rule I want you to understand: A minimum two-second interval is the manual's basic starting point in favorable conditions. Increase it substantially at night, in bad weather, at higher speeds, while towing, or behind motorcycles and large vehicles. The mistake I commonly see from new drivers is this: Counting distance only in car lengths. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "4. Reaction and Braking Distance",
@@ -13295,7 +13334,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Reaction and Braking Distance. Picture this: At higher speed, the vehicle covers more road before the driver even touches the brake. Here is the rule I want you to understand: Total stopping distance includes perception, reaction, and braking. Greater speed increases both the distance traveled before braking and the braking distance itself. The mistake I commonly see from new drivers is this: Assuming braking distance only doubles when speed doubles. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "5. Space Ahead",
@@ -13316,7 +13356,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Space Ahead. Picture this: Scan 15\u201320 seconds ahead on faster roads while preserving following space. Here is the rule I want you to understand: A front safety cushion gives time to see brake lights, slowing traffic, debris, pedestrians, and other hazards. Look well ahead rather than focusing only on the vehicle directly in front. The mistake I commonly see from new drivers is this: Following closely to prevent others from merging. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "6. Space Behind and Tailgaters",
@@ -13337,7 +13378,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Space Behind and Tailgaters. Picture this: Create extra room ahead so you can slow gradually. Here is the rule I want you to understand: You cannot fully control rear space, but you can reduce risk by maintaining steady speed, signaling early, increasing space ahead, moving right when safe, and allowing a tailgater to pass. Never brake-check. The mistake I commonly see from new drivers is this: Tapping the brakes aggressively to punish a tailgater. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "7. Side Space and Escape Routes",
@@ -13358,7 +13400,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Side Space and Escape Routes. Picture this: Split the difference between hazards, giving extra room to the more dangerous side. Here is the rule I want you to understand: Maintain room on both sides whenever possible. Avoid blind spots, parked cars, roadside pedestrians, bicyclists, and large vehicles. Preserve at least one escape route. The mistake I commonly see from new drivers is this: Driving beside another vehicle for long periods. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "8. Lane Changes",
@@ -13379,7 +13422,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Lane Changes. Picture this: Signal early, check mirrors, glance over the shoulder, then move smoothly. Here is the rule I want you to understand: Every lane change requires mirrors, signal, blind-spot check, and a smooth move into a clear gap. Do not change lanes suddenly or inside an intersection. The mistake I commonly see from new drivers is this: Relying only on mirrors or blind-spot alerts. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "9. Passing",
@@ -13400,7 +13444,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Passing. Picture this: Wait for a legal passing zone and a long, clear view. Here is the rule I want you to understand: Pass only where legal and where enough sight distance exists to complete the maneuver. Return only when both headlights of the passed vehicle are visible in the mirror. Never exceed the speed limit to pass. The mistake I commonly see from new drivers is this: Starting a pass near a hill because no vehicle is visible. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "10. Defensive Space Management",
@@ -13421,7 +13466,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Defensive Space Management. Picture this: Slow and create room when another driver merges suddenly. Here is the rule I want you to understand: Defensive driving means scanning, predicting errors, and preserving time and space. You cannot control traffic, but you can control your reaction. The mistake I commonly see from new drivers is this: Matching aggressive behavior with aggressive behavior. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "11. Curves, Hills, and Limited Sight Distance",
@@ -13442,7 +13488,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Curves, Hills, and Limited Sight Distance. Picture this: Slow before reaching a blind curve rather than braking hard after entering it. Here is the rule I want you to understand: Reduce speed before curves, hillcrests, and other places where sight distance is limited. Entering too fast leaves little room to respond to stopped traffic, animals, debris, or an oncoming vehicle. The mistake I commonly see from new drivers is this: Assuming the posted limit is safe when the roadway ahead cannot be seen. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "12. Being Passed and Cooperative Driving",
@@ -13463,7 +13510,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Being Passed and Cooperative Driving. Picture this: Hold a steady speed while the passing vehicle completes the maneuver. Here is the rule I want you to understand: When another vehicle passes, maintain a steady lawful speed and provide space. Do not accelerate, move left, or compete. Cooperative driving reduces the time both vehicles remain exposed to conflict. The mistake I commonly see from new drivers is this: Accelerating because you do not want another driver to pass. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         }
       ],
       "intro": "You are driving 45 mph on a wet two-lane road. A pickup is tailgating, brake lights appear ahead, and parked cars narrow your side space. A safe response requires speed reduction, extra front space, smooth braking, and a plan to let the tailgater pass.",
@@ -13507,7 +13555,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Intersection Types. Picture this: At a blind intersection, cover the brake and creep forward only when you can see. Here is the rule I want you to understand: Controlled intersections use signs, signals, or authorized traffic direction. Uncontrolled and blind intersections require slower speeds and a careful search. The mistake I commonly see from new drivers is this: Assuming light traffic means no hazard. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "2. Right-of-Way Is Not Absolute",
@@ -13528,7 +13577,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Right-of-Way Is Not Absolute. Picture this: Wait when another driver rolls through, even if you arrived first. Here is the rule I want you to understand: Right-of-way creates order, but it never gives permission to cause a collision. Yield when another road user makes a mistake. The mistake I commonly see from new drivers is this: Continuing simply because you are legally correct. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "3. Four-Way Stops",
@@ -13549,7 +13599,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Four-Way Stops. Picture this: You and a vehicle on your right stop together; it normally goes first. Here is the rule I want you to understand: The first vehicle to stop normally proceeds first. At the same arrival time, the driver on the left yields to the driver on the right. The mistake I commonly see from new drivers is this: Assuming the largest vehicle goes first. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "4. Left Turns",
@@ -13570,7 +13621,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Left Turns. Picture this: Wait for a clearly safe gap before crossing oncoming traffic. Here is the rule I want you to understand: A left-turning driver generally yields to approaching traffic close enough to be a hazard, even on a steady green light. The mistake I commonly see from new drivers is this: Trusting an oncoming turn signal without seeing the vehicle slow. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "5. Right Turns on Red",
@@ -13591,7 +13643,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Right Turns on Red. Picture this: Stop first, then check every conflict area. Here is the rule I want you to understand: A permitted right turn on red requires a complete stop, checking for prohibitions, and yielding to cross traffic, pedestrians, and bicyclists. The mistake I commonly see from new drivers is this: Rolling through because traffic appears clear. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "6. Pedestrians and Bicyclists",
@@ -13612,7 +13665,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Pedestrians and Bicyclists. Picture this: Let a pedestrian finish crossing and let a cyclist clear before turning right. Here is the rule I want you to understand: Drivers yield to pedestrians in marked and unmarked crosswalks and must not turn across a bicyclist traveling beside the vehicle. The mistake I commonly see from new drivers is this: Assuming green means pedestrians must disappear immediately. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "7. Driveways and T-Intersections",
@@ -13633,7 +13687,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Driveways and T-Intersections. Picture this: Stop before a sidewalk and choose a safe gap. Here is the rule I want you to understand: Drivers entering from private property yield to roadway and sidewalk users. At a T-intersection, the road that ends generally yields to the through road. The mistake I commonly see from new drivers is this: Checking only for vehicles and missing pedestrians. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "8. Roundabouts",
@@ -13654,7 +13709,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Roundabouts. Picture this: Wait for a vehicle circulating from your left. Here is the rule I want you to understand: Entering drivers yield to circulating traffic, choose the proper lane before entry, travel counterclockwise, and continue around if they miss an exit. The mistake I commonly see from new drivers is this: Entering because you are on the right. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "9. Blocked Intersections",
@@ -13675,7 +13731,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Blocked Intersections. Picture this: Wait behind the line when traffic is stopped beyond a green light. Here is the rule I want you to understand: Never enter unless there is enough room to clear the intersection, crosswalk, or railroad tracks completely. The mistake I commonly see from new drivers is this: Following traffic into an intersection and becoming trapped. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "10. Emergency and Authorized Direction",
@@ -13696,7 +13753,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Emergency and Authorized Direction. Picture this: Clear the intersection, then pull right for an ambulance. Here is the rule I want you to understand: Clear an intersection before yielding to an emergency vehicle. Directions from officers, flaggers, and crossing guards override normal signs and signals. The mistake I commonly see from new drivers is this: Stopping inside the intersection or ignoring a crossing guard. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "11. Multi-Lane and Offset Intersections",
@@ -13717,7 +13775,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Multi-Lane and Offset Intersections. Picture this: Complete a left turn into the proper lane before making a separate lane change. Here is the rule I want you to understand: At wide or offset intersections, choose the correct lane before entering, follow lane arrows, and avoid changing lanes while turning. Watch for vehicles hidden by adjacent traffic. The mistake I commonly see from new drivers is this: Crossing several lanes during the turn to reach an exit or driveway. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "12. Courtesy, Communication, and Uncertain Intentions",
@@ -13738,7 +13797,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Courtesy, Communication, and Uncertain Intentions. Picture this: A driver waves you through, but you still check the next lane for a motorcycle. Here is the rule I want you to understand: Signals, eye contact, and courtesy waves may help communicate, but they never guarantee that every lane or pedestrian path is clear. Confirm safety independently before moving. The mistake I commonly see from new drivers is this: Treating another driver's wave as permission to ignore hidden hazards. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         }
       ],
       "intro": "At a busy intersection, combine arrival order, vehicle position, pedestrians, bicyclists, signals, and collision avoidance before proceeding.",
@@ -13782,7 +13842,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Pre-Trip Vehicle Check. Picture this: Walk around the vehicle before a long trip or after it has been parked in an unfamiliar place. Here is the rule I want you to understand: Before driving, check tires, lights, mirrors, glass, wipers, fluid leaks, fuel or charge level, and anything that could interfere with safe operation. The mistake I commonly see from new drivers is this: Assuming warning lights reveal every problem. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "2. Tires and Tread",
@@ -13803,7 +13864,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Tires and Tread. Picture this: Inspect tires for cuts, bulges, exposed cords, or uneven wear. Here is the rule I want you to understand: Proper tire pressure and adequate tread support steering, braking, and wet-road traction. Use the vehicle manufacturer recommended pressure. The mistake I commonly see from new drivers is this: Inflating every tire to the sidewall maximum. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "3. Dashboard Warning Lights",
@@ -13824,7 +13886,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Dashboard Warning Lights. Picture this: Move safely off the road when an oil-pressure or temperature warning appears. Here is the rule I want you to understand: Warning lights can indicate problems with oil pressure, engine temperature, brakes, charging, tires, airbags, or other systems. Serious red warnings deserve immediate attention. The mistake I commonly see from new drivers is this: Covering a warning light and continuing. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "4. Normal Braking and ABS",
@@ -13845,7 +13908,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Normal Braking and ABS. Picture this: Press firmly and steer rather than pumping the ABS pedal. Here is the rule I want you to understand: Brake early and smoothly. With ABS, apply firm continuous pressure during an emergency and continue steering toward a safe path. The mistake I commonly see from new drivers is this: Releasing the pedal because it vibrates. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "5. Brake Failure",
@@ -13866,7 +13930,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Brake Failure. Picture this: Apply the parking brake gradually while maintaining control. Here is the rule I want you to understand: If the brake pedal does not slow the vehicle, remain calm, pump the pedal if pressure may be lost, downshift, use the parking brake gradually, warn others, and steer toward safety. The mistake I commonly see from new drivers is this: Jerking the parking brake. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "6. Tire Blowout",
@@ -13887,7 +13952,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Tire Blowout. Picture this: Maintain a straight path until speed decreases. Here is the rule I want you to understand: A blowout may cause pulling, vibration, and noise. Hold the wheel firmly, ease off the accelerator, avoid sudden braking, allow the vehicle to slow, then move off the roadway when stable. The mistake I commonly see from new drivers is this: Braking hard immediately. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "7. Engine Overheating",
@@ -13908,7 +13974,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Engine Overheating. Picture this: Wait until the system cools before inspection. Here is the rule I want you to understand: A high temperature gauge, warning light, steam, or coolant smell can indicate overheating. Move safely out of traffic, shut down, and allow cooling. Never remove a hot radiator cap. The mistake I commonly see from new drivers is this: Opening the radiator cap immediately. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "8. Engine Stall and Loss of Power",
@@ -13929,7 +13996,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Engine Stall and Loss of Power. Picture this: Use remaining momentum to reach a shoulder. Here is the rule I want you to understand: If the engine stalls, steering and braking may require more effort. Signal, maintain control, and use remaining momentum to move out of traffic. The mistake I commonly see from new drivers is this: Stopping in the travel lane without hazards. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "9. Breakdowns and Roadside Safety",
@@ -13950,7 +14018,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Breakdowns and Roadside Safety. Picture this: Exit on the side away from traffic if leaving is necessary. Here is the rule I want you to understand: Move as far from traffic as possible, activate hazards, remain visible, and call for assistance. Avoid standing near moving traffic. The mistake I commonly see from new drivers is this: Standing behind the vehicle in the travel lane. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "10. Crash Response",
@@ -13971,7 +14040,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Crash Response. Picture this: Use hazards and move minor crashes out of travel lanes when safe and lawful. Here is the rule I want you to understand: After a crash, stop, assess injuries, call emergency services when needed, protect the scene, and exchange required information. The mistake I commonly see from new drivers is this: Standing in traffic to inspect damage. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "11. Required Emergency Stops",
@@ -13992,7 +14062,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Required Emergency Stops. Picture this: Stop behind the line, then creep forward if visibility is blocked. Here is the rule I want you to understand: Drivers must stop for red signals, stop signs, school buses as required, railroad warnings, police directions, and other lawful controls. A complete stop means the wheels cease moving. The mistake I commonly see from new drivers is this: Treating a rolling movement as a complete stop. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "12. Emergency Judgment",
@@ -14013,7 +14084,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Emergency Judgment. Picture this: Control the vehicle before reaching for a phone. Here is the rule I want you to understand: Vehicle emergencies require calm priorities: maintain control, reduce speed smoothly, communicate, move away from traffic, and seek help. The mistake I commonly see from new drivers is this: Diagnosing while moving at highway speed. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         }
       ],
       "intro": "You are driving at highway speed when a tire fails and a warning light appears. Traffic is close behind and the shoulder is narrow. A safe response requires steady steering, gradual deceleration, hazard communication, and careful movement away from traffic.",
@@ -14057,7 +14129,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Ramp Preparation. Picture this: Use the ramp view to identify a likely gap before reaching the acceleration lane. Here is the rule I want you to understand: Before entering the interstate, check mirrors, secure distractions, identify the ramp type, and begin searching for traffic and available gaps. The mistake I commonly see from new drivers is this: Waiting until the merge point to begin looking. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "2. Acceleration Lanes",
@@ -14078,7 +14151,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Acceleration Lanes. Picture this: Accelerate smoothly while checking mirrors and the blind spot. Here is the rule I want you to understand: Use the acceleration lane to build speed close to the lawful traffic flow. Entering too slowly forces other drivers to react and reduces available gaps. The mistake I commonly see from new drivers is this: Entering at a much lower speed than traffic. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "3. Yielding and Merging",
@@ -14099,7 +14173,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Yielding and Merging. Picture this: Merge behind a vehicle when the original gap closes. Here is the rule I want you to understand: Entering traffic yields to vehicles already on the interstate. Signal, select a gap, adjust speed, and merge without forcing through traffic to brake sharply. The mistake I commonly see from new drivers is this: Assuming through traffic must move over. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "4. Lane Discipline",
@@ -14120,7 +14195,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Lane Discipline. Picture this: Return right after completing a pass and establishing clearance. Here is the rule I want you to understand: Keep right except to pass, avoid unnecessary lane changes, and do not remain in the left lane when not passing or preparing for a lawful movement. The mistake I commonly see from new drivers is this: Using the left lane as a permanent travel lane. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "5. Passing and Blind Spots",
@@ -14141,7 +14217,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Passing and Blind Spots. Picture this: See both headlights of the passed vehicle before returning. Here is the rule I want you to understand: Check mirrors and blind spots, signal, pass without lingering, and avoid staying beside trucks or other vehicles. Return only after adequate clearance. The mistake I commonly see from new drivers is this: Driving beside a trailer for a long distance. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "6. Following Distance at High Speed",
@@ -14162,7 +14239,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Following Distance at High Speed. Picture this: React to brake lights several vehicles ahead by easing off early. Here is the rule I want you to understand: Higher speed increases reaction and braking distance. Preserve a larger following interval and scan well beyond the vehicle directly ahead. The mistake I commonly see from new drivers is this: Using the same short gap as on a neighborhood street. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "7. Interchanges and Exit-Only Lanes",
@@ -14183,7 +14261,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Interchanges and Exit-Only Lanes. Picture this: Leave an exit-only lane early when continuing on the interstate. Here is the rule I want you to understand: Read overhead signs early, identify lane arrows and EXIT ONLY panels, and move into the proper lane well before the interchange. The mistake I commonly see from new drivers is this: Crossing several lanes at the last second. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "8. Deceleration and Exiting",
@@ -14204,7 +14283,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Deceleration and Exiting. Picture this: Maintain interstate speed until established in the exit lane when conditions allow. Here is the rule I want you to understand: Signal before the exit, enter the deceleration lane, and reduce speed there rather than slowing abruptly in the through lane. The mistake I commonly see from new drivers is this: Braking sharply before entering the deceleration lane. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "9. Missed Exits and Route Errors",
@@ -14225,7 +14305,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Missed Exits and Route Errors. Picture this: Use the next interchange to correct the route. Here is the rule I want you to understand: If an exit is missed, continue to the next one. Never stop, reverse, cross the gore, or use an emergency crossover. The mistake I commonly see from new drivers is this: Backing on the shoulder toward a missed exit. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "10. Congestion and Sudden Stops",
@@ -14246,7 +14327,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Congestion and Sudden Stops. Picture this: Ease off when brake lights appear far ahead. Here is the rule I want you to understand: Scan far ahead, increase following distance, avoid repeated abrupt lane changes, and expect queues near work zones, crashes, and interchanges. The mistake I commonly see from new drivers is this: Tailgating to keep another vehicle from merging. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "11. Breakdowns and Shoulder Safety",
@@ -14267,7 +14349,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Breakdowns and Shoulder Safety. Picture this: Remain belted inside when safely off the lane and outside traffic is more dangerous. Here is the rule I want you to understand: If the vehicle fails, move as far from traffic as possible, activate hazards, and seek help from a protected location. Do not stop on the shoulder except for emergencies. The mistake I commonly see from new drivers is this: Standing behind the vehicle near high-speed traffic. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "12. Fatigue and Long-Distance Driving",
@@ -14288,7 +14371,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Fatigue and Long-Distance Driving. Picture this: Exit to a safe rest area after repeated yawning and lane drift. Here is the rule I want you to understand: Fatigue reduces attention and can cause microsleep. Stop safely and rest or change drivers when drowsiness begins; music and open windows are not cures. The mistake I commonly see from new drivers is this: Continuing because the destination is close. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         }
       ],
       "intro": "You enter a busy interstate behind a truck while traffic is moving quickly. Your intended gap closes, an exit-only lane begins ahead, and brake lights appear in the distance. Safe driving requires speed adjustment, lane planning, scanning, and patience.",
@@ -14332,7 +14416,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Why Night Driving Is Harder. Picture this: On an unlit rural road, reduce speed enough that you can stop within the visible headlight area. Here is the rule I want you to understand: At night, drivers see less roadway detail, have reduced depth perception, and may not detect pedestrians, animals, curves, debris, or disabled vehicles until much later. Speed should never exceed the distance illuminated by the headlights. The mistake I commonly see from new drivers is this: Driving the daytime speed simply because the road is familiar. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "2. Low Beams and High Beams",
@@ -14353,7 +14438,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Low Beams and High Beams. Picture this: Use high beams on an empty rural road, then dim them when an oncoming vehicle approaches. Here is the rule I want you to understand: High beams improve forward visibility on dark open roads, but they must be dimmed for oncoming traffic and when following another vehicle closely. Low beams are safer in rain, fog, snow, and other conditions where reflected light can reduce visibility. The mistake I commonly see from new drivers is this: Leaving high beams on because your own visibility is better. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "3. Glare and Recovery",
@@ -14374,7 +14460,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Glare and Recovery. Picture this: Use the right edge line as a visual guide until the oncoming vehicle passes. Here is the rule I want you to understand: When glare from oncoming headlights makes it hard to see, reduce speed, look toward the right edge of your lane, and avoid staring directly into the lights. Clean windshields, mirrors, and headlights also reduce glare. The mistake I commonly see from new drivers is this: Looking directly at bright headlights. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "4. Pedestrians, Bicycles, and Wildlife at Night",
@@ -14395,7 +14482,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Pedestrians, Bicycles, and Wildlife at Night. Picture this: After a deer-crossing sign, scan both shoulders and reduce speed before reaching the likely crossing area. Here is the rule I want you to understand: People, bicycles, animals, and dark objects can be difficult to see at night. Scan both shoulders, watch for reflections, reduce speed near warning signs, and cover the brake when a hazard may enter the roadway. The mistake I commonly see from new drivers is this: Swerving suddenly without checking adjacent space. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "5. Rain and Wet Roads",
@@ -14416,7 +14504,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Rain and Wet Roads. Picture this: Increase following distance before approaching standing water or heavy spray. Here is the rule I want you to understand: Rain reduces visibility and traction. Slow down, increase following distance, turn on headlights, and avoid abrupt steering or braking. The first part of a rainfall can be especially slippery because water mixes with oil and debris. The mistake I commonly see from new drivers is this: Using cruise control in heavy rain. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "6. Hydroplaning",
@@ -14437,7 +14526,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Hydroplaning. Picture this: If the steering feels light in standing water, ease off the accelerator and hold a steady course. Here is the rule I want you to understand: Hydroplaning occurs when tires ride on water and lose contact with the pavement. If it begins, ease off the accelerator, keep the steering wheel steady, and avoid hard braking until traction returns. The mistake I commonly see from new drivers is this: Braking hard or making a sharp steering correction. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "7. Fog",
@@ -14458,7 +14548,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Fog. Picture this: If visibility becomes too poor, leave the roadway at a safe location rather than stopping in a travel lane. Here is the rule I want you to understand: Fog can reduce visibility to only a short distance. Use low beams, reduce speed, increase following distance, and use the right edge line for guidance. High beams reflect from fog and can make visibility worse. The mistake I commonly see from new drivers is this: Following another vehicle's taillights too closely. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "8. Snow, Ice, and Black Ice",
@@ -14479,7 +14570,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Snow, Ice, and Black Ice. Picture this: Approach a bridge cautiously when temperatures are near freezing, even if the road before it looks wet rather than icy. Here is the rule I want you to understand: Snow and ice dramatically reduce traction. Slow before curves and stops, leave much more distance, and make steering, braking, and acceleration inputs gently. Bridges, overpasses, shaded areas, and low spots may freeze before other pavement. The mistake I commonly see from new drivers is this: Using cruise control on ice. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "9. Skids",
@@ -14500,7 +14592,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Skids. Picture this: If the rear slides right, look and steer toward the path you want rather than making a sudden opposite correction. Here is the rule I want you to understand: If the rear of the vehicle begins to skid, look and steer in the direction you want the vehicle to travel, ease off the accelerator, and avoid overcorrecting. The goal is to regain traction smoothly. The mistake I commonly see from new drivers is this: Staring at the object you want to avoid. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "10. Flooded Roads and Severe Weather",
@@ -14521,7 +14614,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Flooded Roads and Severe Weather. Picture this: Turn around rather than entering water flowing across the road. Here is the rule I want you to understand: Never drive through moving or deep water when depth and road condition are uncertain. Water can hide washouts, move a vehicle, or stall the engine. Heavy wind, hail, lightning, or extreme rain may require leaving the roadway and waiting in a safe location. The mistake I commonly see from new drivers is this: Assuming a large vehicle can safely cross because another vehicle did. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "11. Fatigue and Nighttime Judgment",
@@ -14542,7 +14636,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Fatigue and Nighttime Judgment. Picture this: If you struggle to keep your eyes open, exit and rest rather than trying to continue. Here is the rule I want you to understand: Fatigue reduces attention, slows reaction time, and can cause lane drift or brief sleep episodes. Open windows, loud music, or caffeine do not replace rest. Stop in a safe place when drowsiness begins. The mistake I commonly see from new drivers is this: Believing that a short drive is safe despite heavy drowsiness. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "12. Nighttime Emergencies",
@@ -14563,7 +14658,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Nighttime Emergencies. Picture this: A stalled vehicle should be moved as far from the travel lane as possible before occupants seek help. Here is the rule I want you to understand: If headlights fail, slow, activate hazard lights, and move off the roadway as safely as possible. If the vehicle becomes disabled, get completely out of the travel lane, use hazard lights, and remain visible without standing in traffic. The mistake I commonly see from new drivers is this: Stopping in the travel lane with only parking lights. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         }
       ],
       "intro": "You are driving at night in light rain. An oncoming vehicle creates glare, spray reduces visibility, a deer warning sign appears, and the pavement begins to hold water. A safe response requires lower speed, low beams, added following space, careful shoulder scanning, and smooth control.",
@@ -14607,7 +14703,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Alcohol and Driving Ability. Picture this: Choose a sober driver before anyone begins drinking. Here is the rule I want you to understand: Alcohol reduces judgment, vision, coordination, attention, and reaction time before a driver may feel obviously impaired. The safest rule is not to drive after drinking and not to ride with an impaired driver. The mistake I commonly see from new drivers is this: Believing that feeling normal means driving ability is normal. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "2. BAC and Impairment",
@@ -14628,7 +14725,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through BAC and Impairment. Picture this: A teen driver should treat any alcohol use as incompatible with driving. Here is the rule I want you to understand: Blood alcohol concentration is affected by the amount consumed, time, body characteristics, food, and other factors. Even a BAC below the adult legal limit can impair driving, and stricter rules apply to drivers under 21. The mistake I commonly see from new drivers is this: Using the legal limit as a target rather than an enforcement threshold. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "3. Sobering-Up Myths",
@@ -14649,7 +14747,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Sobering-Up Myths. Picture this: Arrange transportation instead of trying to become sober quickly. Here is the rule I want you to understand: Coffee, cold showers, exercise, food, or fresh air do not remove alcohol from the bloodstream. Only time allows the body to process alcohol. The mistake I commonly see from new drivers is this: Believing caffeine makes an impaired person safe to drive. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "4. Cannabis and Other Drugs",
@@ -14670,7 +14769,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Cannabis and Other Drugs. Picture this: Do not drive after using a substance that changes alertness or coordination. Here is the rule I want you to understand: Cannabis and other drugs can alter judgment, coordination, perception, attention, and reaction time. Mixing substances can intensify impairment. A substance being prescribed, legal, or familiar does not make impaired driving safe. The mistake I commonly see from new drivers is this: Assuming cannabis is safe because it does not affect everyone the same way. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "5. Prescription and Over-the-Counter Medicines",
@@ -14691,7 +14791,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Prescription and Over-the-Counter Medicines. Picture this: Avoid driving after taking a cold medicine labeled 'may cause drowsiness.' Here is the rule I want you to understand: Some medicines cause drowsiness, dizziness, blurred vision, slowed reactions, or confusion. Read labels, follow medical advice, and learn how a medicine affects you before driving. The mistake I commonly see from new drivers is this: Assuming over-the-counter medicine cannot impair driving. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "6. Mixing Substances",
@@ -14712,7 +14813,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Mixing Substances. Picture this: Use a sober ride when any combination may affect alertness. Here is the rule I want you to understand: Combining alcohol with medicines, cannabis, or other drugs can produce greater impairment than either substance alone. Never assume one substance cancels another. The mistake I commonly see from new drivers is this: Believing a stimulant cancels alcohol impairment. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "7. Visual, Manual, and Mental Distraction",
@@ -14733,7 +14835,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Visual, Manual, and Mental Distraction. Picture this: Silence the phone and set navigation before moving. Here is the rule I want you to understand: Distraction can take the eyes off the road, hands off the wheel, or mind away from driving. Texting is especially dangerous because it often combines all three forms. The mistake I commonly see from new drivers is this: Believing a quick glance cannot matter. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "8. Phones and Electronic Devices",
@@ -14754,7 +14857,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Phones and Electronic Devices. Picture this: Let a passenger manage navigation or wait until safely parked. Here is the rule I want you to understand: A phone call, text, notification, video, or social-media message can wait. Pull completely off the roadway at a safe location before interacting with a device. Hands-free use can still create mental distraction. The mistake I commonly see from new drivers is this: Using a red light as an opportunity to text. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "9. Passengers and In-Vehicle Distraction",
@@ -14775,7 +14879,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Passengers and In-Vehicle Distraction. Picture this: Tell passengers that the driver needs quiet during a difficult merge. Here is the rule I want you to understand: Passengers, food, pets, grooming, loud music, and reaching for objects can all interfere with safe driving. New drivers should set limits and ask passengers to help maintain a calm environment. The mistake I commonly see from new drivers is this: Turning around to deal with passengers while the vehicle is moving. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "10. Fatigue and Microsleep",
@@ -14796,7 +14901,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Fatigue and Microsleep. Picture this: Exit and rest when you begin drifting or missing signs. Here is the rule I want you to understand: Fatigue slows reaction time, reduces judgment, causes lane drift, and can lead to microsleep. Warning signs include frequent yawning, missing signs, heavy eyelids, wandering thoughts, and not remembering recent miles. The mistake I commonly see from new drivers is this: Relying on music, cold air, or caffeine to replace sleep. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "11. Emotions, Anger, and Road Rage",
@@ -14817,7 +14923,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Emotions, Anger, and Road Rage. Picture this: Let an aggressive driver pass and avoid eye contact or gestures. Here is the rule I want you to understand: Anger, stress, fear, excitement, and sadness can narrow attention and lead to aggressive choices. Do not respond to gestures, tailgating, or insults. Create distance and seek a public or safe location if another driver follows or threatens you. The mistake I commonly see from new drivers is this: Brake-checking or blocking a driver who is behaving aggressively. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "12. Seat Belts, Airbags, and Occupant Readiness",
@@ -14838,7 +14945,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Seat Belts, Airbags, and Occupant Readiness. Picture this: Buckle every passenger before moving the vehicle. Here is the rule I want you to understand: Seat belts should be worn correctly by every occupant on every trip. Sit upright, keep the lap belt low across the hips, place the shoulder belt across the chest, and maintain safe distance from the airbag. The mistake I commonly see from new drivers is this: Putting the shoulder belt behind the back. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         }
       ],
       "intro": "You are preparing to drive home after a long evening. You took cold medicine, slept poorly, received several phone notifications, and a friend pressures you to leave immediately. A safe driver evaluates fitness before starting the vehicle and chooses another ride when necessary.",
@@ -14882,7 +14990,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Large Trucks and No-Zones. Picture this: Pass a truck steadily on the left and remain ahead until both truck headlights are visible in your mirror. Here is the rule I want you to understand: Large trucks have wide blind areas in front, behind, and along both sides. Drivers should avoid lingering beside a truck, should not cut closely in front after passing, and should leave extra room because trucks need more distance to stop. The mistake I commonly see from new drivers is this: Driving beside a trailer for a long distance. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "2. Wide Turns by Large Vehicles",
@@ -14903,7 +15012,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Wide Turns by Large Vehicles. Picture this: Stay behind a truck displaying a right-turn signal rather than entering the space along its passenger side. Here is the rule I want you to understand: Trucks and buses may swing left before turning right or may need more than one lane to complete a turn. Never squeeze between a turning truck and the curb, and do not assume an open space beside the truck is a usable lane. The mistake I commonly see from new drivers is this: Passing a turning truck on the right. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "3. School Buses",
@@ -14924,7 +15034,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through School Buses. Picture this: On an undivided road, traffic in both directions generally stops for a school bus displaying red lights. Here is the rule I want you to understand: Flashing red lights and an extended stop arm indicate that children are loading or unloading. Drivers must stop as required by the roadway design and remain stopped until the lights stop, the arm retracts, and the way is safe. The mistake I commonly see from new drivers is this: Proceeding because no child is immediately visible. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "4. Motorcycles",
@@ -14945,7 +15056,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Motorcycles. Picture this: Before a left turn, make a deliberate second search for motorcycles approaching from the opposite direction. Here is the rule I want you to understand: Motorcycles are entitled to a full lane but can be difficult to see and judge. Their smaller size may make them appear farther away or slower than they are. Increase following distance and look carefully before turning or changing lanes. The mistake I commonly see from new drivers is this: Assuming a motorcycle can stop instantly because it is small. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "5. Bicyclists",
@@ -14966,7 +15078,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Bicyclists. Picture this: Wait behind a bicyclist on a narrow road until the opposing lane is fully clear. Here is the rule I want you to understand: Bicyclists are legitimate road users. Give substantial passing clearance, check blind spots before turning, and avoid opening a door into a bicycle's path. Do not pass a bicycle when oncoming traffic leaves insufficient room. The mistake I commonly see from new drivers is this: Squeezing past while remaining in the same narrow lane. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "6. Pedestrians and People with Disabilities",
@@ -14987,7 +15100,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Pedestrians and People with Disabilities. Picture this: Stop and remain stopped for a person using a white cane who is entering the crosswalk. Here is the rule I want you to understand: Drivers must yield to pedestrians in crosswalks and remain especially alert for children, older adults, wheelchair users, and people with visual or hearing impairments. A white cane or guide dog indicates a visually impaired pedestrian who may not see your vehicle. The mistake I commonly see from new drivers is this: Using the horn to signal a visually impaired person to hurry. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "7. Emergency Vehicles",
@@ -15008,7 +15122,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Emergency Vehicles. Picture this: Clear an intersection, then pull right for an approaching ambulance. Here is the rule I want you to understand: When an emergency vehicle approaches with lights and siren, move right and stop when safe. If already in an intersection, clear it first. Do not follow closely behind emergency vehicles or enter a roadway area blocked for emergency operations. The mistake I commonly see from new drivers is this: Stopping in the middle of an intersection. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "8. Move Over Situations",
@@ -15029,7 +15144,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Move Over Situations. Picture this: On a multilane highway, check traffic and move left before passing a stopped patrol vehicle on the shoulder. Here is the rule I want you to understand: When approaching stopped emergency, service, recovery, or maintenance vehicles displaying warning lights, move to a farther lane when possible. If a safe lane change is not available, reduce speed and pass with caution. The mistake I commonly see from new drivers is this: Maintaining speed because the vehicle is outside the travel lane. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "9. Work Zones and Flaggers",
@@ -15050,7 +15166,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Work Zones and Flaggers. Picture this: Stop when a flagger displays STOP even if a nearby signal is green. Here is the rule I want you to understand: Work zones may contain changing lanes, equipment, workers, uneven surfaces, and sudden stops. Temporary signs, arrow boards, cones, and flagger directions control movement. The flagger's direction overrides a normal traffic signal. The mistake I commonly see from new drivers is this: Watching construction equipment instead of traffic ahead. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "10. Railroad Crossings",
@@ -15071,7 +15188,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Railroad Crossings. Picture this: After one train passes, continue waiting if lights flash or multiple tracks remain blocked from view. Here is the rule I want you to understand: Trains always have priority. Stop for flashing lights, gates, or an approaching train. Never drive around a gate or stop on tracks. At multiple tracks, wait until all tracks are clear before crossing. The mistake I commonly see from new drivers is this: Crossing as soon as the last train car passes. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "11. Farm Equipment and Slow-Moving Vehicles",
@@ -15092,7 +15210,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Farm Equipment and Slow-Moving Vehicles. Picture this: Reduce speed early when approaching a tractor near the crest of a hill. Here is the rule I want you to understand: Farm tractors, machinery, horse-drawn vehicles, and other slow vehicles may travel well below normal traffic speed. Their orange triangle emblem warns of slow movement, not permission to pass. Wait for adequate sight distance and legal passing conditions. The mistake I commonly see from new drivers is this: Passing near a curve because the tractor is slow. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "12. Defensive Sharing",
@@ -15113,7 +15232,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Defensive Sharing. Picture this: Ease off the accelerator when another vehicle merges too closely. Here is the rule I want you to understand: Sharing the road means anticipating mistakes and preserving space. Avoid aggressive responses, do not compete for position, and create room for merging vehicles, confused drivers, pedestrians, and vulnerable road users. The mistake I commonly see from new drivers is this: Closing a gap to prevent another vehicle from entering. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         }
       ],
       "intro": "You are driving on a two-lane road behind a farm tractor. A bicyclist is near the shoulder, an oncoming truck approaches, and an emergency vehicle appears behind you. The safest decision requires patience, proper yielding, and enough room for every road user.",
@@ -15157,7 +15277,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Recognizing Work Zones. Picture this: Reduce speed before reaching the first cone. Here is the rule I want you to understand: Orange signs, cones, drums, barricades, arrow boards, workers, and equipment identify construction or maintenance conditions. The mistake I commonly see from new drivers is this: Waiting until the lane physically ends to react. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "2. Advance Warning and Speed",
@@ -15178,7 +15299,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Advance Warning and Speed. Picture this: Ease off when a ROAD WORK AHEAD sign appears even before cones are visible. Here is the rule I want you to understand: Work-zone warnings often appear before workers or lane changes. Slow early and be prepared for sudden queues, uneven pavement, or narrowed lanes. The mistake I commonly see from new drivers is this: Maintaining speed until traffic stops. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "3. Flaggers",
@@ -15199,7 +15321,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Flaggers. Picture this: Stop for the flagger despite a nearby green signal. Here is the rule I want you to understand: Flaggers use paddles and hand signals to stop, slow, or release traffic. Their directions override normal signs or signals in the controlled area. The mistake I commonly see from new drivers is this: Following the vehicle ahead instead of the current instruction. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "4. Cones, Drums, and Barricades",
@@ -15220,7 +15343,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Cones, Drums, and Barricades. Picture this: Follow the lane formed by drums through a shift. Here is the rule I want you to understand: Channelizing devices define the temporary travel path. Stay centered, do not cross closed areas, and expect lane widths or alignment to change. The mistake I commonly see from new drivers is this: Straddling the temporary lane line. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "5. Arrow Boards and Lane Closures",
@@ -15241,7 +15365,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Arrow Boards and Lane Closures. Picture this: Merge left when a flashing arrow directs traffic away from the right lane. Here is the rule I want you to understand: Arrow boards direct traffic away from closed lanes. Signal, check for a gap, and merge smoothly without forcing another driver to brake. The mistake I commonly see from new drivers is this: Racing to the final barrier at high speed. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "6. Following Distance and Rear-End Risk",
@@ -15262,7 +15387,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Following Distance and Rear-End Risk. Picture this: Leave room when brake lights appear several vehicles ahead. Here is the rule I want you to understand: Work-zone traffic can stop suddenly because of flaggers, equipment, lane shifts, or congestion. Increase following distance and scan far ahead. The mistake I commonly see from new drivers is this: Tailgating to prevent merging. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "7. Workers and Equipment",
@@ -15283,7 +15409,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Workers and Equipment. Picture this: Cover the brake when a construction vehicle approaches the travel path. Here is the rule I want you to understand: Workers may be close to traffic, and equipment may enter or cross the lane. Avoid distractions and obey reduced speed or stop instructions. The mistake I commonly see from new drivers is this: Watching equipment instead of the lane and traffic ahead. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "8. Temporary Pavement and Uneven Surfaces",
@@ -15304,7 +15431,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Temporary Pavement and Uneven Surfaces. Picture this: Hold the wheel steadily across a grooved surface. Here is the rule I want you to understand: Grooved pavement, steel plates, gravel, drop-offs, and uneven lanes can reduce traction or affect steering. Slow and avoid abrupt movement. The mistake I commonly see from new drivers is this: Braking or steering sharply on loose material. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "9. Night and Weather Work Zones",
@@ -15325,7 +15453,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Night and Weather Work Zones. Picture this: Increase distance when rain hides lane markings and spray obscures cones. Here is the rule I want you to understand: Rain, darkness, glare, and reflective devices can make temporary paths harder to read. Reduce speed further and use low beams when appropriate. The mistake I commonly see from new drivers is this: Using high beams in fog or heavy spray. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "10. Move-Over and Roadside Operations",
@@ -15346,7 +15475,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Move-Over and Roadside Operations. Picture this: Change lanes before passing a patrol vehicle on the shoulder. Here is the rule I want you to understand: Move away from stopped emergency, recovery, maintenance, or service vehicles displaying warning lights when safe. If unable to move over, slow and pass cautiously. The mistake I commonly see from new drivers is this: Maintaining full speed because the vehicle is outside the lane. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "11. Violations, Points, and Responsibility",
@@ -15367,7 +15497,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Violations, Points, and Responsibility. Picture this: Review the consequences of a citation rather than ignoring it. Here is the rule I want you to understand: Traffic convictions can add points, delay licensing progress, or lead to suspension. Safe choices protect both people and driving privileges. The mistake I commonly see from new drivers is this: Assuming one violation cannot affect a teen license. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         },
         {
           "title": "12. Crashes, Insurance, and Reporting",
@@ -15388,7 +15519,8 @@ window.APP_DATA = {
             "alignment": "topic-authored",
             "type": "Topic Check",
             "difficulty": 2
-          }
+          },
+          "instructorNarrative": "Let's work through Crashes, Insurance, and Reporting. Picture this: Move a minor drivable crash from the lane when lawful and safe. Here is the rule I want you to understand: After a crash, stop, protect life, call for help when needed, exchange required driver, vehicle, and insurance information, and complete required reporting. The mistake I commonly see from new drivers is this: Leaving because damage appears minor. Remember, the goal is not simply to memorize the rule. Recognize the situation early and make the safe decision before it becomes an emergency."
         }
       ],
       "intro": "You approach a work zone where the right lane closes, an arrow board directs traffic left, a flagger displays SLOW, and traffic stops beyond a curve. Safe driving requires early speed reduction, a controlled merge, and full attention.",
@@ -16224,13 +16356,52 @@ function lessonStatus(section){
  return {label:'Not Started',className:'not-started',button:'Begin lesson'};
 }
 function renderLessons(){const w=document.querySelector('#lessonCards');if(!w){console.error('lessonCards container missing');return;}w.innerHTML='<p class="lesson-status">Loading '+(DATA?.sections?.length||0)+' course sections…</p>';if(!DATA||!DATA.lessons){w.innerHTML='<div class="feedback"><h3>Lesson files did not update together</h3><p>This page is not running the current course data. Re-upload every file, then refresh.</p></div>';return;}w.innerHTML='';DATA.sections.forEach(s=>{const l=DATA.lessons[s];if(!l)return;const x=sectionInfo(s),status=lessonStatus(s),d=document.createElement('div');d.className='lesson-card';const quizNote=x.passed?'<span>Section quiz passed</span>':(x.attempts?'<span>Best quiz: '+x.best+'%</span>':'');d.innerHTML=`<span class="eyebrow">${l.topics.length} TOPICS • PAGES ${l.manualPages}</span><h3>${l.title}</h3><p>${l.objective}</p><div class="lesson-card-status ${status.className}"><b>${status.label}</b>${quizNote}</div><button>${status.button}</button>`;d.querySelector('button').onclick=()=>openLesson(s);w.appendChild(d)});if(!w.children.length)w.innerHTML='<div class="feedback"><h3>No lessons rendered</h3><p>No matching lesson records were found.</p></div>'}
-function openLesson(s){const l=DATA.lessons[s],v=document.querySelector('#lessonViewer');
+
+// ===== VERSION 7.4 LESSON AUDIO AND INSTRUCTOR NARRATIVE =====
+let lessonSpeechState={utterance:null,topicIndex:null,paused:false};
+function speechSupported(){return 'speechSynthesis' in window&&'SpeechSynthesisUtterance' in window}
+function buildInstructorNarrative(t){return `Let's work through ${String(t.title||'this topic').replace(/^\d+\.\s*/,'')}. Picture this: ${t.example||''} Here is the rule I want you to understand: ${t.body||t.content||''} The mistake I commonly see from new drivers is this: ${t.mistake||''} Remember, recognize the situation early and make the safe decision before it becomes an emergency.`}
+function lessonTakeaway(t){const body=(t.body||t.content||'').trim(),match=body.match(/^[^.!?]+[.!?]/);return match?match[0]:body}
+function preferredSpeechRate(){const value=Number(localStorage.getItem('roadreadySpeechRate')||1);return [0.75,1,1.25,1.5].includes(value)?value:1}
+function setSpeechStatus(text){const el=document.querySelector('#speechStatus');if(el)el.textContent=text}
+function clearSpeakingHighlight(){document.querySelectorAll('.topic-block.speaking').forEach(el=>el.classList.remove('speaking'))}
+function stopLessonSpeech(){if(speechSupported())speechSynthesis.cancel();clearSpeakingHighlight();lessonSpeechState={utterance:null,topicIndex:null,paused:false};setSpeechStatus('Audio stopped')}
+function pauseLessonSpeech(){if(!speechSupported()||!speechSynthesis.speaking)return;speechSynthesis.pause();lessonSpeechState.paused=true;setSpeechStatus('Audio paused')}
+function resumeLessonSpeech(){if(!speechSupported()||!speechSynthesis.paused)return;speechSynthesis.resume();lessonSpeechState.paused=false;setSpeechStatus('Reading lesson')}
+function speakLessonText(text,topicIndex=null,label='Reading lesson'){
+ if(!speechSupported()){alert('Text-to-speech is not supported by this browser.');return}
+ speechSynthesis.cancel();clearSpeakingHighlight();
+ const u=new SpeechSynthesisUtterance(text.replace(/\s+/g,' ').trim());u.rate=preferredSpeechRate();u.pitch=1;u.volume=1;
+ const voices=speechSynthesis.getVoices(),voice=voices.find(v=>v.lang?.startsWith('en-US')&&/Samantha|Google US English|Microsoft.*Online|Natural/i.test(v.name))||voices.find(v=>v.lang?.startsWith('en-US'))||voices.find(v=>v.lang?.startsWith('en'));if(voice)u.voice=voice;
+ if(topicIndex!==null){const el=document.querySelector(`[data-speech-topic="${topicIndex}"]`);if(el){el.classList.add('speaking');el.scrollIntoView({behavior:'smooth',block:'center'})}}
+ u.onstart=()=>setSpeechStatus(label);u.onpause=()=>setSpeechStatus('Audio paused');u.onresume=()=>setSpeechStatus(label);
+ u.onend=()=>{clearSpeakingHighlight();lessonSpeechState.utterance=null;setSpeechStatus('Audio complete')};
+ u.onerror=e=>{clearSpeakingHighlight();lessonSpeechState.utterance=null;if(e.error!=='canceled')setSpeechStatus('Audio unavailable')};
+ lessonSpeechState.utterance=u;lessonSpeechState.topicIndex=topicIndex;speechSynthesis.speak(u);
+}
+function topicSpeechText(t){return `${String(t.title||'').replace(/^\d+\.\s*/,'')}. ${t.instructorNarrative||buildInstructorNarrative(t)} Remember this: ${lessonTakeaway(t)}`}
+function checkSpeechText(t){return `Quick check. ${t.check.q}. Choices. ${t.check.choices.map((c,i)=>`${String.fromCharCode(65+i)}. ${c}`).join('. ')}`}
+function fullLessonSpeechText(l){return `${l.title}. Learning objective. ${l.objective}. ${l.intro}. `+l.topics.map((t,i)=>`Topic ${i+1}. ${topicSpeechText(t)}`).join(' ')+` Lesson summary. ${(l.summary||[]).join('. ')}`}
+function setupLessonAudio(view,lesson){
+ const controls=view.querySelector('.lesson-audio-toolbar');
+ if(!speechSupported()){if(controls)controls.innerHTML='<span>Audio narration is unavailable in this browser.</span>';view.querySelectorAll('.audio-controls,.read-check').forEach(el=>el.hidden=true);return}
+ const rate=view.querySelector('#speechRate');if(rate){rate.value=String(preferredSpeechRate());rate.onchange=()=>{localStorage.setItem('roadreadySpeechRate',rate.value);stopLessonSpeech();setSpeechStatus(`Speed set to ${rate.value}×`)}}
+ view.querySelector('#readFullLesson').onclick=()=>speakLessonText(fullLessonSpeechText(lesson),null,'Reading full lesson');
+ view.querySelector('#pauseLesson').onclick=pauseLessonSpeech;view.querySelector('#resumeLesson').onclick=resumeLessonSpeech;view.querySelector('#stopLesson').onclick=stopLessonSpeech;
+ view.querySelectorAll('.topic-read').forEach(btn=>btn.onclick=()=>{const i=Number(btn.dataset.topic);speakLessonText(topicSpeechText(lesson.topics[i]),i,`Reading topic ${i+1}`)});
+ view.querySelectorAll('.topic-pause').forEach(btn=>btn.onclick=pauseLessonSpeech);view.querySelectorAll('.topic-stop').forEach(btn=>btn.onclick=stopLessonSpeech);
+ view.querySelectorAll('.read-check').forEach(btn=>btn.onclick=()=>{const i=Number(btn.dataset.topic);speakLessonText(checkSpeechText(lesson.topics[i]),i,`Reading quick check ${i+1}`)});
+}
+window.addEventListener('beforeunload',stopLessonSpeech);
+// ===== END VERSION 7.4 =====
+
+function openLesson(s){stopLessonSpeech();const l=DATA.lessons[s],v=document.querySelector('#lessonViewer');
  if(!l||!Array.isArray(l.topics)){v.innerHTML='<div class="feedback"><h3>Lesson data unavailable</h3><p>Please upload the complete release and refresh.</p></div>';v.hidden=false;return}
  l.intro=l.intro||l.scenario||'';
  l.summary=Array.isArray(l.summary)?l.summary:(l.points||[]);
- l.topics=l.topics.map(t=>({...t,page:t.page||parseInt(l.manualPages)||1,body:t.body||t.content||'',check:{...(t.check||{}),feedback:t.check?.feedback||t.check?.explain||''}}));if(!currentProfile.lessonsViewed.includes(s)){currentProfile.lessonsViewed.push(s);save()}document.querySelector('#lessonListCard').hidden=true;v.hidden=false;let checks=l.topics.map((t,i)=>`<article class="topic-block"><div class="topic-number">${i+1}</div><div class="topic-content"><span class="eyebrow">TOPIC ${i+1} • MANUAL PAGE ${t.page}</span><h3>${t.title}</h3><p>${t.body}</p><div class="example-box"><b>Real-world example</b><p>${t.example}</p></div><div class="mistake-box"><b>Common mistake</b><p>${t.mistake}</p></div><div class="mini-check" data-topic="${i}"><b>Quick check</b><p>${t.check.q}</p><div class="mini-choices">${t.check.choices.map((c,j)=>`<button data-answer="${j}">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="mini-feedback"></div></div></div></article>`).join('');v.innerHTML=`<div class="card lesson-view"><span class="eyebrow">${s} • MANUAL PAGES ${l.manualPages}</span><h2>${l.title}</h2><div class="lesson-objective"><b>Learning objective:</b> ${l.objective}</div><p class="lesson-intro">${l.intro}</p><div class="lesson-toc"><b>In this lesson</b>${l.topics.map((t,i)=>`<a href="#topic-${i}">${i+1}. ${t.title}</a>`).join('')}</div>${checks}<div class="lesson-summary"><h3>Lesson summary</h3><ul class="lesson-points">${l.summary.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="lesson-actions"><button id="lessonComplete">Mark lesson complete</button><button class="secondary" id="lessonQuiz">Take 15-Question Section Quiz</button><button class="secondary" id="lessonMastery">Take 25-Question Mastery Exam</button><button class="secondary" id="lessonManual">Open manual</button><button class="secondary" id="lessonBack">Back to lessons</button></div></div>`;v.querySelectorAll('.topic-block').forEach((el,i)=>el.id='topic-'+i);v.querySelectorAll('.mini-check').forEach((box,i)=>{box.querySelectorAll('button').forEach(btn=>btn.onclick=()=>{if(box.dataset.done)return;box.dataset.done='1';const chosen=Number(btn.dataset.answer),correct=l.topics[i].check.answer;box.querySelectorAll('button').forEach(b=>{b.disabled=true;if(Number(b.dataset.answer)===correct)b.classList.add('correct');if(b===btn&&chosen!==correct)b.classList.add('wrong')});box.querySelector('.mini-feedback').innerHTML=`<div class="feedback ${chosen===correct?'good':''}"><b>${chosen===correct?'Correct':'Correct answer: '+l.topics[i].check.choices[correct]}</b><p>${l.topics[i].check.feedback}</p></div>`})});v.querySelector('#lessonComplete').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();renderLessons();v.querySelector('#lessonComplete').textContent='Lesson completed ✓';v.querySelector('#lessonComplete').disabled=true};v.querySelector('#lessonQuiz').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();document.querySelector('#lessonListCard').hidden=false;v.hidden=true;startSection(s);switchTab('test')};
- v.querySelector('#lessonMastery').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();document.querySelector('#lessonListCard').hidden=false;v.hidden=true;startSectionMasteryExam(s);switchTab('test')};
- v.querySelector('#lessonManual').onclick=()=>openManual(parseInt(l.manualPages)||1);v.querySelector('#lessonBack').onclick=()=>{v.hidden=true;document.querySelector('#lessonListCard').hidden=false;renderLessons()};renderBadges();window.scrollTo({top:0,behavior:'smooth'})}
+ l.topics=l.topics.map(t=>({...t,page:t.page||parseInt(l.manualPages)||1,body:t.body||t.content||'',check:{...(t.check||{}),feedback:t.check?.feedback||t.check?.explain||''}}));if(!currentProfile.lessonsViewed.includes(s)){currentProfile.lessonsViewed.push(s);save()}document.querySelector('#lessonListCard').hidden=true;v.hidden=false;let checks=l.topics.map((t,i)=>`<article class="topic-block" data-speech-topic="${i}"><div class="topic-number">${i+1}</div><div class="topic-content"><span class="eyebrow">TOPIC ${i+1} • MANUAL PAGE ${t.page}</span><h3>${t.title}</h3><div class="audio-controls"><button class="topic-read" data-topic="${i}">▶ Read Topic</button><button class="topic-pause secondary" data-topic="${i}">Pause</button><button class="topic-stop secondary" data-topic="${i}">Stop</button></div><div class="instructor-box"><b>Instructor narrative</b><p>${t.instructorNarrative||buildInstructorNarrative(t)}</p></div><div class="lesson-rule"><b>Key rule</b><p>${t.body}</p></div><div class="example-box"><b>Real-world example</b><p>${t.example}</p></div><div class="mistake-box"><b>What new drivers often get wrong</b><p>${t.mistake}</p></div><div class="remember-box"><b>Remember this</b><p>${lessonTakeaway(t)}</p></div><div class="mini-check" data-topic="${i}"><b>Quick check</b><button class="read-check secondary" data-topic="${i}">🔊 Read Question</button><p>${t.check.q}</p><div class="mini-choices">${t.check.choices.map((c,j)=>`<button data-answer="${j}">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="mini-feedback"></div></div></div></article>`).join('');v.innerHTML=`<div class="card lesson-view"><span class="eyebrow">${s} • MANUAL PAGES ${l.manualPages}</span><h2>${l.title}</h2><div class="lesson-objective"><b>Learning objective:</b> ${l.objective}</div><p class="lesson-intro">${l.intro}</p><div class="lesson-audio-toolbar"><button id="readFullLesson">▶ Read Full Lesson</button><button id="pauseLesson" class="secondary">Pause</button><button id="resumeLesson" class="secondary">Resume</button><button id="stopLesson" class="secondary">Stop</button><label>Speed <select id="speechRate"><option value="0.75">0.75×</option><option value="1">1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option></select></label><span id="speechStatus" role="status">Audio ready</span></div><div class="lesson-toc"><b>In this lesson</b>${l.topics.map((t,i)=>`<a href="#topic-${i}">${i+1}. ${t.title}</a>`).join('')}</div>${checks}<div class="lesson-summary"><h3>Lesson summary</h3><ul class="lesson-points">${l.summary.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="lesson-actions"><button id="lessonComplete">Mark lesson complete</button><button class="secondary" id="lessonQuiz">Take 15-Question Section Quiz</button><button class="secondary" id="lessonMastery">Take 25-Question Mastery Exam</button><button class="secondary" id="lessonManual">Open manual</button><button class="secondary" id="lessonBack">Back to lessons</button></div></div>`;v.querySelectorAll('.topic-block').forEach((el,i)=>el.id='topic-'+i);setupLessonAudio(v,l);v.querySelectorAll('.mini-check').forEach((box,i)=>{box.querySelectorAll('button').forEach(btn=>btn.onclick=()=>{if(box.dataset.done)return;box.dataset.done='1';const chosen=Number(btn.dataset.answer),correct=l.topics[i].check.answer;box.querySelectorAll('button').forEach(b=>{b.disabled=true;if(Number(b.dataset.answer)===correct)b.classList.add('correct');if(b===btn&&chosen!==correct)b.classList.add('wrong')});box.querySelector('.mini-feedback').innerHTML=`<div class="feedback ${chosen===correct?'good':''}"><b>${chosen===correct?'Correct':'Correct answer: '+l.topics[i].check.choices[correct]}</b><p>${l.topics[i].check.feedback}</p></div>`})});v.querySelector('#lessonComplete').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();renderLessons();v.querySelector('#lessonComplete').textContent='Lesson completed ✓';v.querySelector('#lessonComplete').disabled=true};v.querySelector('#lessonQuiz').onclick=()=>{stopLessonSpeech();if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();document.querySelector('#lessonListCard').hidden=false;v.hidden=true;startSection(s);switchTab('test')};
+ v.querySelector('#lessonMastery').onclick=()=>{stopLessonSpeech();if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();document.querySelector('#lessonListCard').hidden=false;v.hidden=true;startSectionMasteryExam(s);switchTab('test')};
+ v.querySelector('#lessonManual').onclick=()=>openManual(parseInt(l.manualPages)||1);v.querySelector('#lessonBack').onclick=()=>{stopLessonSpeech();v.hidden=true;document.querySelector('#lessonListCard').hidden=false;renderLessons()};renderBadges();window.scrollTo({top:0,behavior:'smooth'})}
 function renderAll(){
  const jobs=[['lessons',renderLessons],['metrics',renderMetrics],['sections',renderSections],['history',renderHistory],['goal',renderGoalAndReadiness],['badges',renderBadges],['examStatus',renderExamStatus],['learningInsights',renderLearningInsights],['learningCoach',renderLearningCoach],['readinessCenter',renderReadinessCenter]];
  jobs.forEach(([name,fn])=>{try{fn()}catch(err){console.error('Render failure:',name,err);if(name==='lessons'){const w=document.querySelector('#lessonCards');if(w)w.innerHTML='<div class="feedback"><h3>Lesson rendering error</h3><p>'+String(err.message||err)+'</p></div>';}}});

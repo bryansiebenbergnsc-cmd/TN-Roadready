@@ -155,3 +155,17 @@ body.exam-active #quizArea{display:block!important}
 .certificate-seal{width:95px;height:95px;border-radius:50%;border:6px double #9a6b00;display:grid;place-items:center;margin:18px auto;font-weight:900;color:#9a6b00}
 @media(max-width:720px){.readiness-grid{grid-template-columns:1fr}}
 @media print{body *{visibility:hidden!important}#printableCertificate,#printableCertificate *{visibility:visible!important}#printableCertificate{display:block!important;position:absolute;inset:0;padding:30px;background:#fff}}
+
+.lesson-audio-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:9px;padding:14px;margin:15px 0 20px;border:1px solid var(--line);border-radius:14px;background:#eef6fb}
+.lesson-audio-toolbar label{display:flex;align-items:center;gap:7px;font-weight:800}
+.lesson-audio-toolbar select{padding:8px;border:1px solid var(--line);border-radius:8px;background:#fff}
+#speechStatus{font-size:.82rem;color:var(--muted);font-weight:700}
+.audio-controls{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 13px}
+.audio-controls button,.read-check{padding:8px 11px;font-size:.82rem}
+.instructor-box{background:linear-gradient(135deg,#eef7ff,#fff);border-left:5px solid var(--blue);padding:15px;border-radius:11px;margin:12px 0}
+.instructor-box p{font-size:1.02rem;line-height:1.65}
+.lesson-rule{background:#f8fafb;border:1px solid var(--line);padding:13px;border-radius:10px;margin:10px 0}
+.remember-box{background:#fff5d8;border-left:5px solid var(--gold);padding:13px;border-radius:10px;margin:10px 0}
+.topic-block{transition:box-shadow .2s ease,transform .2s ease,border-color .2s ease}
+.topic-block.speaking{box-shadow:0 0 0 4px #2f80ed33,0 8px 24px #0002;border-color:#2f80ed;transform:translateY(-2px)}
+@media(max-width:600px){.lesson-audio-toolbar{align-items:stretch}.lesson-audio-toolbar button{flex:1 1 42%}.lesson-audio-toolbar label{width:100%;justify-content:space-between}.audio-controls button{flex:1}}
