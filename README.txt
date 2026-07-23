@@ -243,3 +243,14 @@ VERSION 7.1.2 — LESSON CHECK HARDENING
 - Reduced answer-length clues by avoiding candidates whose correct choice was uniquely longest when possible.
 - Added source question ID, difficulty, and question type to lesson-check metadata.
 - Updated bundle and service-worker cache versions.
+
+VERSION 7.2 — SHORTER SECTION QUIZZES
+- Kept the complete 50+ question banks for every knowledge section.
+- Changed the standard Section Quiz to 15 questions.
+- Added broad topic coverage when selecting each 15-question quiz.
+- Prioritizes unseen, previously missed, weak, and higher-difficulty questions.
+- Every new attempt generates a different question set.
+- Restored a separate 25-question Mastery Exam button in every lesson.
+- Section Quiz pass score remains 80%.
+- Mastery Exam remains a longer, higher-difficulty assessment.
+- Smart Review and Comprehensive Final continue using the complete question database.

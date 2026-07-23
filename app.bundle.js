@@ -16228,7 +16228,9 @@ function openLesson(s){const l=DATA.lessons[s],v=document.querySelector('#lesson
  if(!l||!Array.isArray(l.topics)){v.innerHTML='<div class="feedback"><h3>Lesson data unavailable</h3><p>Please upload the complete release and refresh.</p></div>';v.hidden=false;return}
  l.intro=l.intro||l.scenario||'';
  l.summary=Array.isArray(l.summary)?l.summary:(l.points||[]);
- l.topics=l.topics.map(t=>({...t,page:t.page||parseInt(l.manualPages)||1,body:t.body||t.content||'',check:{...(t.check||{}),feedback:t.check?.feedback||t.check?.explain||''}}));if(!currentProfile.lessonsViewed.includes(s)){currentProfile.lessonsViewed.push(s);save()}document.querySelector('#lessonListCard').hidden=true;v.hidden=false;let checks=l.topics.map((t,i)=>`<article class="topic-block"><div class="topic-number">${i+1}</div><div class="topic-content"><span class="eyebrow">TOPIC ${i+1} • MANUAL PAGE ${t.page}</span><h3>${t.title}</h3><p>${t.body}</p><div class="example-box"><b>Real-world example</b><p>${t.example}</p></div><div class="mistake-box"><b>Common mistake</b><p>${t.mistake}</p></div><div class="mini-check" data-topic="${i}"><b>Quick check</b><p>${t.check.q}</p><div class="mini-choices">${t.check.choices.map((c,j)=>`<button data-answer="${j}">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="mini-feedback"></div></div></div></article>`).join('');v.innerHTML=`<div class="card lesson-view"><span class="eyebrow">${s} • MANUAL PAGES ${l.manualPages}</span><h2>${l.title}</h2><div class="lesson-objective"><b>Learning objective:</b> ${l.objective}</div><p class="lesson-intro">${l.intro}</p><div class="lesson-toc"><b>In this lesson</b>${l.topics.map((t,i)=>`<a href="#topic-${i}">${i+1}. ${t.title}</a>`).join('')}</div>${checks}<div class="lesson-summary"><h3>Lesson summary</h3><ul class="lesson-points">${l.summary.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="lesson-actions"><button id="lessonComplete">Mark lesson complete</button><button class="secondary" id="lessonQuiz">Take section quiz</button><button class="secondary" id="lessonManual">Open manual</button><button class="secondary" id="lessonBack">Back to lessons</button></div></div>`;v.querySelectorAll('.topic-block').forEach((el,i)=>el.id='topic-'+i);v.querySelectorAll('.mini-check').forEach((box,i)=>{box.querySelectorAll('button').forEach(btn=>btn.onclick=()=>{if(box.dataset.done)return;box.dataset.done='1';const chosen=Number(btn.dataset.answer),correct=l.topics[i].check.answer;box.querySelectorAll('button').forEach(b=>{b.disabled=true;if(Number(b.dataset.answer)===correct)b.classList.add('correct');if(b===btn&&chosen!==correct)b.classList.add('wrong')});box.querySelector('.mini-feedback').innerHTML=`<div class="feedback ${chosen===correct?'good':''}"><b>${chosen===correct?'Correct':'Correct answer: '+l.topics[i].check.choices[correct]}</b><p>${l.topics[i].check.feedback}</p></div>`})});v.querySelector('#lessonComplete').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();renderLessons();v.querySelector('#lessonComplete').textContent='Lesson completed ✓';v.querySelector('#lessonComplete').disabled=true};v.querySelector('#lessonQuiz').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();document.querySelector('#lessonListCard').hidden=false;v.hidden=true;startSection(s);switchTab('test')};v.querySelector('#lessonManual').onclick=()=>openManual(parseInt(l.manualPages)||1);v.querySelector('#lessonBack').onclick=()=>{v.hidden=true;document.querySelector('#lessonListCard').hidden=false;renderLessons()};renderBadges();window.scrollTo({top:0,behavior:'smooth'})}
+ l.topics=l.topics.map(t=>({...t,page:t.page||parseInt(l.manualPages)||1,body:t.body||t.content||'',check:{...(t.check||{}),feedback:t.check?.feedback||t.check?.explain||''}}));if(!currentProfile.lessonsViewed.includes(s)){currentProfile.lessonsViewed.push(s);save()}document.querySelector('#lessonListCard').hidden=true;v.hidden=false;let checks=l.topics.map((t,i)=>`<article class="topic-block"><div class="topic-number">${i+1}</div><div class="topic-content"><span class="eyebrow">TOPIC ${i+1} • MANUAL PAGE ${t.page}</span><h3>${t.title}</h3><p>${t.body}</p><div class="example-box"><b>Real-world example</b><p>${t.example}</p></div><div class="mistake-box"><b>Common mistake</b><p>${t.mistake}</p></div><div class="mini-check" data-topic="${i}"><b>Quick check</b><p>${t.check.q}</p><div class="mini-choices">${t.check.choices.map((c,j)=>`<button data-answer="${j}">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="mini-feedback"></div></div></div></article>`).join('');v.innerHTML=`<div class="card lesson-view"><span class="eyebrow">${s} • MANUAL PAGES ${l.manualPages}</span><h2>${l.title}</h2><div class="lesson-objective"><b>Learning objective:</b> ${l.objective}</div><p class="lesson-intro">${l.intro}</p><div class="lesson-toc"><b>In this lesson</b>${l.topics.map((t,i)=>`<a href="#topic-${i}">${i+1}. ${t.title}</a>`).join('')}</div>${checks}<div class="lesson-summary"><h3>Lesson summary</h3><ul class="lesson-points">${l.summary.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="lesson-actions"><button id="lessonComplete">Mark lesson complete</button><button class="secondary" id="lessonQuiz">Take 15-Question Section Quiz</button><button class="secondary" id="lessonMastery">Take 25-Question Mastery Exam</button><button class="secondary" id="lessonManual">Open manual</button><button class="secondary" id="lessonBack">Back to lessons</button></div></div>`;v.querySelectorAll('.topic-block').forEach((el,i)=>el.id='topic-'+i);v.querySelectorAll('.mini-check').forEach((box,i)=>{box.querySelectorAll('button').forEach(btn=>btn.onclick=()=>{if(box.dataset.done)return;box.dataset.done='1';const chosen=Number(btn.dataset.answer),correct=l.topics[i].check.answer;box.querySelectorAll('button').forEach(b=>{b.disabled=true;if(Number(b.dataset.answer)===correct)b.classList.add('correct');if(b===btn&&chosen!==correct)b.classList.add('wrong')});box.querySelector('.mini-feedback').innerHTML=`<div class="feedback ${chosen===correct?'good':''}"><b>${chosen===correct?'Correct':'Correct answer: '+l.topics[i].check.choices[correct]}</b><p>${l.topics[i].check.feedback}</p></div>`})});v.querySelector('#lessonComplete').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();renderLessons();v.querySelector('#lessonComplete').textContent='Lesson completed ✓';v.querySelector('#lessonComplete').disabled=true};v.querySelector('#lessonQuiz').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();document.querySelector('#lessonListCard').hidden=false;v.hidden=true;startSection(s);switchTab('test')};
+ v.querySelector('#lessonMastery').onclick=()=>{if(!currentProfile.lessonsCompleted.includes(s))currentProfile.lessonsCompleted.push(s);save();document.querySelector('#lessonListCard').hidden=false;v.hidden=true;startSectionMasteryExam(s);switchTab('test')};
+ v.querySelector('#lessonManual').onclick=()=>openManual(parseInt(l.manualPages)||1);v.querySelector('#lessonBack').onclick=()=>{v.hidden=true;document.querySelector('#lessonListCard').hidden=false;renderLessons()};renderBadges();window.scrollTo({top:0,behavior:'smooth'})}
 function renderAll(){
  const jobs=[['lessons',renderLessons],['metrics',renderMetrics],['sections',renderSections],['history',renderHistory],['goal',renderGoalAndReadiness],['badges',renderBadges],['examStatus',renderExamStatus],['learningInsights',renderLearningInsights],['learningCoach',renderLearningCoach],['readinessCenter',renderReadinessCenter]];
  jobs.forEach(([name,fn])=>{try{fn()}catch(err){console.error('Render failure:',name,err);if(name==='lessons'){const w=document.querySelector('#lessonCards');if(w)w.innerHTML='<div class="feedback"><h3>Lesson rendering error</h3><p>'+String(err.message||err)+'</p></div>';}}});
@@ -16247,9 +16249,53 @@ document.querySelector('#addProfileBtn').onclick=()=>{
 };
 
 function shuffled(a){return [...a].sort(()=>Math.random()-.5)}
+function buildSectionQuiz(section,count=15){
+ const pool=DATA.questions.filter(q=>q.section===section);
+ if(pool.length<=count)return shuffled(pool);
+
+ const byTopic={};
+ pool.forEach(q=>{
+   const topic=q.topic||q.learningObjective||'General';
+   (byTopic[topic]||(byTopic[topic]=[])).push(q);
+ });
+
+ const selected=[],used=new Set();
+ const topics=Object.keys(byTopic);
+
+ // First pass: broad topic coverage.
+ shuffled(topics).forEach(topic=>{
+   if(selected.length>=count)return;
+   const candidates=byTopic[topic].filter(q=>!used.has(q.id));
+   if(!candidates.length)return;
+   const ranked=candidates.sort((a,b)=>{
+     const sa=currentProfile.questionStats?.[a.id]||{},sb=currentProfile.questionStats?.[b.id]||{};
+     const wa=(sa.attempts||0)?1-(sa.correct||0)/(sa.attempts||1):1.15;
+     const wb=(sb.attempts||0)?1-(sb.correct||0)/(sb.attempts||1):1.15;
+     return wb-wa||(b.difficulty||2)-(a.difficulty||2);
+   });
+   selected.push(ranked[0]);used.add(ranked[0].id);
+ });
+
+ // Second pass: prioritize unseen, missed, weak, and harder questions.
+ const remaining=pool.filter(q=>!used.has(q.id)).sort((a,b)=>{
+   const sa=currentProfile.questionStats?.[a.id]||{},sb=currentProfile.questionStats?.[b.id]||{};
+   const missedA=currentProfile.missed.includes(a.id)?2:0,missedB=currentProfile.missed.includes(b.id)?2:0;
+   const unseenA=(sa.attempts||0)===0?3:0,unseenB=(sb.attempts||0)===0?3:0;
+   const weakA=(sa.attempts||0)?1-(sa.correct||0)/(sa.attempts||1):1;
+   const weakB=(sb.attempts||0)?1-(sb.correct||0)/(sb.attempts||1):1;
+   const valueA=unseenA+missedA+weakA+(a.difficulty||2)*.2;
+   const valueB=unseenB+missedB+weakB+(b.difficulty||2)*.2;
+   return valueB-valueA;
+ });
+ for(const q of remaining){
+   if(selected.length>=count)break;
+   selected.push(q);used.add(q.id);
+ }
+ return shuffled(selected).slice(0,count);
+}
 function startSection(section){
- const qs=shuffled(DATA.questions.filter(q=>q.section===section));
- beginQuiz(qs,`${section} Quiz`,section);switchTab('test')
+ const qs=buildSectionQuiz(section,15);
+ beginQuiz(qs,`${section} — 15-Question Section Quiz`,section);switchTab('test')
 }
 document.querySelectorAll('[data-count]').forEach(b=>b.onclick=()=>{
  const count=Number(b.dataset.count);beginQuiz(shuffled(DATA.questions).slice(0,count),`${count}-Question Practice Test`,null)
@@ -16305,7 +16351,9 @@ function finishQuiz(abandoned){
  if(quiz.section){const s=currentProfile.sectionStats[quiz.section]||{answered:0,correct:0,attempts:0,best:0};s.attempts++;s.best=Math.max(s.best||0,score);currentProfile.sectionStats[quiz.section]=s}
  save();renderAll();
  if(DATA.sections.filter(s=>sectionInfo(s).passed).length===DATA.sections.length)maybeCelebrateMilestone('All 11 section quizzes passed');
- area.innerHTML=`<div class="card"><h2>${passed?'Great work!':'Keep practicing'}</h2><div class="metric"><b>${score}%</b><span>${quiz.correct} of ${quiz.questions.length} correct</span></div><p>${passed?'You passed this test.':'A passing score is 80%. Review missed questions and try again.'}</p><button id="doneQuiz">Return to dashboard</button></div>`;
+ area.innerHTML=`<div class="card"><h2>${passed?'Great work!':'Keep practicing'}</h2><div class="metric"><b>${score}%</b><span>${quiz.correct} of ${quiz.questions.length} correct</span></div><p>${passed
+ ?(quiz.type.includes('Mastery')?'You demonstrated mastery of this section.':'You passed the section quiz.')
+ :(quiz.type.includes('Mastery')?'Mastery requires 80%. Review weak topics before another attempt.':'A passing score is 80%. Review missed questions and try a new 15-question set.')}</p><button id="doneQuiz">Return to dashboard</button></div>`;
  document.querySelector('#doneQuiz').onclick=()=>{area.hidden=true;document.querySelector('#testSetup').hidden=false;quiz=null;switchTab('dashboard')}
 }
 
@@ -16317,7 +16365,7 @@ function startSectionMasteryExam(section){
  Object.entries(config.requiredDifficultyMix||{}).forEach(([level,count])=>selected.push(...sampleWithoutReplacement(buckets[level]||[],count)));
  const target=config.masteryExamCount||25;
  if(selected.length<target)selected.push(...sampleWithoutReplacement(pool.filter(q=>!selected.some(x=>x.id===q.id)),target-selected.length));
- beginQuiz(shuffled(selected).slice(0,target),`${section} Mastery Exam`,section);
+ beginQuiz(shuffled(selected).slice(0,target),`${section} — 25-Question Mastery Exam`,section);
 }
 
 
