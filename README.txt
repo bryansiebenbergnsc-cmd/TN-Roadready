@@ -128,3 +128,98 @@ VERSION 5.1 — LEARNING COACH
   * 85% permit readiness
 - Local milestone celebrations.
 - No Parent Mode, no cloud account, and no outside data storage.
+
+VERSION 6.0 — SIGNS, SIGNALS & PAVEMENT MARKINGS FULL EXPERIENCE
+- Expanded the section to 12 detailed instructional topics.
+- Added examples, common mistakes, and embedded knowledge checks.
+- Added 50 new questions with topic, type, difficulty, objective, and tag metadata.
+- Added recall, understanding, applied, and advanced judgment questions.
+- Added a dedicated 25-question Signs Mastery Exam with a controlled difficulty mix.
+- Added manual references covering printed pages 35–44.
+- Current total app question count: 208.
+
+VERSION 6.1 — INTERSECTIONS FULL EXPERIENCE
+- 10 expanded teaching topics
+- 32 new questions
+- Dedicated 25-question mastery exam
+- Total questions: 240
+
+VERSION 6.2 — SPEED, SPACE & STOPPING
+- 10 expanded teaching topics
+- 32 new questions
+- Dedicated 25-question mastery exam
+- Total questions: 272
+
+VERSION 6.3 — SIGNS VISUAL RECOGNITION
+- Added a dedicated Sign Challenge tab.
+- Added a 20-sign visual library built with offline CSS shapes.
+- Added browse, quick 10, and timed 20 challenge modes.
+- Added sign meaning plus safest driver-response testing.
+- Sign challenge scores are stored in student test history.
+- All visuals work offline with no external image files.
+
+VERSION 6.4 — NIGHT & WEATHER DRIVING
+- Expanded Night & Weather Driving to 12 detailed teaching topics.
+- Added 36 new metadata-rich questions.
+- Added recall, understanding, applied, and judgment difficulty levels.
+- Added a dedicated 25-question Night & Weather Mastery Exam.
+- Covers darkness, headlights, glare, wildlife, rain, hydroplaning, fog, snow, ice, skids, flooding, wind, fatigue, and nighttime emergencies.
+- Current total app question count: 308.
+
+VERSION 6.5 — SHARING THE ROAD
+- Expanded Defensive Driving & Sharing to 12 detailed teaching topics.
+- Added 39 new metadata-rich questions.
+- Added recall, understanding, applied, and judgment difficulty levels.
+- Added a dedicated 25-question Sharing the Road Mastery Exam.
+- Covers trucks, wide turns, school buses, motorcycles, bicycles, pedestrians, emergency vehicles, move-over situations, work zones, railroads, farm equipment, and defensive sharing.
+- Current total app question count: 347.
+
+VERSION 6.6 — ALCOHOL, DRUGS, DISTRACTIONS & DRIVER FITNESS
+- Expanded Distraction & Impairment to 12 detailed teaching topics.
+- Added 37 metadata-rich questions.
+- Added recall, understanding, applied, and judgment difficulty levels.
+- Added a dedicated 25-question Driver Fitness Mastery Exam.
+- Covers alcohol, BAC, sobering myths, cannabis, medicines, mixed substances, phones, passengers, fatigue, emotions, road rage, seat belts, and airbags.
+- Current total app question count: 384.
+
+VERSION 6.7 — PARKING, BACKING & LOW-SPEED MANEUVERS
+- Expanded Vehicle & Occupant Safety to 12 detailed teaching topics.
+- Added 37 metadata-rich questions.
+- Added recall, understanding, applied, and judgment difficulty levels.
+- Added a dedicated 25-question Vehicle and Low-Speed Safety Mastery Exam.
+- Covers pre-drive setup, backing, driveways, parking lots, parallel parking, hill parking, restrictions, three-point turns, U-turns, curb entry, doors, cargo, children, pets, and pedestrian safety.
+- Current total app question count: 421.
+
+VERSION 6.8 — TENNESSEE LICENSING, PERMIT RULES & TEEN RESTRICTIONS
+- Expanded Licensing & Teen Rules to 12 detailed teaching topics.
+- Added 36 metadata-rich questions.
+- Added recall, understanding, applied, and judgment difficulty levels.
+- Added a dedicated 25-question Tennessee Licensing Mastery Exam.
+- Covers graduated licensing, eligibility, documents, testing, supervision, passenger and nighttime restrictions, devices, violations, insurance, school-related requirements, and readiness.
+- Current total app question count: 457.
+
+VERSION 6.9 — VEHICLE EQUIPMENT, MAINTENANCE & EMERGENCIES
+- Expanded Required Stops & Emergencies to 12 teaching topics.
+- Added 40 metadata-rich questions.
+- Added a dedicated 25-question mastery exam.
+- Total questions: 497
+
+VERSION 7.0 — PERMIT READINESS FINAL
+- Dedicated Permit Readiness Center
+- 50-question, 45-minute Comprehensive Final
+- Guaranteed coverage of all 11 sections
+- Extra weighting toward weaker sections
+- 85% overall score and 70% minimum in every section
+- Full-course mastery report and recommended review
+- Printable family completion certificate
+- Certificate is not an official Tennessee credential
+
+VERSION 7.1 — CURRICULUM CONSISTENCY AUDIT
+- Normalized all 11 lessons to the same data structure.
+- Every section now has 12 guided topics.
+- Every guided topic uses Content, Example, Common Mistake, and Knowledge Check.
+- Every question now has topic, difficulty, type, objective, tags, page, explanation, and answer metadata.
+- Interstate Driving expanded from 4 to 12 topics and from 14 to 50 questions.
+- Work Zones & Responsibility expanded from 4 to 12 topics and from 14 to 50 questions.
+- Added dedicated 25-question mastery exams for Interstate Driving and Work Zones & Responsibility.
+- All 11 knowledge sections now support the same full-experience format.

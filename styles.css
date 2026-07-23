@@ -103,3 +103,55 @@ body.exam-active #quizArea{display:block!important}
 .milestone-row .complete{color:var(--good)}.milestone-row .pending{color:#9a6b00}
 .next-recommendation{background:#edf4f9;border-left:5px solid var(--blue);padding:12px;border-radius:10px}
 @media(max-width:720px){.coach-summary-grid{grid-template-columns:1fr}.coach-item{grid-template-columns:34px 1fr}.coach-duration{grid-column:2}.weekly-summary{grid-template-columns:repeat(2,1fr)}}
+
+.lesson-view{max-width:900px;margin:auto}
+.lesson-view .lesson-points{margin-bottom:22px}
+.review-item{border:1px solid var(--line);border-radius:10px;padding:10px;margin:8px 0}
+#masteryExam{background:#8a5a00}
+
+.sign-mode-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.sign-library-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:16px}
+.sign-library-card{border:1px solid var(--line);border-radius:15px;padding:14px;background:#f9fbfc}
+.sign-visual-wrap{min-height:150px;display:grid;place-items:center;margin-bottom:10px}
+.road-sign{width:120px;height:120px;display:grid;place-items:center;text-align:center;font-weight:900;line-height:1.05;padding:10px;box-sizing:border-box;box-shadow:0 4px 10px #0002}
+.road-sign.octagon{clip-path:polygon(30% 0,70% 0,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%)}
+.road-sign.triangle{clip-path:polygon(50% 100%,0 0,100% 0)}
+.road-sign.diamond{transform:rotate(45deg);border-radius:7px}.road-sign.diamond span{transform:rotate(-45deg)}
+.road-sign.circle{border-radius:50%}.road-sign.rectangle{width:145px;height:90px;border-radius:5px}
+.road-sign.pentagon{clip-path:polygon(50% 0,100% 38%,82% 100%,18% 100%,0 38%)}
+.road-sign.pennant{clip-path:polygon(0 0,100% 50%,0 100%)}
+.road-sign.crossbuck{width:150px;height:105px;background:transparent;box-shadow:none;position:relative}
+.road-sign.crossbuck:before,.road-sign.crossbuck:after{content:"";position:absolute;width:150px;height:30px;background:#fff;border:3px solid #111;left:0;top:37px}
+.road-sign.crossbuck:before{transform:rotate(35deg)}.road-sign.crossbuck:after{transform:rotate(-35deg)}
+.road-sign.crossbuck span{z-index:2;font-size:.72rem}
+.road-sign.red{background:#c82333;color:#fff;border:5px solid #fff;outline:3px solid #c82333}
+.road-sign.redwhite{background:#fff;color:#c82333;border:8px solid #c82333}
+.road-sign.white{background:#fff;color:#111;border:4px solid #111}
+.road-sign.yellow{background:#f4c542;color:#111;border:4px solid #111}
+.road-sign.orange{background:#ef8a24;color:#111;border:4px solid #111}
+.road-sign.fluorescent{background:#d7f13a;color:#111;border:4px solid #111}
+.road-sign.blue{background:#1769aa;color:#fff;border:4px solid #fff;outline:2px solid #1769aa}
+.road-sign.brown{background:#80522f;color:#fff;border:4px solid #fff;outline:2px solid #80522f}
+.sign-question-card{text-align:center}.sign-question-card .choice-list{text-align:left}
+.sign-score{font-size:3rem;font-weight:900;color:var(--blue)}
+.sign-category{display:inline-block;background:#e9f0f5;color:var(--blue);padding:4px 8px;border-radius:999px;font-size:.75rem;font-weight:800}
+
+.readiness-hero{border-top:6px solid var(--gold);background:linear-gradient(135deg,#fff,#f4f9fc)}
+.readiness-summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px;margin-top:16px}
+.readiness-stat{border:1px solid var(--line);border-radius:13px;padding:14px;background:#fff}
+.readiness-stat b{display:block;font-size:1.5rem;color:var(--blue)}
+.readiness-stat span{font-size:.82rem;color:var(--muted)}
+.readiness-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.course-review-row{border:1px solid var(--line);border-radius:11px;padding:11px;margin:9px 0}
+.course-review-head{display:flex;justify-content:space-between;gap:10px;margin-bottom:6px}
+.course-review-row.needs-review{border-left:5px solid var(--gold)}
+.course-review-row.mastered{border-left:5px solid var(--good)}
+.permit-ready-banner{text-align:center;background:#e8f6ee;border:2px solid var(--good);border-radius:15px;padding:18px}
+.not-ready-banner{background:#fff5d8;border:2px solid var(--gold);border-radius:15px;padding:15px}
+.certificate-sheet{display:none}
+.certificate-preview{border:8px double #173f5f;padding:28px;text-align:center;background:#fffdf5}
+.certificate-preview h1{font-size:2.3rem;color:#173f5f}
+.certificate-name{font-size:2rem;font-weight:900;border-bottom:2px solid #444;display:inline-block;padding:5px 30px;margin:20px}
+.certificate-seal{width:95px;height:95px;border-radius:50%;border:6px double #9a6b00;display:grid;place-items:center;margin:18px auto;font-weight:900;color:#9a6b00}
+@media(max-width:720px){.readiness-grid{grid-template-columns:1fr}}
+@media print{body *{visibility:hidden!important}#printableCertificate,#printableCertificate *{visibility:visible!important}#printableCertificate{display:block!important;position:absolute;inset:0;padding:30px;background:#fff}}

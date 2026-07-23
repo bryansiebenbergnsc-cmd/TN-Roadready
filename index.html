@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="TN RoadReady">
-  <title>TN RoadReady v5.1 Learning Coach</title>
+  <title>TN RoadReady v7.1 Curriculum Consistency</title>
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icon-192.png">
   <link rel="stylesheet" href="styles.css?v=4.1">
@@ -36,6 +36,8 @@
       <button data-tab="dashboard" class="active">Dashboard</button>
       <button data-tab="study">Lessons</button>
       <button data-tab="test">Practice</button>
+      <button data-tab="signs">Sign Challenge</button>
+      <button data-tab="readiness">Readiness</button>
       <button data-tab="manual">Manual</button>
     </nav>
 
@@ -134,6 +136,53 @@
       <div id="quizArea" hidden></div>
     </div>
 
+
+    <div id="signs" class="tab-panel">
+      <div class="card">
+        <span class="eyebrow">VISUAL RECOGNITION</span>
+        <h2>Traffic Sign Challenge</h2>
+        <p>Recognize the sign by shape, color, and symbol, then choose the safest response.</p>
+        <div class="sign-mode-grid">
+          <button id="signLearnBtn">Browse Sign Library</button>
+          <button id="signQuickBtn">Quick Challenge — 10</button>
+          <button id="signTimedBtn">Timed Challenge — 20</button>
+        </div>
+      </div>
+      <div id="signChallengeArea"></div>
+    </div>
+
+
+    <div id="readiness" class="tab-panel">
+      <div class="card readiness-hero">
+        <span class="eyebrow">COURSE CAPSTONE</span>
+        <h2>Permit Readiness Center</h2>
+        <p>Review full-course mastery, complete the comprehensive final, and print a family completion certificate.</p>
+        <div id="readinessSummary" class="readiness-summary-grid"></div>
+      </div>
+      <div class="readiness-grid">
+        <div class="card">
+          <span class="eyebrow">COMPREHENSIVE FINAL</span>
+          <h3>50-Question Permit Readiness Exam</h3>
+          <p>Balanced coverage of all 11 sections, with extra questions from weaker areas.</p>
+          <ul class="exam-features"><li>50 questions</li><li>45-minute timer</li><li>85% overall required</li><li>No section below 70%</li></ul>
+          <div id="capstoneStatus" class="adaptive-status"></div>
+          <button id="capstoneExamBtn">Start Comprehensive Final</button>
+        </div>
+        <div class="card">
+          <span class="eyebrow">READINESS REPORT</span>
+          <h3>Full-Course Review</h3>
+          <div id="courseReview"></div>
+          <button class="secondary" id="smartCourseReviewBtn">Start Recommended Review</button>
+        </div>
+      </div>
+      <div class="card">
+        <span class="eyebrow">FAMILY COMPLETION CERTIFICATE</span>
+        <h3>RoadReady Academy Certificate</h3>
+        <div id="certificateStatus"></div>
+        <button id="printCertificateBtn">Print Certificate</button>
+      </div>
+    </div>
+
     <div id="manual" class="tab-panel">
       <div class="card">
         <div class="section-title"><div><h2>Driver License Manual</h2><p>Use the page field to jump to a referenced page.</p></div>
@@ -149,7 +198,7 @@
   </section>
 </main>
 
-<footer>TN RoadReady v5.1 Learning Coach • Offline family study app • No accounts • No advertisements</footer>
-<script src="app.bundle.js?v=5.3"></script>
+<footer>TN RoadReady v7.1 Curriculum Consistency • Offline family study app • No accounts • No advertisements</footer>
+<script src="app.bundle.js?v=7.1"></script>
 </body>
 </html>
